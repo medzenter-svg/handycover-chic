@@ -4,7 +4,7 @@ import { ProductCard } from "./ProductCard";
 
 export function Bestsellers() {
   return (
-    <section id="bestseller" className="mx-auto max-w-[1400px] px-6 pt-8">
+    <section id="bestseller" className="mx-auto max-w-[1280px] px-4 pt-6 sm:px-5">
       <div className="flex items-end justify-between gap-4">
         <h2 className="flex items-center gap-2 text-lg font-extrabold">
           <Flame className="h-4 w-4 text-primary" />
@@ -15,7 +15,7 @@ export function Bestsellers() {
         </a>
       </div>
 
-      <div className="mt-3 grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-8">
+      <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-8">
         {products.map((p) => (
           <ProductCard key={p.id} p={p} />
         ))}

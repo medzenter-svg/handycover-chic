@@ -4,16 +4,17 @@ import { Hero } from "@/components/site/Hero";
 import { Categories } from "@/components/site/Categories";
 import { Bestsellers } from "@/components/site/Bestsellers";
 import { Guides } from "@/components/site/Guides";
+import { TrustAffiliate } from "@/components/site/TrustAffiliate";
 import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HandyCover – Smartphone Zubehör, ausgewählt für dich" },
+      { title: "HandyCover – Die besten Smartphone Zubehör Empfehlungen" },
       {
         name: "description",
         content:
-          "Hüllen, Ladegeräte, MagSafe Accessoires, Powerbanks und mehr – sorgfältig ausgewählt und direkt bei Amazon erhältlich.",
+          "Entdecke stilvolle Handyhüllen, MagSafe Zubehör, Displayschutz, Ladegeräte, Powerbanks und Tech-Geschenke – sorgfältig ausgewählt und direkt bei Amazon verfügbar.",
       },
       { property: "og:title", content: "HandyCover – Smartphone Zubehör, ausgewählt für dich" },
       {
@@ -41,6 +42,7 @@ function Index() {
         <Hero />
         <Categories />
         <Bestsellers />
+        <TrustAffiliate />
         <Guides />
       </main>
       <Footer />

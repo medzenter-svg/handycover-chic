@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="mx-auto mt-12 max-w-[1400px] px-6 pb-10">
       <div className="overflow-hidden rounded-3xl bg-gradient-footer shadow-card">
-        <div className="footer-grid grid grid-cols-1 items-start gap-10 p-8 md:gap-12 md:p-10">
+        <div className="footer-grid grid grid-cols-1 items-start gap-7 p-7 md:gap-12 md:p-10">
           <style>{`@media (min-width: 768px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr; } }`}</style>
 
           {/* Brand */}

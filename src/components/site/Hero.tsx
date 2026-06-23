@@ -1,6 +1,6 @@
 import { Check, ChevronLeft, ChevronRight, Sparkles, Shield, Truck, BadgeCheck, Star, Heart } from "lucide-react";
-import heroProducts from "@/assets/hero-products.png";
-import pCase from "@/assets/p-case.jpg";
+import heroProducts from "@/assets/hero-products-premium.png";
+import pCase from "@/assets/p-case-premium.jpg";
 
 export function Hero() {
   return (

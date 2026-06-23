@@ -6,6 +6,7 @@ import { Bestsellers } from "@/components/site/Bestsellers";
 import { Guides } from "@/components/site/Guides";
 import { TrustAffiliate } from "@/components/site/TrustAffiliate";
 import { Footer } from "@/components/site/Footer";
+import { ErrorReportButton } from "@/components/site/ErrorReportButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({

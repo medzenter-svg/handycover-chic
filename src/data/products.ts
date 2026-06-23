@@ -6,6 +6,12 @@ import pMount from "@/assets/p-mount.jpg";
 import pPb1 from "@/assets/p-powerbank1.jpg";
 import pCar from "@/assets/p-carcharger.jpg";
 import pPb2 from "@/assets/p-powerbank2.jpg";
+import pSamsung from "@/assets/p-samsung.jpg";
+import pAirpods from "@/assets/p-airpods.jpg";
+import pWatch from "@/assets/p-watch.jpg";
+import pScreen from "@/assets/p-screen.jpg";
+import pGift from "@/assets/p-gift.jpg";
+
 
 export type Product = {
   id: string;
@@ -137,16 +143,17 @@ export type Category = {
 
 export const categories: Category[] = [
   { id: "iphone", name: "iPhone Zubehör", image: pCase, gradient: "from-pink-100 to-rose-100" },
-  { id: "samsung", name: "Samsung Zubehör", image: pPb2, gradient: "from-indigo-100 to-purple-100" },
+  { id: "samsung", name: "Samsung Zubehör", image: pSamsung, gradient: "from-indigo-100 to-purple-100" },
   { id: "magsafe", name: "MagSafe Zubehör", image: pWallet, gradient: "from-purple-100 to-fuchsia-100" },
-  { id: "display", name: "Displayschutz", image: pCable, gradient: "from-sky-100 to-blue-100" },
+  { id: "display", name: "Displayschutz", image: pScreen, gradient: "from-sky-100 to-blue-100" },
   { id: "charging", name: "Ladegeräte & Kabel", image: pCharger, gradient: "from-amber-100 to-orange-100" },
   { id: "powerbanks", name: "Powerbanks", image: pPb1, gradient: "from-emerald-100 to-teal-100" },
   { id: "car", name: "Auto‑Halterungen", image: pMount, gradient: "from-blue-100 to-cyan-100" },
-  { id: "carcharger", name: "Auto‑Ladegeräte", image: pCar, gradient: "from-rose-100 to-pink-100" },
-  { id: "watch", name: "Smartwatch Zubehör", image: pPb2, gradient: "from-violet-100 to-purple-100" },
-  { id: "gifts", name: "Tech Gifts", image: pWallet, gradient: "from-pink-100 to-red-100" },
+  { id: "airpods", name: "AirPods Zubehör", image: pAirpods, gradient: "from-slate-100 to-zinc-100" },
+  { id: "watch", name: "Smartwatch Zubehör", image: pWatch, gradient: "from-violet-100 to-purple-100" },
+  { id: "gifts", name: "Tech Gifts", image: pGift, gradient: "from-pink-100 to-red-100" },
 ];
+
 
 export type Guide = {
   id: string;
@@ -168,7 +175,7 @@ export const guides: Guide[] = [
     id: "display",
     title: "Displayschutz: Glas oder Folie?",
     text: "Vor‑ & Nachteile einfach erklärt.",
-    image: pCable,
+    image: pScreen,
     gradient: "from-sky-50 via-blue-50 to-indigo-50",
   },
   {
@@ -189,14 +196,15 @@ export const guides: Guide[] = [
     id: "gifts",
     title: "Geschenkideen für Tech‑Fans",
     text: "Praktische & stylische Geschenke.",
-    image: pCharger,
+    image: pGift,
     gradient: "from-purple-50 via-fuchsia-50 to-pink-50",
   },
   {
-    id: "kunden",
-    title: "Kundenzufriedenheit Tech‑Fans",
-    text: "Bewertungen & Bestseller entdecken.",
-    image: pCase,
-    gradient: "from-rose-50 via-pink-50 to-purple-50",
+    id: "airpods",
+    title: "AirPods Zubehör: Was lohnt sich wirklich?",
+    text: "Cases, Spitzen und mehr im Vergleich.",
+    image: pAirpods,
+    gradient: "from-slate-50 via-zinc-50 to-gray-50",
   },
 ];
+

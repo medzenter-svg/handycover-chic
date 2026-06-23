@@ -1,5 +1,7 @@
 import { Check, ChevronLeft, ChevronRight, Sparkles, Shield, Truck, BadgeCheck, Star } from "lucide-react";
 import pCase from "@/assets/p-case-premium.jpg";
+import heroProducts from "@/assets/hero-products-brand.jpg";
+
 
 export function Hero() {
   return (
@@ -59,20 +61,14 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="relative min-h-[340px] md:min-h-[430px]">
-              <div className="product-stage" aria-label="Premium Smartphone Zubehör Set">
-                <div className="product-stage__plate" />
-                <div className="product-stage__case" />
-                <div className="product-stage__phone">
-                  <span />
-                </div>
-                <div className="product-stage__wallet" />
-                <div className="product-stage__buds" />
-                <div className="product-stage__charger" />
-                <div className="product-stage__cable" />
-                <div className="product-stage__watch" />
-                <div className="product-stage__powerbank" />
-              </div>
+            <div className="relative">
+              <img
+                src={heroProducts}
+                alt="Premium Smartphone Zubehör – Hülle, Ladegerät, Kabel, Powerbank, Wallet, Watch"
+                width={1408}
+                height={1216}
+                className="aspect-square w-full rounded-2xl object-cover shadow-card"
+              />
             </div>
           </div>
         </div>

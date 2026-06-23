@@ -4,10 +4,16 @@ export function Footer() {
   return (
     <footer className="mx-auto mt-12 max-w-[1400px] px-6 pb-10">
       <div className="overflow-hidden rounded-3xl bg-gradient-footer shadow-card">
-        {/* Single horizontal row */}
-        <div className="flex flex-col gap-8 p-8 lg:flex-row lg:items-start lg:justify-between lg:gap-10 lg:p-10">
+        {/* Desktop: 5-column grid. Mobile: stacked. */}
+        <div
+          className="grid grid-cols-1 items-start gap-10 p-8 md:gap-12 md:p-10"
+          style={{ gridTemplateColumns: undefined }}
+        >
+          <div className="hidden md:contents">
+            <style>{`@media (min-width: 768px) { .footer-grid-5 { grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr; } }`}</style>
+          </div>
           {/* Brand */}
-          <div className="lg:max-w-[240px]">
+          <div>
             <div className="flex items-center gap-2">
               <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-brand shadow-glow">
                 <Sparkles className="h-4 w-4 text-white" />

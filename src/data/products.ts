@@ -92,7 +92,7 @@ export const products: Product[] = [
     title: "INIU Powerbank 10000 mAh",
     benefit: "Slim, schnell, mit Display & USB‑C PD.",
     image: pPb1,
-    badge: "Power unterwegs",
+    badge: "Power",
     badgeGradient: "from-fuchsia-500 to-purple-600",
     rating: 4.8,
     reviews: "1.918",
@@ -131,65 +131,72 @@ export const products: Product[] = [
 export type Category = {
   id: string;
   name: string;
-  emoji: string;
+  image: string;
   gradient: string;
 };
 
 export const categories: Category[] = [
-  { id: "iphone", name: "iPhone Zubehör", emoji: "📱", gradient: "from-pink-100 to-rose-100" },
-  { id: "samsung", name: "Samsung Zubehör", emoji: "✨", gradient: "from-indigo-100 to-purple-100" },
-  { id: "magsafe", name: "MagSafe Zubehör", emoji: "🧲", gradient: "from-purple-100 to-fuchsia-100" },
-  { id: "display", name: "Displayschutz", emoji: "🛡️", gradient: "from-sky-100 to-blue-100" },
-  { id: "charging", name: "Ladegeräte & Kabel", emoji: "⚡", gradient: "from-amber-100 to-orange-100" },
-  { id: "powerbanks", name: "Powerbanks", emoji: "🔋", gradient: "from-emerald-100 to-teal-100" },
-  { id: "car", name: "Auto‑Halterungen", emoji: "🚗", gradient: "from-blue-100 to-cyan-100" },
-  { id: "airpods", name: "AirPods Zubehör", emoji: "🎧", gradient: "from-rose-100 to-pink-100" },
-  { id: "watch", name: "Smartwatch Zubehör", emoji: "⌚", gradient: "from-violet-100 to-purple-100" },
-  { id: "gifts", name: "Tech Gifts", emoji: "🎁", gradient: "from-pink-100 to-red-100" },
+  { id: "iphone", name: "iPhone Zubehör", image: pCase, gradient: "from-pink-100 to-rose-100" },
+  { id: "samsung", name: "Samsung Zubehör", image: pPb2, gradient: "from-indigo-100 to-purple-100" },
+  { id: "magsafe", name: "MagSafe Zubehör", image: pWallet, gradient: "from-purple-100 to-fuchsia-100" },
+  { id: "display", name: "Displayschutz", image: pCable, gradient: "from-sky-100 to-blue-100" },
+  { id: "charging", name: "Ladegeräte & Kabel", image: pCharger, gradient: "from-amber-100 to-orange-100" },
+  { id: "powerbanks", name: "Powerbanks", image: pPb1, gradient: "from-emerald-100 to-teal-100" },
+  { id: "car", name: "Auto‑Halterungen", image: pMount, gradient: "from-blue-100 to-cyan-100" },
+  { id: "carcharger", name: "Auto‑Ladegeräte", image: pCar, gradient: "from-rose-100 to-pink-100" },
+  { id: "watch", name: "Smartwatch Zubehör", image: pPb2, gradient: "from-violet-100 to-purple-100" },
+  { id: "gifts", name: "Tech Gifts", image: pWallet, gradient: "from-pink-100 to-red-100" },
 ];
 
 export type Guide = {
   id: string;
   title: string;
   text: string;
-  emoji: string;
+  image: string;
   gradient: string;
 };
 
 export const guides: Guide[] = [
   {
     id: "magsafe",
-    title: "MagSafe Zubehör: Was lohnt sich wirklich?",
-    text: "Finde die perfekten MagSafe Produkte für deinen Alltag.",
-    emoji: "🧲",
-    gradient: "from-pink-100 via-rose-50 to-purple-100",
+    title: "Welches MagSafe Zubehör passt zu dir?",
+    text: "Finde die perfekten MagSafe Produkte.",
+    image: pWallet,
+    gradient: "from-pink-50 via-rose-50 to-purple-50",
   },
   {
     id: "display",
     title: "Displayschutz: Glas oder Folie?",
-    text: "Vor‑ und Nachteile einfach erklärt.",
-    emoji: "🛡️",
-    gradient: "from-sky-100 via-blue-50 to-indigo-100",
+    text: "Vor‑ & Nachteile einfach erklärt.",
+    image: pCable,
+    gradient: "from-sky-50 via-blue-50 to-indigo-50",
   },
   {
     id: "powerbanks",
     title: "Powerbanks kaufen: Worauf achten?",
     text: "Kapazität, Ladeleistung und mehr.",
-    emoji: "🔋",
-    gradient: "from-emerald-100 via-teal-50 to-cyan-100",
+    image: pPb1,
+    gradient: "from-emerald-50 via-teal-50 to-cyan-50",
   },
   {
     id: "car",
-    title: "Auto‑Halterung fürs Handy: Magnetisch oder klassisch?",
-    text: "Vergleich & klare Empfehlungen.",
-    emoji: "🚗",
-    gradient: "from-amber-100 via-orange-50 to-rose-100",
+    title: "Auto‑Halterung fürs Handy: Magnetisch oder Klemme?",
+    text: "Vergleich & Empfehlungen.",
+    image: pMount,
+    gradient: "from-amber-50 via-orange-50 to-rose-50",
   },
   {
     id: "gifts",
     title: "Geschenkideen für Tech‑Fans",
-    text: "Praktische & stylische Geschenke entdecken.",
-    emoji: "🎁",
-    gradient: "from-purple-100 via-fuchsia-50 to-pink-100",
+    text: "Praktische & stylische Geschenke.",
+    image: pCharger,
+    gradient: "from-purple-50 via-fuchsia-50 to-pink-50",
+  },
+  {
+    id: "kunden",
+    title: "Kundenzufriedenheit Tech‑Fans",
+    text: "Bewertungen & Bestseller entdecken.",
+    image: pCase,
+    gradient: "from-rose-50 via-pink-50 to-purple-50",
   },
 ];

@@ -12,4 +12,18 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    server: {
+      hmr: {
+        // The HMR websocket cannot reach localhost:8080 from the lovableproject.com preview,
+        // which made Vite show a fullscreen "connection lost" overlay (black screen).
+        // Route HMR through the preview host on 443 (wss) instead.
+        protocol: "wss",
+        clientPort: 443,
+        host: `${process.env.LOVABLE_PROJECT_ID ?? ""}.lovableproject.com`,
+        overlay: false,
+      },
+    },
+  },
 });
+

@@ -1,29 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Categories } from "@/components/site/Categories";
+import { Bestsellers } from "@/components/site/Bestsellers";
+import { Guides } from "@/components/site/Guides";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "HandyCover – Smartphone Zubehör, ausgewählt für dich" },
+      {
+        name: "description",
+        content:
+          "Hüllen, Ladegeräte, MagSafe Accessoires, Powerbanks und mehr – sorgfältig ausgewählt und direkt bei Amazon erhältlich.",
+      },
+      { property: "og:title", content: "HandyCover – Smartphone Zubehör, ausgewählt für dich" },
+      {
+        property: "og:description",
+        content: "Stilvoll. Praktisch. Ausgewählt. Die besten Amazon Picks für dein Smartphone.",
+      },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main className="pb-10">
+        <Hero />
+        <Categories />
+        <Bestsellers />
+        <Guides />
+      </main>
+      <Footer />
     </div>
   );
 }

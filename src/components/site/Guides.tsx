@@ -19,17 +19,17 @@ export function Guides() {
           <a
             key={g.id}
             href="#"
-            className={`group flex h-[120px] items-center gap-3 rounded-2xl border border-border/60 bg-gradient-to-br ${g.gradient} p-3 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card`}
+            className={`group flex h-[110px] items-center gap-2.5 rounded-2xl border border-border/60 bg-gradient-to-br ${g.gradient} p-2.5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card`}
           >
-            <div className="grid h-[96px] w-[96px] shrink-0 place-items-center overflow-hidden rounded-xl bg-card/70 shadow-soft backdrop-blur">
-              <img src={g.image} alt="" width={192} height={192} className="h-full w-full object-cover" loading="lazy" />
+            <div className="grid h-[74px] w-[74px] shrink-0 place-items-center overflow-hidden rounded-xl bg-card/70 shadow-soft backdrop-blur">
+              <img src={g.image} alt="" width={148} height={148} className="h-full w-full object-cover" loading="lazy" />
             </div>
             <div className="min-w-0 flex-1">
-              <h3 className="line-clamp-2 text-[12.5px] font-bold leading-snug text-foreground">
+              <h3 className="line-clamp-2 text-[11.5px] font-bold leading-snug text-foreground">
                 {g.title}
               </h3>
-              <p className="mt-1 line-clamp-2 text-[11px] text-foreground/70">{g.text}</p>
-              <span className="mt-1 inline-block text-[10.5px] font-semibold text-primary">
+              <p className="mt-0.5 line-clamp-1 text-[10.5px] text-foreground/70">{g.text}</p>
+              <span className="mt-0.5 inline-block text-[10px] font-semibold text-primary">
                 Zum Ratgeber →
               </span>
             </div>

@@ -93,8 +93,8 @@ export function Hero() {
           </div>
 
           <div className="mt-4 grid grid-cols-[110px_1fr] gap-4">
-            <div className="aspect-square overflow-hidden rounded-2xl bg-muted/30 p-2">
-              <img src={pCase} alt="iPhone 16 Pro Hülle" width={440} height={440} className="h-full w-full object-contain object-center" />
+            <div className="grid aspect-square place-items-center overflow-hidden rounded-2xl bg-white p-3">
+              <img src={pCase} alt="iPhone 16 Pro Hülle" width={440} height={440} className="max-h-[86px] max-w-[86px] object-contain object-center" />
             </div>
 
             <div className="min-w-0">

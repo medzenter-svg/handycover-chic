@@ -3,34 +3,36 @@ import { guides } from "@/data/products";
 
 export function Guides() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 pt-14">
+    <section className="mx-auto max-w-[1400px] px-6 pt-10">
       <div className="flex items-end justify-between gap-4">
-        <h2 className="flex items-center gap-2 text-2xl font-extrabold">
-          <BookOpen className="h-6 w-6 text-primary" />
+        <h2 className="flex items-center gap-2 text-xl font-extrabold">
+          <BookOpen className="h-5 w-5 text-primary" />
           Ratgeber & Kaufberatung
         </h2>
-        <a href="#" className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
-          Alle Ratgeber ansehen <ArrowRight className="h-4 w-4" />
+        <a href="#" className="inline-flex items-center gap-1 text-[12.5px] font-semibold text-primary hover:underline">
+          Alle Ratgeber ansehen <ArrowRight className="h-3.5 w-3.5" />
         </a>
       </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         {guides.map((g) => (
           <a
             key={g.id}
             href="#"
-            className={`group flex h-full flex-col rounded-2xl bg-gradient-to-br ${g.gradient} p-5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card`}
+            className={`group flex h-[120px] items-center gap-3 rounded-2xl border border-border/60 bg-gradient-to-br ${g.gradient} p-3 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card`}
           >
-            <div className="grid h-14 w-14 place-items-center rounded-2xl bg-card/70 text-2xl shadow-soft backdrop-blur">
-              {g.emoji}
+            <div className="grid h-[96px] w-[96px] shrink-0 place-items-center overflow-hidden rounded-xl bg-card/70 shadow-soft backdrop-blur">
+              <img src={g.image} alt="" width={192} height={192} className="h-full w-full object-cover" loading="lazy" />
             </div>
-            <h3 className="mt-4 text-[15px] font-bold leading-snug text-foreground">
-              {g.title}
-            </h3>
-            <p className="mt-2 line-clamp-3 text-sm text-foreground/70">{g.text}</p>
-            <span className="mt-auto pt-4 text-xs font-semibold text-primary opacity-0 transition group-hover:opacity-100">
-              Mehr erfahren →
-            </span>
+            <div className="min-w-0 flex-1">
+              <h3 className="line-clamp-2 text-[12.5px] font-bold leading-snug text-foreground">
+                {g.title}
+              </h3>
+              <p className="mt-1 line-clamp-2 text-[11px] text-foreground/70">{g.text}</p>
+              <span className="mt-1 inline-block text-[10.5px] font-semibold text-primary">
+                Zum Ratgeber →
+              </span>
+            </div>
           </a>
         ))}
       </div>

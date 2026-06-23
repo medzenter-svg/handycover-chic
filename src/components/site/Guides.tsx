@@ -21,9 +21,10 @@ export function Guides() {
             href="#"
             className={`group flex h-[110px] items-center gap-2.5 rounded-2xl border border-border/60 bg-gradient-to-br ${g.gradient} p-2.5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card`}
           >
-            <div className="grid h-[74px] w-[74px] shrink-0 place-items-center overflow-hidden rounded-xl bg-card/70 shadow-soft backdrop-blur">
-              <img src={g.image} alt="" width={148} height={148} className="h-full w-full object-cover" loading="lazy" />
+            <div className="grid h-[74px] w-[74px] shrink-0 place-items-center overflow-hidden rounded-xl bg-card/80 p-1.5 shadow-soft backdrop-blur">
+              <img src={g.image} alt="" width={148} height={148} className="h-full w-full object-contain" loading="lazy" />
             </div>
+
             <div className="min-w-0 flex-1">
               <h3 className="line-clamp-2 text-[11.5px] font-bold leading-snug text-foreground">
                 {g.title}

@@ -11,9 +11,9 @@ export function Categories() {
             className="group flex h-[78px] items-center gap-2.5 rounded-2xl border border-border/60 bg-card px-2.5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card xl:flex-col xl:items-center xl:justify-center xl:gap-1 xl:px-2 xl:h-[120px]"
           >
             <div
-              className={`grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br ${c.gradient} p-1.5`}
+              className={`grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br ${c.gradient} p-1`}
             >
-              <img src={c.image} alt="" width={120} height={120} className="h-full w-full object-contain" loading="lazy" />
+              <img src={c.image} alt="" width={120} height={120} className="h-full w-full object-contain object-center" loading="lazy" />
             </div>
 
             <span className="min-w-0 text-[11.5px] font-semibold leading-tight text-foreground xl:text-center">

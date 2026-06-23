@@ -4,14 +4,9 @@ export function Footer() {
   return (
     <footer className="mx-auto mt-12 max-w-[1400px] px-6 pb-10">
       <div className="overflow-hidden rounded-3xl bg-gradient-footer shadow-card">
-        {/* Desktop: 5-column grid. Mobile: stacked. */}
-        <div
-          className="grid grid-cols-1 items-start gap-10 p-8 md:gap-12 md:p-10"
-          style={{ gridTemplateColumns: undefined }}
-        >
-          <div className="hidden md:contents">
-            <style>{`@media (min-width: 768px) { .footer-grid-5 { grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr; } }`}</style>
-          </div>
+        <div className="footer-grid grid grid-cols-1 items-start gap-10 p-8 md:gap-12 md:p-10">
+          <style>{`@media (min-width: 768px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr; } }`}</style>
+
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2">
@@ -37,7 +32,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
           <FooterCol
             title="Kategorien"
             items={[
@@ -59,7 +53,7 @@ export function Footer() {
           />
 
           {/* Newsletter */}
-          <div className="lg:max-w-[260px]">
+          <div>
             <h4 className="text-[13px] font-bold">Newsletter</h4>
             <p className="mt-2 text-[12.5px] text-foreground/70">
               Keine Deals & Tipps mehr verpassen!
@@ -72,7 +66,7 @@ export function Footer() {
               />
               <button
                 type="button"
-                className="inline-flex h-9 items-center rounded-full bg-gradient-brand px-3.5 text-[12.5px] font-semibold text-white shadow-glow"
+                className="inline-flex h-9 shrink-0 items-center rounded-full bg-gradient-brand px-3.5 text-[12.5px] font-semibold text-white shadow-glow"
               >
                 Anmelden
               </button>
@@ -84,7 +78,7 @@ export function Footer() {
         </div>
 
         {/* Slim bottom bar */}
-        <div className="flex flex-col items-center justify-between gap-2 border-t border-border/60 px-8 py-4 text-[11.5px] text-muted-foreground sm:flex-row lg:px-10">
+        <div className="flex flex-col items-center justify-between gap-2 border-t border-border/60 px-8 py-4 text-[11.5px] text-muted-foreground sm:flex-row md:px-10">
           <span>© {new Date().getFullYear()} HandyCover. Alle Rechte vorbehalten.</span>
           <span className="text-center">
             Als Amazon‑Partner verdienen wir an qualifizierten Verkäufen.

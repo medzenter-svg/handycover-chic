@@ -1,5 +1,5 @@
-import { Check, ChevronLeft, ChevronRight, Sparkles, Shield, Truck, BadgeCheck, Star, Heart } from "lucide-react";
-import heroProducts from "@/assets/hero-products-premium.png";
+import { Check, ChevronLeft, ChevronRight, Sparkles, Shield, Truck, BadgeCheck, Star } from "lucide-react";
+import heroProducts from "@/assets/hero-products-premium-v2.jpg";
 import pCase from "@/assets/p-case-premium.jpg";
 
 export function Hero() {
@@ -7,12 +7,7 @@ export function Hero() {
     <section className="mx-auto max-w-[1400px] px-6 pt-6">
       <div className="grid gap-5 lg:grid-cols-[1.55fr_1fr]">
         {/* Main hero */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-hero p-7 shadow-card md:p-10">
-          {/* decorative blobs */}
-          <div className="pointer-events-none absolute right-[18%] top-[8%] h-72 w-72 rounded-full bg-pink/50 blur-3xl" />
-          <div className="pointer-events-none absolute right-[2%] top-[40%] h-72 w-72 rounded-full bg-lavender/60 blur-3xl" />
-          <div className="pointer-events-none absolute left-1/2 bottom-0 h-60 w-60 rounded-full bg-sky/40 blur-3xl" />
-
+        <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-7 shadow-card md:p-10">
           <div className="relative z-10 grid items-center gap-6 md:grid-cols-[1fr_1.1fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-card/85 px-3.5 py-1.5 text-[11px] font-semibold text-foreground shadow-soft backdrop-blur">
@@ -66,18 +61,12 @@ export function Hero() {
             </div>
 
             <div className="relative">
-              <div className="absolute left-4 top-6 z-10 rounded-full bg-gradient-brand px-3.5 py-2 text-[11px] font-bold text-white shadow-glow">
-                <span className="inline-flex items-center gap-1.5">
-                  <Heart className="h-3 w-3 fill-white" />
-                  Für dein<br />Lieblingszubehör!
-                </span>
-              </div>
               <img
                 src={heroProducts}
                 alt="Smartphone Hülle, MagSafe Ladegerät, USB‑C Netzteil und Kabel"
-                width={1280}
-                height={896}
-                className="relative z-[1] w-full select-none object-contain drop-shadow-[0_30px_40px_rgba(180,80,140,0.18)]"
+                width={1600}
+                height={1000}
+                className="relative z-[1] w-full select-none rounded-2xl object-contain"
               />
             </div>
           </div>

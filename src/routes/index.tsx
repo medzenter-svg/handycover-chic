@@ -47,6 +47,7 @@ function Index() {
         <Guides />
       </main>
       <Footer />
+      <ErrorReportButton />
     </div>
   );
 }

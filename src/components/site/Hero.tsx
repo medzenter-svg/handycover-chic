@@ -2,12 +2,10 @@ import { Check, ChevronLeft, ChevronRight, Sparkles, Shield, Truck, BadgeCheck, 
 import pCase from "@/assets/p-case-premium.jpg";
 import heroProducts from "@/assets/hero-products-brand.jpg";
 
-
 export function Hero() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 pt-6">
       <div className="grid gap-5 lg:grid-cols-[1.55fr_1fr]">
-        {/* Main hero */}
         <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-7 shadow-card md:p-10">
           <div className="relative z-10 grid items-center gap-6 md:grid-cols-[1fr_1.1fr]">
             <div>
@@ -26,8 +24,7 @@ export function Hero() {
                 Stilvoll. Praktisch. Ausgewählt.
               </p>
               <p className="mt-2 max-w-md text-[13.5px] leading-relaxed text-muted-foreground">
-                Entdecke hochwertiges Smartphone Zubehör, empfohlen von Amazon –
-                für mehr Schutz, Komfort und Leistung im Alltag.
+                Entdecke hochwertiges Smartphone Zubehör mit direktem Amazon Preischeck, klarer Auswahl und schnellen Links zu beliebten Produkten.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2.5">
@@ -48,10 +45,10 @@ export function Hero() {
 
               <div className="mt-7 grid grid-cols-2 gap-x-4 gap-y-2 text-[11.5px] text-muted-foreground sm:grid-cols-4">
                 {[
-                  { i: BadgeCheck, t: "Amazon Partner" },
-                  { i: Shield, t: "Sichere Zahlung" },
-                  { i: Truck, t: "Schnelle Lieferung" },
-                  { i: Check, t: "Geprüfte Qualität" },
+                  { i: BadgeCheck, t: "Sorgfältig kuratiert" },
+                  { i: Shield, t: "Kauf über Amazon" },
+                  { i: Truck, t: "Amazon Preischeck" },
+                  { i: Check, t: "Ohne Mehrkosten" },
                 ].map(({ i: Icon, t }) => (
                   <span key={t} className="inline-flex items-center gap-1.5">
                     <Icon className="h-3.5 w-3.5 text-primary" />
@@ -64,7 +61,7 @@ export function Hero() {
             <div className="relative">
               <img
                 src={heroProducts}
-                alt="Premium Smartphone Zubehör – Hülle, Ladegerät, Kabel, Powerbank, Wallet, Watch"
+                alt="Premium Smartphone Zubehör"
                 width={1408}
                 height={1216}
                 className="aspect-square w-full rounded-2xl object-cover shadow-card"
@@ -73,7 +70,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Recommendation card */}
         <aside className="flex flex-col rounded-3xl bg-card p-5 shadow-card md:p-6">
           <div className="flex items-center justify-between">
             <h3 className="text-base font-bold">Empfehlung der Woche</h3>
@@ -109,9 +105,9 @@ export function Hero() {
           <ul className="mt-4 space-y-1.5 text-[13px] text-foreground/80">
             {[
               "Kristallklares Design mit optimalem Schutz",
-              "Erhöhte Kanten für Display & Kamera",
+              "Erhöhte Kanten für Display und Kamera",
               "Kompatibel mit MagSafe",
-              "Schlank, leicht & langlebig",
+              "Schlank, leicht und langlebig",
             ].map((b) => (
               <li key={b} className="flex items-start gap-2">
                 <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" />

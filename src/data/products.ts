@@ -1,16 +1,16 @@
-import pCase from "@/assets/p-case.jpg";
-import pCharger from "@/assets/p-charger.jpg";
-import pCable from "@/assets/p-cable.jpg";
-import pWallet from "@/assets/p-wallet.jpg";
-import pMount from "@/assets/p-mount.jpg";
-import pPb1 from "@/assets/p-powerbank1.jpg";
-import pCar from "@/assets/p-carcharger.jpg";
-import pPb2 from "@/assets/p-powerbank2.jpg";
-import pSamsung from "@/assets/p-samsung.jpg";
-import pAirpods from "@/assets/p-airpods.jpg";
-import pWatch from "@/assets/p-watch.jpg";
-import pScreen from "@/assets/p-screen.jpg";
-import pGift from "@/assets/p-gift.jpg";
+import pCase from "@/assets/p-case-premium.jpg";
+import pCharger from "@/assets/p-charger-premium.jpg";
+import pCable from "@/assets/p-cable-premium.jpg";
+import pWallet from "@/assets/p-wallet-premium.jpg";
+import pMount from "@/assets/p-mount-premium.jpg";
+import pPb1 from "@/assets/p-powerbank1-premium.jpg";
+import pCar from "@/assets/p-carcharger-premium.jpg";
+import pPb2 from "@/assets/p-powerbank2-premium.jpg";
+import pSamsung from "@/assets/p-samsung-premium.jpg";
+import pAirpods from "@/assets/p-airpods-premium.jpg";
+import pWatch from "@/assets/p-watch-premium.jpg";
+import pScreen from "@/assets/p-screen-premium.jpg";
+import pGift from "@/assets/p-gift-premium.jpg";
 
 
 export type Product = {

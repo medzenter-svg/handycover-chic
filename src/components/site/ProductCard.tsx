@@ -3,34 +3,38 @@ import type { Product } from "@/data/products";
 
 export function ProductCard({ p }: { p: Product }) {
   return (
-    <article className="group flex h-full min-h-[276px] flex-col overflow-hidden rounded-lg border border-border/60 bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-card-hover">
-      <div className="relative flex h-[148px] items-center justify-center overflow-hidden bg-[#f5f5f7] p-2">
+    <article className="group flex h-full min-h-[292px] flex-col overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-card-hover">
+      <div className="relative flex h-[150px] items-center justify-center overflow-hidden bg-[#f7f7fa] p-3">
         <span
-          className={`absolute left-1.5 top-1.5 z-10 rounded-full bg-gradient-to-r ${p.badgeGradient} px-1.5 py-[1px] text-[7.5px] font-bold uppercase tracking-wide text-primary-foreground shadow-soft`}
+          className={`absolute left-2 top-2 z-10 rounded-full bg-gradient-to-r ${p.badgeGradient} px-2 py-0.5 text-[8px] font-extrabold uppercase tracking-wide text-primary-foreground shadow-soft`}
         >
           {p.badge}
         </span>
         <img
           src={p.image}
           alt={p.title}
-          width={240}
-          height={240}
+          width={260}
+          height={260}
           loading="lazy"
-          className="h-[124px] w-[124px] object-contain object-center transition duration-500 group-hover:scale-[1.03]"
+          className="h-[122px] w-[122px] object-contain object-center transition duration-500 group-hover:scale-[1.03]"
         />
       </div>
 
-      <div className="flex flex-1 flex-col gap-1 px-2 py-1.5">
-        <h3 className="line-clamp-2 min-h-[1.65rem] text-[10px] font-semibold leading-snug text-foreground">
+      <div className="flex flex-1 flex-col px-3 pb-3 pt-2">
+        <h3 className="line-clamp-2 min-h-[2rem] text-[11px] font-extrabold leading-snug text-foreground">
           {p.title}
         </h3>
 
-        <div className="flex items-center gap-0.5 text-[8.5px] text-muted-foreground">
+        <p className="mt-1 line-clamp-2 min-h-[1.7rem] text-[9.5px] leading-snug text-muted-foreground">
+          {p.benefit}
+        </p>
+
+        <div className="mt-1.5 flex items-center gap-0.5 text-[9px] text-muted-foreground">
           <span className="flex">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={i}
-                className={`h-2 w-2 ${
+                className={`h-2.5 w-2.5 ${
                   i < Math.round(p.rating) ? "fill-amber-400 text-amber-400" : "text-border"
                 }`}
               />
@@ -39,10 +43,10 @@ export function ProductCard({ p }: { p: Product }) {
           <span>({p.reviews})</span>
         </div>
 
-        <div className="flex items-baseline gap-1">
-          <span className="text-[11.5px] font-extrabold text-gradient-brand">{p.price}</span>
+        <div className="mt-1 flex items-baseline gap-1.5">
+          <span className="text-[13px] font-extrabold text-gradient-brand">{p.price}</span>
           {p.oldPrice && (
-            <span className="text-[8.5px] text-muted-foreground line-through">{p.oldPrice}</span>
+            <span className="text-[9px] text-muted-foreground line-through">{p.oldPrice}</span>
           )}
         </div>
 
@@ -50,7 +54,7 @@ export function ProductCard({ p }: { p: Product }) {
           href={p.amazonUrl}
           target="_blank"
           rel="nofollow sponsored noopener"
-          className="mt-auto inline-flex h-5 items-center justify-center rounded-full bg-gradient-brand px-2 text-[9px] font-semibold text-primary-foreground shadow-glow transition hover:opacity-95"
+          className="mt-auto inline-flex h-7 items-center justify-center rounded-full bg-gradient-brand px-3 text-[10px] font-bold text-primary-foreground shadow-glow transition hover:opacity-95"
         >
           Bei Amazon ansehen
         </a>

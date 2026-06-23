@@ -4,7 +4,7 @@ import type { Product } from "@/data/products";
 export function ProductCard({ p }: { p: Product }) {
   return (
     <article className="group flex h-full min-h-[258px] flex-col overflow-hidden rounded-lg border border-border/60 bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-card-hover">
-      <div className="relative flex h-[128px] items-center justify-center overflow-hidden bg-muted/30 p-2">
+      <div className="relative flex h-[128px] items-center justify-center overflow-hidden bg-white p-3">
         <span
           className={`absolute left-1.5 top-1.5 z-10 rounded-full bg-gradient-to-r ${p.badgeGradient} px-1.5 py-[1px] text-[7.5px] font-bold uppercase tracking-wide text-primary-foreground shadow-soft`}
         >
@@ -16,7 +16,7 @@ export function ProductCard({ p }: { p: Product }) {
           width={240}
           height={240}
           loading="lazy"
-          className="h-full w-full object-contain object-center transition duration-500 group-hover:scale-[1.03]"
+          className="max-h-[104px] max-w-[104px] object-contain object-center transition duration-500 group-hover:scale-[1.03]"
         />
       </div>
 

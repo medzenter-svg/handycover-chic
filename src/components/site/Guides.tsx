@@ -21,8 +21,8 @@ export function Guides() {
             href="#"
             className={`group flex h-[110px] items-center gap-2.5 rounded-2xl border border-border/60 bg-gradient-to-br ${g.gradient} p-2.5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card`}
           >
-            <div className="grid h-[74px] w-[74px] shrink-0 place-items-center overflow-hidden rounded-xl bg-card/80 p-1 shadow-soft backdrop-blur">
-              <img src={g.image} alt="" width={148} height={148} className="h-full w-full object-contain object-center" loading="lazy" />
+            <div className="grid h-[74px] w-[74px] shrink-0 place-items-center overflow-hidden rounded-xl bg-white p-2 shadow-soft">
+              <img src={g.image} alt="" width={148} height={148} className="max-h-[58px] max-w-[58px] object-contain object-center" loading="lazy" />
             </div>
 
             <div className="min-w-0 flex-1">

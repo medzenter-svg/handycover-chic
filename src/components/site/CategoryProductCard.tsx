@@ -1,40 +1,48 @@
-import { Star, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { Product } from "@/data/products";
 
+function neutralHint(p: Product): string {
+  if (p.category === "iphone" || p.category === "magsafe") return "Für iPhone";
+  if (p.category === "samsung") return "Für Samsung";
+  if (p.category === "display") return "Klare Sicht";
+  if (p.category === "charging") return "Schnellladen";
+  if (p.category === "powerbanks") return "Mobile Power";
+  if (p.category === "car") return "Für unterwegs";
+  if (p.category === "watch") return "Für Smartwatch";
+  if (p.category === "airpods") return "Für Earbuds";
+  return "Top Zubehör";
+}
+
 export function CategoryProductCard({ p }: { p: Product }) {
+  const chips = (p.features && p.features.length > 0 ? p.features : [p.badge]).slice(0, 3);
+
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card transition hover:border-foreground/20 hover:shadow-[0_22px_50px_-28px_rgba(15,23,42,0.4)]">
       {/* Image area */}
-      <div className="relative flex h-[230px] items-center justify-center overflow-hidden bg-gradient-to-br from-[#fdf2f8] via-[#faf5ff] to-[#eef2ff] p-4 sm:h-[260px]">
-        {/* decorative circle */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="h-[78%] w-[78%] rounded-full bg-white/70 shadow-[0_20px_60px_-20px_rgba(168,85,247,0.35)] ring-1 ring-white/80" />
-        </div>
-
-        <span
-          className={`absolute left-3 top-3 z-10 inline-flex items-center gap-1 rounded-full bg-gradient-to-r ${p.badgeGradient} px-2.5 py-1 text-[10.5px] font-extrabold uppercase tracking-wide text-primary-foreground shadow-soft`}
-        >
-          <Sparkles className="h-3 w-3" />
-          {p.badge}
+      <div className="relative flex h-[240px] items-center justify-center overflow-hidden bg-gradient-to-b from-[#f4f5f7] to-[#e7eaf0] p-5 sm:h-[260px]">
+        <span className="absolute left-3 top-3 z-10 rounded-md bg-white/90 px-2 py-0.5 text-[11px] font-semibold tracking-wide text-slate-800 ring-1 ring-slate-200 backdrop-blur">
+          {chips[0]}
         </span>
-
         {p.oldPrice && (
-          <span className="absolute right-3 top-3 z-10 rounded-full bg-white/90 px-2 py-0.5 text-[10.5px] font-bold text-pink-600 shadow-soft ring-1 ring-pink-100">
+          <span className="absolute right-3 top-3 z-10 rounded-md bg-slate-900 px-2 py-0.5 text-[11px] font-semibold tracking-wide text-white">
             Sale
           </span>
         )}
-
         <img
           src={p.image}
           alt={p.title}
           loading="lazy"
-          className="relative z-[1] h-[78%] w-[78%] object-contain object-center drop-shadow-[0_18px_22px_rgba(80,40,120,0.18)] transition duration-500 group-hover:scale-[1.04]"
+          className="relative z-[1] h-[82%] w-[82%] object-contain object-center drop-shadow-[0_18px_24px_rgba(15,23,42,0.22)] transition duration-500 group-hover:scale-[1.04]"
         />
       </div>
 
       {/* Content */}
-      <div className="flex flex-1 flex-col gap-2 px-4 pb-4 pt-3">
-        <h3 className="line-clamp-2 min-h-[2.6rem] text-[14px] font-extrabold leading-snug text-foreground">
+      <div className="flex flex-1 flex-col gap-2 px-5 pb-5 pt-4">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">
+          {neutralHint(p)}
+        </span>
+
+        <h3 className="line-clamp-2 min-h-[2.6rem] text-[15px] font-bold leading-snug text-foreground">
           {p.title}
         </h3>
 
@@ -42,12 +50,12 @@ export function CategoryProductCard({ p }: { p: Product }) {
           {p.benefit}
         </p>
 
-        {p.features && p.features.length > 0 && (
-          <div className="flex flex-wrap gap-1">
-            {p.features.slice(0, 3).map((f) => (
+        {chips.length > 1 && (
+          <div className="flex flex-wrap gap-1.5">
+            {chips.slice(1).map((f) => (
               <span
                 key={f}
-                className="rounded-full bg-muted px-2 py-0.5 text-[10.5px] font-semibold text-foreground/80"
+                className="rounded-md border border-border bg-muted/40 px-2 py-0.5 text-[10.5px] font-medium text-foreground/75"
               >
                 {f}
               </span>
@@ -55,47 +63,23 @@ export function CategoryProductCard({ p }: { p: Product }) {
           </div>
         )}
 
-        <div className="flex items-center gap-1.5 text-[12px] text-muted-foreground">
-          <span className="flex">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star
-                key={i}
-                className={`h-3.5 w-3.5 ${
-                  i < Math.round(p.rating) ? "fill-amber-400 text-amber-400" : "text-border"
-                }`}
-              />
-            ))}
-          </span>
-          <span className="font-semibold text-foreground/80">{p.rating.toFixed(1)}</span>
-          <span>({p.reviews})</span>
-        </div>
-
-        <div className="flex items-baseline gap-2">
-          <span className="text-[18px] font-extrabold text-gradient-brand">{p.price}</span>
+        <div className="mt-1 flex items-baseline gap-2">
+          <span className="text-[20px] font-extrabold text-foreground">{p.price}</span>
           {p.oldPrice && (
             <span className="text-[12px] text-muted-foreground line-through">{p.oldPrice}</span>
           )}
         </div>
 
         {/* TODO: Amazon-Link wird zentral in src/data/products.ts via `amazonUrl` gepflegt */}
-        <div className="mt-auto flex flex-col gap-1.5 pt-2">
-          <a
-            href={p.amazonUrl}
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-flex h-10 items-center justify-center rounded-full bg-gradient-brand px-3 text-[12.5px] font-bold text-primary-foreground shadow-glow transition hover:opacity-95"
-          >
-            Bei Amazon ansehen
-          </a>
-          <a
-            href={p.amazonUrl}
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-flex h-9 items-center justify-center rounded-full border border-border bg-card px-3 text-[12px] font-semibold text-foreground transition hover:bg-muted"
-          >
-            Preis prüfen
-          </a>
-        </div>
+        <a
+          href={p.amazonUrl}
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          className="mt-auto inline-flex h-11 items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-4 text-[13px] font-semibold text-white transition hover:bg-slate-800"
+        >
+          Auf Amazon ansehen
+          <ArrowUpRight className="h-4 w-4" />
+        </a>
       </div>
     </article>
   );

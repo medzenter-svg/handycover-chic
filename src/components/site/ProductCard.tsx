@@ -1,74 +1,75 @@
-import { Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { Product } from "@/data/products";
+
+function neutralHint(p: Product): string {
+  if (p.category === "iphone" || p.category === "magsafe") return "Für iPhone";
+  if (p.category === "samsung") return "Für Samsung";
+  if (p.category === "display") return "Klare Sicht";
+  if (p.category === "charging") return "Schnellladen";
+  if (p.category === "powerbanks") return "Mobile Power";
+  if (p.category === "car") return "Für unterwegs";
+  if (p.category === "watch") return "Für Smartwatch";
+  if (p.category === "airpods") return "Für Earbuds";
+  return "Top Zubehör";
+}
+
+function shortLabel(p: Product): string {
+  if (p.features && p.features.length > 0) return p.features[0];
+  return p.badge;
+}
 
 export function ProductCard({ p }: { p: Product }) {
   return (
-    <article className="group flex h-full min-h-[330px] flex-col overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft transition hover:-translate-y-0.5 hover:shadow-card-hover">
-      <div className="relative flex h-[160px] items-center justify-center overflow-hidden bg-[#f7f7fa] p-3">
-        <span
-          className={`absolute left-2.5 top-2.5 z-10 rounded-full bg-gradient-to-r ${p.badgeGradient} px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wide text-primary-foreground shadow-soft`}
-        >
-          {p.badge}
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card transition hover:border-foreground/20 hover:shadow-[0_18px_40px_-24px_rgba(15,23,42,0.35)]">
+      {/* Image */}
+      <div className="relative flex h-[170px] items-center justify-center overflow-hidden bg-gradient-to-b from-[#f4f5f7] to-[#e9ecf1] p-3">
+        <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-white/90 px-2 py-0.5 text-[10.5px] font-semibold tracking-wide text-slate-800 ring-1 ring-slate-200 backdrop-blur">
+          {shortLabel(p)}
         </span>
+        {p.oldPrice && (
+          <span className="absolute right-2.5 top-2.5 z-10 rounded-md bg-slate-900 px-2 py-0.5 text-[10.5px] font-semibold tracking-wide text-white">
+            Sale
+          </span>
+        )}
         <img
           src={p.image}
           alt={p.title}
           width={260}
           height={260}
           loading="lazy"
-          className="h-[128px] w-[128px] object-contain object-center transition duration-500 group-hover:scale-[1.03]"
+          className="h-[140px] w-[140px] object-contain object-center drop-shadow-[0_10px_18px_rgba(15,23,42,0.18)] transition duration-500 group-hover:scale-[1.04]"
         />
       </div>
 
-      <div className="flex flex-1 flex-col px-3.5 pb-3.5 pt-2.5">
-        <h3 className="line-clamp-2 min-h-[2.5rem] text-[13px] font-extrabold leading-snug text-foreground">
+      {/* Content */}
+      <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
+        <span className="text-[10.5px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">
+          {neutralHint(p)}
+        </span>
+        <h3 className="mt-1 line-clamp-2 min-h-[2.5rem] text-[13.5px] font-bold leading-snug text-foreground">
           {p.title}
         </h3>
-
-        <p className="mt-1.5 line-clamp-2 min-h-[2.3rem] text-[12.5px] leading-snug text-muted-foreground">
+        <p className="mt-1 line-clamp-2 min-h-[2.2rem] text-[12px] leading-snug text-muted-foreground">
           {p.benefit}
         </p>
 
-        <div className="mt-2 flex items-center gap-1.5 text-[12px] text-muted-foreground">
-          <span className="flex">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star
-                key={i}
-                className={`h-3.5 w-3.5 ${
-                  i < Math.round(p.rating) ? "fill-amber-400 text-amber-400" : "text-border"
-                }`}
-              />
-            ))}
-          </span>
-          <span>({p.reviews})</span>
-        </div>
-
-        <div className="mt-1 flex items-baseline gap-1.5">
-          <span className="text-[16px] font-extrabold text-gradient-brand">{p.price}</span>
+        <div className="mt-2.5 flex items-baseline gap-2">
+          <span className="text-[17px] font-extrabold text-foreground">{p.price}</span>
           {p.oldPrice && (
-            <span className="text-[11px] text-muted-foreground line-through">{p.oldPrice}</span>
+            <span className="text-[11.5px] text-muted-foreground line-through">{p.oldPrice}</span>
           )}
         </div>
 
         {/* TODO: Amazon-Link wird zentral in src/data/products.ts via `amazonUrl` gepflegt */}
-        <div className="mt-auto flex flex-col gap-1.5 pt-2">
-          <a
-            href={p.amazonUrl}
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-flex h-9 items-center justify-center rounded-full bg-gradient-brand px-3 text-[12px] font-bold text-primary-foreground shadow-glow transition hover:opacity-95"
-          >
-            Bei Amazon ansehen
-          </a>
-          <a
-            href={p.amazonUrl}
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-flex h-8 items-center justify-center rounded-full border border-border bg-card px-3 text-[11.5px] font-semibold text-foreground transition hover:bg-muted"
-          >
-            Preis prüfen
-          </a>
-        </div>
+        <a
+          href={p.amazonUrl}
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          className="mt-auto inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-3 pt-3 text-[12.5px] font-semibold text-white transition hover:bg-slate-800"
+        >
+          Auf Amazon ansehen
+          <ArrowUpRight className="h-3.5 w-3.5" />
+        </a>
       </div>
     </article>
   );

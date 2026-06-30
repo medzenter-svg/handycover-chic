@@ -198,8 +198,8 @@ export const products: Product[] = [
   },
   {
     id: "spigen-glas-tr",
-    title: "Spigen Glas.tR Panzerglas iPhone 16 Pro",
-    benefit: "9H Härte, kristallklar, mit Schablone.",
+    title: "Spigen Displayschutzglas für iPhone 16 Pro",
+    benefit: "Kristallklarer 9H-Schutz mit Montagerahmen.",
     image: pScreen,
     badge: "Displayschutz",
     badgeGradient: "from-sky-400 to-cyan-500",
@@ -212,8 +212,8 @@ export const products: Product[] = [
   },
   {
     id: "displayschutz-samsung",
-    title: "Panzerglas Folie für Samsung Galaxy S24",
-    benefit: "Fingerprint-kompatibel, blasenfrei.",
+    title: "Displayschutzfolie für Samsung Galaxy S24",
+    benefit: "Fingerprint-kompatibel, blasenfrei aufgetragen.",
     image: pScreen,
     badge: "2er Pack",
     badgeGradient: "from-blue-400 to-indigo-500",

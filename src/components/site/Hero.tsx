@@ -97,7 +97,7 @@ export function Hero() {
               </div>
               <div className="mt-1.5 flex items-baseline gap-2">
                 <span className="text-xl font-extrabold text-gradient-brand">19,99 €</span>
-                <span className="text-[11px] text-muted-foreground line-through">UVP 24,99 €</span>
+                <span className="text-[11px] text-muted-foreground line-through">statt 24,99 €</span>
               </div>
             </div>
           </div>

@@ -59,8 +59,6 @@ export function ProductCard({ p }: { p: Product }) {
           Bei Amazon ansehen
         </a>
       </div>
-
-      </div>
     </article>
   );
 }

@@ -48,6 +48,8 @@ export type Product = {
   reviews: string;
   price: string;
   oldPrice?: string;
+  /** Optionale kleine Feature-Chips, z. B. "MagSafe", "Kratzschutz" */
+  features?: string[];
   /** TODO: echten Amazon-Link hier einfügen */
   amazonUrl: string;
   category: CategoryId;
@@ -287,6 +289,65 @@ export const products: Product[] = [
     amazonUrl: "#", // TODO: Amazon-Link hier einfügen
     category: "gifts",
   },
+
+  // === Zusätzliche Produkte – mindestens 8 pro Kategorie ===
+  // TODO: alle amazonUrl: "#" durch echte Amazon-Affiliate-Links ersetzen
+
+  // iPhone
+  { id: "iphone-leder-case", title: "Leder Hülle für iPhone 16 Pro", benefit: "Hochwertiges Echtleder, edler Look.", image: pCase, badge: "Premium", badgeGradient: "from-amber-500 to-orange-600", rating: 4.6, reviews: "1.205", price: "29,99 €", oldPrice: "39,99 €", features: ["MagSafe", "Kratzschutz"], amazonUrl: "#", category: "iphone" },
+  { id: "iphone-silikon-case", title: "Silikon Hülle für iPhone 15 Pro", benefit: "Soft-Touch, angenehm in der Hand.", image: pCase, badge: "Soft Touch", badgeGradient: "from-pink-400 to-fuchsia-500", rating: 4.5, reviews: "3.412", price: "12,99 €", features: ["MagSafe", "Kantenschutz"], amazonUrl: "#", category: "iphone" },
+  { id: "iphone-clear-case", title: "Transparente Hülle iPhone 14", benefit: "Vergilbungsfrei, ultra dünn.", image: pCase, badge: "Klar", badgeGradient: "from-sky-400 to-cyan-500", rating: 4.5, reviews: "2.870", price: "9,99 €", features: ["Klar", "Dünn"], amazonUrl: "#", category: "iphone" },
+  { id: "iphone-bumper", title: "Bumper Schutzrahmen iPhone 16", benefit: "Maximaler Kantenschutz, minimalistisch.", image: pCase, badge: "Bumper", badgeGradient: "from-zinc-500 to-slate-600", rating: 4.4, reviews: "612", price: "13,99 €", features: ["Kantenschutz"], amazonUrl: "#", category: "iphone" },
+  { id: "iphone-wallet", title: "Wallet Case iPhone 15", benefit: "Mit Kartenfach, magnetisch.", image: pWallet, badge: "Wallet", badgeGradient: "from-emerald-400 to-teal-500", rating: 4.6, reviews: "1.984", price: "22,99 €", features: ["Kartenfach", "MagSafe"], amazonUrl: "#", category: "iphone" },
+  { id: "iphone-rugged", title: "Outdoor Rugged Case iPhone 16", benefit: "Sturzfest nach Militärstandard.", image: pCase, badge: "Rugged", badgeGradient: "from-stone-500 to-zinc-700", rating: 4.7, reviews: "2.117", price: "24,99 €", oldPrice: "34,99 €", features: ["Sturzfest", "Kratzschutz"], amazonUrl: "#", category: "iphone" },
+
+  // Samsung
+  { id: "samsung-clear-case", title: "Klare Hülle Samsung S24 Ultra", benefit: "Kristallklar, MagSafe-kompatibel.", image: pSamsung, badge: "Klar", badgeGradient: "from-sky-400 to-blue-500", rating: 4.6, reviews: "1.512", price: "13,99 €", features: ["Klar", "Dünn"], amazonUrl: "#", category: "samsung" },
+  { id: "samsung-wallet", title: "Wallet Case Samsung S24", benefit: "Mit Standfunktion und Kartenfach.", image: pWallet, badge: "Wallet", badgeGradient: "from-violet-400 to-indigo-500", rating: 4.5, reviews: "987", price: "19,99 €", features: ["Kartenfach", "Stand"], amazonUrl: "#", category: "samsung" },
+  { id: "samsung-rugged", title: "Outdoor Case Samsung S24 Ultra", benefit: "Robuster Schutz für unterwegs.", image: pSamsung, badge: "Rugged", badgeGradient: "from-stone-500 to-zinc-700", rating: 4.7, reviews: "1.342", price: "22,99 €", oldPrice: "29,99 €", features: ["Sturzfest"], amazonUrl: "#", category: "samsung" },
+  { id: "samsung-glas", title: "Panzerglas Samsung Galaxy S24 Ultra", benefit: "9H Härte, mit Schablone.", image: pScreen, badge: "Glas", badgeGradient: "from-cyan-400 to-sky-500", rating: 4.7, reviews: "5.612", price: "12,99 €", features: ["9H Härte"], amazonUrl: "#", category: "samsung" },
+  { id: "samsung-charger", title: "Samsung 25W Super Fast Charger", benefit: "Original Schnellladegerät USB-C.", image: pCharger, badge: "Original", badgeGradient: "from-indigo-500 to-blue-600", rating: 4.8, reviews: "8.220", price: "19,99 €", features: ["Schnellladen"], amazonUrl: "#", category: "samsung" },
+  { id: "samsung-cable", title: "Samsung USB-C Kabel 1,8 m", benefit: "Robust und kompatibel mit allen S-Geräten.", image: pCable, badge: "Original", badgeGradient: "from-blue-400 to-indigo-500", rating: 4.6, reviews: "4.110", price: "11,99 €", amazonUrl: "#", category: "samsung" },
+
+  // MagSafe
+  { id: "magsafe-stand", title: "MagSafe Ladestation mit Stand", benefit: "3 in 1 für iPhone, Watch & AirPods.", image: pCharger, badge: "3 in 1", badgeGradient: "from-purple-500 to-fuchsia-500", rating: 4.7, reviews: "2.984", price: "39,99 €", oldPrice: "59,99 €", features: ["MagSafe", "3 in 1"], amazonUrl: "#", category: "magsafe" },
+  { id: "magsafe-ring", title: "MagSafe Adapter Ring (universal)", benefit: "Macht jede Hülle MagSafe-fähig.", image: pCase, badge: "Adapter", badgeGradient: "from-pink-400 to-rose-500", rating: 4.4, reviews: "1.221", price: "7,99 €", features: ["MagSafe", "Universal"], amazonUrl: "#", category: "magsafe" },
+  { id: "magsafe-powerbank", title: "MagSafe Powerbank 10.000 mAh", benefit: "Magnetisch andocken, kabellos laden.", image: pPb1, badge: "MagSafe", badgeGradient: "from-fuchsia-500 to-purple-600", rating: 4.6, reviews: "3.120", price: "34,99 €", oldPrice: "49,99 €", features: ["MagSafe", "Kabellos"], amazonUrl: "#", category: "magsafe" },
+  { id: "magsafe-mount-car", title: "MagSafe Autohalterung", benefit: "Bombenfeste Magneten, Lüftungsclip.", image: pMount, badge: "Auto", badgeGradient: "from-sky-400 to-blue-500", rating: 4.7, reviews: "2.014", price: "18,99 €", features: ["MagSafe", "Auto"], amazonUrl: "#", category: "magsafe" },
+  { id: "magsafe-grip", title: "MagSafe Griff & Ständer", benefit: "Besserer Halt, klappbarer Stand.", image: pWallet, badge: "Grip", badgeGradient: "from-rose-400 to-pink-500", rating: 4.5, reviews: "920", price: "14,99 €", features: ["MagSafe", "Stand"], amazonUrl: "#", category: "magsafe" },
+  { id: "magsafe-puck", title: "MagSafe Wireless Charger Puck", benefit: "Klein, magnetisch, 15W Power.", image: pCharger, badge: "15W", badgeGradient: "from-purple-500 to-pink-500", rating: 4.6, reviews: "1.760", price: "21,99 €", features: ["MagSafe", "15W"], amazonUrl: "#", category: "magsafe" },
+
+  // Display
+  { id: "display-iphone15", title: "Panzerglas iPhone 15 (2er Pack)", benefit: "Blasenfrei, mit Montagehilfe.", image: pScreen, badge: "2er Pack", badgeGradient: "from-sky-400 to-cyan-500", rating: 4.7, reviews: "6.812", price: "9,99 €", features: ["2er Pack", "9H Härte"], amazonUrl: "#", category: "display" },
+  { id: "display-privacy", title: "Privacy Panzerglas iPhone 16 Pro", benefit: "Blickschutz – nur du siehst dein Display.", image: pScreen, badge: "Privacy", badgeGradient: "from-slate-500 to-zinc-700", rating: 4.5, reviews: "1.420", price: "14,99 €", features: ["Blickschutz"], amazonUrl: "#", category: "display" },
+  { id: "display-matt", title: "Matt Panzerglas iPhone 15 Pro", benefit: "Reflexionsfrei, fingerabdruckfrei.", image: pScreen, badge: "Matt", badgeGradient: "from-zinc-400 to-slate-500", rating: 4.6, reviews: "2.018", price: "12,99 €", features: ["Matt", "Anti-Glare"], amazonUrl: "#", category: "display" },
+  { id: "display-folie", title: "Hydrogel Folie Samsung S24", benefit: "Selbstheilend, dünn, fullscreen.", image: pScreen, badge: "Folie", badgeGradient: "from-emerald-400 to-teal-500", rating: 4.3, reviews: "812", price: "7,99 €", features: ["Selbstheilend"], amazonUrl: "#", category: "display" },
+  { id: "display-watch", title: "Panzerglas Apple Watch (3er Pack)", benefit: "Schutz für das Watch-Display.", image: pScreen, badge: "Watch", badgeGradient: "from-violet-400 to-purple-500", rating: 4.6, reviews: "1.215", price: "8,99 €", features: ["3er Pack"], amazonUrl: "#", category: "display" },
+  { id: "display-camera", title: "Kamera-Schutzglas iPhone 16 Pro", benefit: "Schützt die Kamera vor Kratzern.", image: pScreen, badge: "Kamera", badgeGradient: "from-indigo-400 to-blue-500", rating: 4.5, reviews: "980", price: "9,99 €", features: ["Kameraschutz"], amazonUrl: "#", category: "display" },
+
+  // Charging
+  { id: "anker-65w", title: "Anker 65W USB-C Ladegerät GaN", benefit: "Lädt Phone, Tablet & Laptop.", image: pCharger, badge: "GaN", badgeGradient: "from-emerald-500 to-teal-600", rating: 4.8, reviews: "12.420", price: "34,99 €", oldPrice: "49,99 €", features: ["GaN", "65W"], amazonUrl: "#", category: "charging" },
+  { id: "anker-mehrfach", title: "Anker 4-Port USB-C Ladestation", benefit: "Eine Steckdose, vier Geräte gleichzeitig.", image: pCharger, badge: "4 Ports", badgeGradient: "from-purple-500 to-fuchsia-500", rating: 4.7, reviews: "3.210", price: "44,99 €", features: ["4 Ports"], amazonUrl: "#", category: "charging" },
+  { id: "ugreen-c-c", title: "UGREEN USB-C zu USB-C Kabel 2 m", benefit: "100W Power Delivery, robust.", image: pCable, badge: "100W", badgeGradient: "from-blue-400 to-indigo-500", rating: 4.7, reviews: "8.412", price: "12,99 €", features: ["100W", "2 m"], amazonUrl: "#", category: "charging" },
+  { id: "kabel-3pack", title: "USB-C Kabel 3er Pack (1m/2m/3m)", benefit: "Drei Längen für jeden Einsatz.", image: pCable, badge: "3er Pack", badgeGradient: "from-pink-400 to-rose-500", rating: 4.6, reviews: "2.918", price: "14,99 €", features: ["3er Pack"], amazonUrl: "#", category: "charging" },
+  { id: "wireless-pad", title: "Kabelloses Ladepad 15W", benefit: "Schick, schnell, universell.", image: pCharger, badge: "Wireless", badgeGradient: "from-purple-400 to-pink-500", rating: 4.5, reviews: "1.882", price: "19,99 €", features: ["Wireless", "15W"], amazonUrl: "#", category: "charging" },
+  { id: "anker-100w", title: "Anker 100W Reiseladegerät", benefit: "Reise-Ladegerät mit Wechseladaptern.", image: pCharger, badge: "Reise", badgeGradient: "from-amber-400 to-orange-500", rating: 4.7, reviews: "1.420", price: "59,99 €", oldPrice: "79,99 €", features: ["100W", "Reise"], amazonUrl: "#", category: "charging" },
+
+  // Powerbanks
+  { id: "anker-pb-20k", title: "Anker Powerbank 20.000 mAh", benefit: "Riesige Kapazität für mehrere Tage.", image: pPb1, badge: "20.000 mAh", badgeGradient: "from-emerald-500 to-teal-600", rating: 4.8, reviews: "9.221", price: "39,99 €", oldPrice: "59,99 €", features: ["20.000 mAh", "PD"], amazonUrl: "#", category: "powerbanks" },
+  { id: "anker-nano", title: "Anker Nano Powerbank mit USB-C", benefit: "Direkt am iPhone andocken, kein Kabel.", image: pPb2, badge: "Nano", badgeGradient: "from-pink-500 to-purple-500", rating: 4.6, reviews: "3.120", price: "27,99 €", features: ["Kompakt", "USB-C"], amazonUrl: "#", category: "powerbanks" },
+  { id: "iniu-mini", title: "INIU Mini Powerbank 5.000 mAh", benefit: "Kreditkartengröße, perfekt für die Tasche.", image: pPb2, badge: "Mini", badgeGradient: "from-cyan-400 to-sky-500", rating: 4.6, reviews: "2.014", price: "14,99 €", features: ["Mini", "Slim"], amazonUrl: "#", category: "powerbanks" },
+  { id: "baseus-pb-fast", title: "Baseus 65W Powerbank 20.000 mAh", benefit: "Lädt sogar Laptops mit voller Leistung.", image: pPb1, badge: "65W", badgeGradient: "from-fuchsia-500 to-purple-600", rating: 4.7, reviews: "1.918", price: "59,99 €", oldPrice: "79,99 €", features: ["65W", "Laptop"], amazonUrl: "#", category: "powerbanks" },
+  { id: "solar-pb", title: "Solar Powerbank 26.800 mAh", benefit: "Outdoor-tauglich mit Solarpanel.", image: pPb1, badge: "Solar", badgeGradient: "from-amber-400 to-yellow-500", rating: 4.4, reviews: "1.420", price: "34,99 €", features: ["Solar", "Outdoor"], amazonUrl: "#", category: "powerbanks" },
+  { id: "wireless-pb", title: "Wireless Powerbank 10.000 mAh", benefit: "Kabellos und per USB-C laden.", image: pPb2, badge: "Wireless", badgeGradient: "from-purple-500 to-pink-500", rating: 4.5, reviews: "1.110", price: "24,99 €", features: ["Wireless", "10.000 mAh"], amazonUrl: "#", category: "powerbanks" },
+
+  // Car
+  { id: "car-cd-mount", title: "CD-Schacht Handyhalterung", benefit: "Verschwindet im CD-Schacht – elegant.", image: pMount, badge: "CD-Slot", badgeGradient: "from-slate-500 to-zinc-700", rating: 4.5, reviews: "1.120", price: "14,99 €", features: ["CD-Slot"], amazonUrl: "#", category: "car" },
+  { id: "car-dashboard", title: "Armaturenbrett Halterung 360°", benefit: "Saugnapf hält bombenfest.", image: pMount, badge: "360°", badgeGradient: "from-blue-400 to-indigo-500", rating: 4.6, reviews: "2.612", price: "16,99 €", features: ["360°", "Saugnapf"], amazonUrl: "#", category: "car" },
+  { id: "car-charger-fast", title: "USB-C Autoladegerät 45W PD", benefit: "Schnellladen auch im Auto.", image: pCar, badge: "45W", badgeGradient: "from-orange-400 to-red-500", rating: 4.7, reviews: "3.410", price: "14,99 €", features: ["45W", "PD"], amazonUrl: "#", category: "car" },
+  { id: "car-magsafe", title: "MagSafe Halterung mit Wireless Charging", benefit: "Magnetisch andocken und laden.", image: pMount, badge: "MagSafe", badgeGradient: "from-purple-500 to-pink-500", rating: 4.6, reviews: "1.812", price: "29,99 €", oldPrice: "39,99 €", features: ["MagSafe", "Wireless"], amazonUrl: "#", category: "car" },
+  { id: "car-fm", title: "FM Transmitter Bluetooth 5.0", benefit: "Musik & Anrufe im alten Autoradio.", image: pCar, badge: "Bluetooth", badgeGradient: "from-sky-400 to-cyan-500", rating: 4.4, reviews: "5.120", price: "19,99 €", features: ["Bluetooth"], amazonUrl: "#", category: "car" },
+  { id: "car-organizer", title: "Auto Organizer für Mittelkonsole", benefit: "Ordnung für Kabel & Kleinkram.", image: pMount, badge: "Organizer", badgeGradient: "from-amber-400 to-orange-500", rating: 4.5, reviews: "812", price: "12,99 €", amazonUrl: "#", category: "car" },
 ];
 
 export type Category = {

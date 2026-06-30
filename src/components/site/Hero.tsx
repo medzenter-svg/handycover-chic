@@ -85,7 +85,7 @@ export function Hero() {
 
             <div className="min-w-0">
               <h4 className="text-[15px] font-bold leading-snug">
-                Spigen Ultra Hybrid Hülle für iPhone 16 Pro
+                Transparente MagSafe-Hülle für iPhone 16 Pro
               </h4>
               <div className="mt-1 flex items-center gap-1 text-[11px] text-muted-foreground">
                 <span className="flex">

@@ -59,7 +59,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: "spigen-ultra-hybrid",
-    title: "Spigen Ultra Hybrid Hülle für iPhone 16 Pro",
+    title: "Transparente MagSafe-Hülle für iPhone 16 Pro",
     benefit: "Kristallklar, kantenstabil, MagSafe-kompatibel.",
     image: pCase,
     badge: "Amazon Pick",
@@ -73,7 +73,7 @@ export const products: Product[] = [
   },
   {
     id: "anker-20w",
-    title: "Anker 20W USB‑C Ladegerät",
+    title: "USB-C Schnellladegerät 20W",
     benefit: "Kompaktes Schnellladen für iPhone & Co.",
     image: pCharger,
     badge: "Bestseller",
@@ -87,8 +87,8 @@ export const products: Product[] = [
   },
   {
     id: "ugreen-cable",
-    title: "UGREEN USB‑C auf Lightning Kabel",
-    benefit: "Apple MFi zertifiziert, robust geflochten.",
+    title: "USB-C auf Lightning Kabel (MFi)",
+    benefit: "MFi zertifiziert, robust geflochten.",
     image: pCable,
     badge: "Top Zubehör",
     badgeGradient: "from-amber-400 to-orange-500",
@@ -101,7 +101,7 @@ export const products: Product[] = [
   },
   {
     id: "esr-magsafe-wallet",
-    title: "ESR MagSafe Wallet Stand",
+    title: "MagSafe Wallet mit Standfunktion",
     benefit: "Karten halten, Phone aufstellen, magnetisch.",
     image: pWallet,
     badge: "MagSafe",
@@ -115,7 +115,7 @@ export const products: Product[] = [
   },
   {
     id: "lisen-mount",
-    title: "LISEN Handyhalterung Auto Magnetisch",
+    title: "Magnetische Handyhalterung fürs Auto",
     benefit: "Bombenfest am Lüftungsgitter, super stark.",
     image: pMount,
     badge: "Praktisch",
@@ -129,7 +129,7 @@ export const products: Product[] = [
   },
   {
     id: "iniu-powerbank",
-    title: "INIU Powerbank 10000 mAh",
+    title: "Powerbank 10.000 mAh mit Display",
     benefit: "Slim, schnell, mit Display & USB‑C PD.",
     image: pPb1,
     badge: "Power",
@@ -143,7 +143,7 @@ export const products: Product[] = [
   },
   {
     id: "anker-30w-car",
-    title: "Anker 30W USB‑C Autoladegerät",
+    title: "USB-C Autoladegerät 30W",
     benefit: "Lädt zwei Geräte gleichzeitig im Auto.",
     image: pCar,
     badge: "Schnellladen",
@@ -157,7 +157,7 @@ export const products: Product[] = [
   },
   {
     id: "baseus-powerbank",
-    title: "Baseus Powerbank 10000 mAh",
+    title: "Slim Powerbank 10.000 mAh",
     benefit: "Leicht, schick und perfekt für den Alltag.",
     image: pPb2,
     badge: "Kompakt",
@@ -171,7 +171,7 @@ export const products: Product[] = [
   },
   {
     id: "samsung-s24-case",
-    title: "Spigen Liquid Air Hülle für Samsung Galaxy S24",
+    title: "Matte Schutzhülle für Samsung Galaxy S24",
     benefit: "Mattes Finish, griffig, ultra leicht.",
     image: pSamsung,
     badge: "Samsung",
@@ -185,7 +185,7 @@ export const products: Product[] = [
   },
   {
     id: "samsung-buds-case",
-    title: "Schutzhülle für Samsung Galaxy Buds",
+    title: "Schutzhülle für Galaxy Buds",
     benefit: "Stoßfest, mit Karabiner – perfekt unterwegs.",
     image: pAirpods,
     badge: "Buds",
@@ -198,7 +198,7 @@ export const products: Product[] = [
   },
   {
     id: "spigen-glas-tr",
-    title: "Spigen Displayschutzglas für iPhone 16 Pro",
+    title: "Displayschutzglas für iPhone 16 Pro",
     benefit: "Kristallklarer 9H-Schutz mit Montagerahmen.",
     image: pScreen,
     badge: "Displayschutz",
@@ -252,10 +252,10 @@ export const products: Product[] = [
   },
   {
     id: "airpods-case",
-    title: "Silikonhülle für AirPods Pro 2",
+    title: "Silikonhülle für kabellose Earbuds",
     benefit: "Rutschfest, mit Karabiner, viele Farben.",
     image: pAirpods,
-    badge: "AirPods",
+    badge: "Earbuds",
     badgeGradient: "from-slate-400 to-zinc-500",
     rating: 4.5,
     reviews: "2.310",
@@ -265,7 +265,7 @@ export const products: Product[] = [
   },
   {
     id: "watch-band",
-    title: "Sport Armband für Apple Watch",
+    title: "Sport Armband für Smartwatch",
     benefit: "Atmungsaktiv, langlebig, viele Größen.",
     image: pWatch,
     badge: "Watch",

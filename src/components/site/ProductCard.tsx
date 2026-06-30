@@ -25,16 +25,16 @@ export function ProductCard({ p }: { p: Product }) {
           {p.title}
         </h3>
 
-        <p className="mt-1 line-clamp-2 min-h-[2rem] text-[11px] leading-snug text-muted-foreground">
+        <p className="mt-1.5 line-clamp-2 min-h-[2.3rem] text-[12.5px] leading-snug text-muted-foreground">
           {p.benefit}
         </p>
 
-        <div className="mt-2 flex items-center gap-1 text-[11px] text-muted-foreground">
+        <div className="mt-2 flex items-center gap-1.5 text-[12px] text-muted-foreground">
           <span className="flex">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={i}
-                className={`h-3 w-3 ${
+                className={`h-3.5 w-3.5 ${
                   i < Math.round(p.rating) ? "fill-amber-400 text-amber-400" : "text-border"
                 }`}
               />
@@ -42,6 +42,7 @@ export function ProductCard({ p }: { p: Product }) {
           </span>
           <span>({p.reviews})</span>
         </div>
+
 
         <div className="mt-1 flex items-baseline gap-1.5">
           <span className="text-[16px] font-extrabold text-gradient-brand">{p.price}</span>

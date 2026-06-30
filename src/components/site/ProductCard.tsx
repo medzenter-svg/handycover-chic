@@ -43,7 +43,6 @@ export function ProductCard({ p }: { p: Product }) {
           <span>({p.reviews})</span>
         </div>
 
-
         <div className="mt-1 flex items-baseline gap-1.5">
           <span className="text-[16px] font-extrabold text-gradient-brand">{p.price}</span>
           {p.oldPrice && (
@@ -51,14 +50,25 @@ export function ProductCard({ p }: { p: Product }) {
           )}
         </div>
 
-        <a
-          href={p.amazonUrl}
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          className="mt-auto inline-flex h-9 items-center justify-center rounded-full bg-gradient-brand px-3 text-[12px] font-bold text-primary-foreground shadow-glow transition hover:opacity-95"
-        >
-          Bei Amazon ansehen
-        </a>
+        {/* TODO: Amazon-Link wird zentral in src/data/products.ts via `amazonUrl` gepflegt */}
+        <div className="mt-auto flex flex-col gap-1.5 pt-2">
+          <a
+            href={p.amazonUrl}
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            className="inline-flex h-9 items-center justify-center rounded-full bg-gradient-brand px-3 text-[12px] font-bold text-primary-foreground shadow-glow transition hover:opacity-95"
+          >
+            Bei Amazon ansehen
+          </a>
+          <a
+            href={p.amazonUrl}
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            className="inline-flex h-8 items-center justify-center rounded-full border border-border bg-card px-3 text-[11.5px] font-semibold text-foreground transition hover:bg-muted"
+          >
+            Preis prüfen
+          </a>
+        </div>
       </div>
     </article>
   );

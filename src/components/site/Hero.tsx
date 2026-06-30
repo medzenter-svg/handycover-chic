@@ -116,9 +116,10 @@ export function Hero() {
             ))}
           </ul>
 
+          {/* TODO: Amazon-Link wird zentral in src/data/products.ts (Produkt "spigen-ultra-hybrid") gepflegt */}
           <div className="mt-auto grid grid-cols-1 gap-2 pt-5">
             <a
-              href="https://www.amazon.de/?tag=handycover-21"
+              href="#"
               target="_blank"
               rel="nofollow sponsored noopener"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-gradient-brand text-[13px] font-semibold text-white shadow-glow"
@@ -126,12 +127,12 @@ export function Hero() {
               Bei Amazon ansehen
             </a>
             <a
-              href="https://www.amazon.de/?tag=handycover-21"
+              href="#"
               target="_blank"
               rel="nofollow sponsored noopener"
               className="inline-flex h-11 items-center justify-center rounded-full border border-border bg-card text-[13px] font-semibold text-foreground hover:bg-muted"
             >
-              Preis bei Amazon prüfen
+              Preis prüfen
             </a>
           </div>
 

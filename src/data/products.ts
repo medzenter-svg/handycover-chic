@@ -59,7 +59,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: "spigen-ultra-hybrid",
-    title: "Spigen Ultra Hybrid Hülle für iPhone 16 Pro",
+    title: "Transparente MagSafe-Hülle für iPhone 16 Pro",
     benefit: "Kristallklar, kantenstabil, MagSafe-kompatibel.",
     image: pCase,
     badge: "Amazon Pick",
@@ -73,7 +73,7 @@ export const products: Product[] = [
   },
   {
     id: "anker-20w",
-    title: "Anker 20W USB‑C Ladegerät",
+    title: "USB-C Schnellladegerät 20W",
     benefit: "Kompaktes Schnellladen für iPhone & Co.",
     image: pCharger,
     badge: "Bestseller",
@@ -87,8 +87,8 @@ export const products: Product[] = [
   },
   {
     id: "ugreen-cable",
-    title: "UGREEN USB‑C auf Lightning Kabel",
-    benefit: "Apple MFi zertifiziert, robust geflochten.",
+    title: "USB-C auf Lightning Kabel (MFi)",
+    benefit: "MFi zertifiziert, robust geflochten.",
     image: pCable,
     badge: "Top Zubehör",
     badgeGradient: "from-amber-400 to-orange-500",
@@ -101,7 +101,7 @@ export const products: Product[] = [
   },
   {
     id: "esr-magsafe-wallet",
-    title: "ESR MagSafe Wallet Stand",
+    title: "MagSafe Wallet mit Standfunktion",
     benefit: "Karten halten, Phone aufstellen, magnetisch.",
     image: pWallet,
     badge: "MagSafe",
@@ -115,7 +115,7 @@ export const products: Product[] = [
   },
   {
     id: "lisen-mount",
-    title: "LISEN Handyhalterung Auto Magnetisch",
+    title: "Magnetische Handyhalterung fürs Auto",
     benefit: "Bombenfest am Lüftungsgitter, super stark.",
     image: pMount,
     badge: "Praktisch",
@@ -129,7 +129,7 @@ export const products: Product[] = [
   },
   {
     id: "iniu-powerbank",
-    title: "INIU Powerbank 10000 mAh",
+    title: "Powerbank 10.000 mAh mit Display",
     benefit: "Slim, schnell, mit Display & USB‑C PD.",
     image: pPb1,
     badge: "Power",
@@ -143,7 +143,7 @@ export const products: Product[] = [
   },
   {
     id: "anker-30w-car",
-    title: "Anker 30W USB‑C Autoladegerät",
+    title: "USB-C Autoladegerät 30W",
     benefit: "Lädt zwei Geräte gleichzeitig im Auto.",
     image: pCar,
     badge: "Schnellladen",
@@ -157,7 +157,7 @@ export const products: Product[] = [
   },
   {
     id: "baseus-powerbank",
-    title: "Baseus Powerbank 10000 mAh",
+    title: "Slim Powerbank 10.000 mAh",
     benefit: "Leicht, schick und perfekt für den Alltag.",
     image: pPb2,
     badge: "Kompakt",
@@ -171,7 +171,7 @@ export const products: Product[] = [
   },
   {
     id: "samsung-s24-case",
-    title: "Spigen Liquid Air Hülle für Samsung Galaxy S24",
+    title: "Matte Schutzhülle für Samsung Galaxy S24",
     benefit: "Mattes Finish, griffig, ultra leicht.",
     image: pSamsung,
     badge: "Samsung",
@@ -185,7 +185,7 @@ export const products: Product[] = [
   },
   {
     id: "samsung-buds-case",
-    title: "Schutzhülle für Samsung Galaxy Buds",
+    title: "Schutzhülle für Galaxy Buds",
     benefit: "Stoßfest, mit Karabiner – perfekt unterwegs.",
     image: pAirpods,
     badge: "Buds",
@@ -198,7 +198,7 @@ export const products: Product[] = [
   },
   {
     id: "spigen-glas-tr",
-    title: "Spigen Displayschutzglas für iPhone 16 Pro",
+    title: "Displayschutzglas für iPhone 16 Pro",
     benefit: "Kristallklarer 9H-Schutz mit Montagerahmen.",
     image: pScreen,
     badge: "Displayschutz",
@@ -252,10 +252,10 @@ export const products: Product[] = [
   },
   {
     id: "airpods-case",
-    title: "Silikonhülle für AirPods Pro 2",
+    title: "Silikonhülle für kabellose Earbuds",
     benefit: "Rutschfest, mit Karabiner, viele Farben.",
     image: pAirpods,
-    badge: "AirPods",
+    badge: "Earbuds",
     badgeGradient: "from-slate-400 to-zinc-500",
     rating: 4.5,
     reviews: "2.310",
@@ -265,7 +265,7 @@ export const products: Product[] = [
   },
   {
     id: "watch-band",
-    title: "Sport Armband für Apple Watch",
+    title: "Sport Armband für Smartwatch",
     benefit: "Atmungsaktiv, langlebig, viele Größen.",
     image: pWatch,
     badge: "Watch",
@@ -310,7 +310,7 @@ export const products: Product[] = [
   { id: "samsung-cable", title: "Samsung USB-C Kabel 1,8 m", benefit: "Robust und kompatibel mit allen S-Geräten.", image: pCable, badge: "Original", badgeGradient: "from-blue-400 to-indigo-500", rating: 4.6, reviews: "4.110", price: "11,99 €", amazonUrl: "#", category: "samsung" },
 
   // MagSafe
-  { id: "magsafe-stand", title: "MagSafe Ladestation mit Stand", benefit: "3 in 1 für iPhone, Watch & AirPods.", image: pCharger, badge: "3 in 1", badgeGradient: "from-purple-500 to-fuchsia-500", rating: 4.7, reviews: "2.984", price: "39,99 €", oldPrice: "59,99 €", features: ["MagSafe", "3 in 1"], amazonUrl: "#", category: "magsafe" },
+  { id: "magsafe-stand", title: "MagSafe Ladestation mit Stand", benefit: "3 in 1 für Smartphone, Smartwatch & Earbuds.", image: pCharger, badge: "3 in 1", badgeGradient: "from-purple-500 to-fuchsia-500", rating: 4.7, reviews: "2.984", price: "39,99 €", oldPrice: "59,99 €", features: ["MagSafe", "3 in 1"], amazonUrl: "#", category: "magsafe" },
   { id: "magsafe-ring", title: "MagSafe Adapter Ring (universal)", benefit: "Macht jede Hülle MagSafe-fähig.", image: pCase, badge: "Adapter", badgeGradient: "from-pink-400 to-rose-500", rating: 4.4, reviews: "1.221", price: "7,99 €", features: ["MagSafe", "Universal"], amazonUrl: "#", category: "magsafe" },
   { id: "magsafe-powerbank", title: "MagSafe Powerbank 10.000 mAh", benefit: "Magnetisch andocken, kabellos laden.", image: pPb1, badge: "MagSafe", badgeGradient: "from-fuchsia-500 to-purple-600", rating: 4.6, reviews: "3.120", price: "34,99 €", oldPrice: "49,99 €", features: ["MagSafe", "Kabellos"], amazonUrl: "#", category: "magsafe" },
   { id: "magsafe-mount-car", title: "MagSafe Autohalterung", benefit: "Bombenfeste Magneten, Lüftungsclip.", image: pMount, badge: "Auto", badgeGradient: "from-sky-400 to-blue-500", rating: 4.7, reviews: "2.014", price: "18,99 €", features: ["MagSafe", "Auto"], amazonUrl: "#", category: "magsafe" },
@@ -322,22 +322,22 @@ export const products: Product[] = [
   { id: "display-privacy", title: "Privacy Schutzglas für iPhone 16 Pro", benefit: "Blickschutz – nur du siehst dein Display.", image: pScreen, badge: "Privacy", badgeGradient: "from-slate-500 to-zinc-700", rating: 4.5, reviews: "1.420", price: "14,99 €", features: ["Blickschutz"], amazonUrl: "#", category: "display" },
   { id: "display-matt", title: "Mattes Schutzglas für iPhone 15 Pro", benefit: "Reflexionsfrei, fingerabdruckfrei.", image: pScreen, badge: "Matt", badgeGradient: "from-zinc-400 to-slate-500", rating: 4.6, reviews: "2.018", price: "12,99 €", features: ["Matt", "Anti-Glare"], amazonUrl: "#", category: "display" },
   { id: "display-folie", title: "Hydrogel Folie Samsung S24", benefit: "Selbstheilend, dünn, fullscreen.", image: pScreen, badge: "Folie", badgeGradient: "from-emerald-400 to-teal-500", rating: 4.3, reviews: "812", price: "7,99 €", features: ["Selbstheilend"], amazonUrl: "#", category: "display" },
-  { id: "display-watch", title: "Schutzglas für Apple Watch (3er Pack)", benefit: "Schutz für das Watch-Display.", image: pScreen, badge: "Watch", badgeGradient: "from-violet-400 to-purple-500", rating: 4.6, reviews: "1.215", price: "8,99 €", features: ["3er Pack"], amazonUrl: "#", category: "display" },
+  { id: "display-watch", title: "Schutzglas für Smartwatch (3er Pack)", benefit: "Schutz für das Watch-Display.", image: pScreen, badge: "Watch", badgeGradient: "from-violet-400 to-purple-500", rating: 4.6, reviews: "1.215", price: "8,99 €", features: ["3er Pack"], amazonUrl: "#", category: "display" },
   { id: "display-camera", title: "Kamera-Schutzglas iPhone 16 Pro", benefit: "Schützt die Kamera vor Kratzern.", image: pScreen, badge: "Kamera", badgeGradient: "from-indigo-400 to-blue-500", rating: 4.5, reviews: "980", price: "9,99 €", features: ["Kameraschutz"], amazonUrl: "#", category: "display" },
 
   // Charging
-  { id: "anker-65w", title: "Anker 65W USB-C Ladegerät GaN", benefit: "Lädt Phone, Tablet & Laptop.", image: pCharger, badge: "GaN", badgeGradient: "from-emerald-500 to-teal-600", rating: 4.8, reviews: "12.420", price: "34,99 €", oldPrice: "49,99 €", features: ["GaN", "65W"], amazonUrl: "#", category: "charging" },
-  { id: "anker-mehrfach", title: "Anker 4-Port USB-C Ladestation", benefit: "Eine Steckdose, vier Geräte gleichzeitig.", image: pCharger, badge: "4 Ports", badgeGradient: "from-purple-500 to-fuchsia-500", rating: 4.7, reviews: "3.210", price: "44,99 €", features: ["4 Ports"], amazonUrl: "#", category: "charging" },
-  { id: "ugreen-c-c", title: "UGREEN USB-C zu USB-C Kabel 2 m", benefit: "100W Power Delivery, robust.", image: pCable, badge: "100W", badgeGradient: "from-blue-400 to-indigo-500", rating: 4.7, reviews: "8.412", price: "12,99 €", features: ["100W", "2 m"], amazonUrl: "#", category: "charging" },
+  { id: "anker-65w", title: "USB-C Ladegerät 65W mit GaN-Technologie", benefit: "Lädt Phone, Tablet & Laptop.", image: pCharger, badge: "GaN", badgeGradient: "from-emerald-500 to-teal-600", rating: 4.8, reviews: "12.420", price: "34,99 €", oldPrice: "49,99 €", features: ["GaN", "65W"], amazonUrl: "#", category: "charging" },
+  { id: "anker-mehrfach", title: "4-Port USB-C Ladestation", benefit: "Eine Steckdose, vier Geräte gleichzeitig.", image: pCharger, badge: "4 Ports", badgeGradient: "from-purple-500 to-fuchsia-500", rating: 4.7, reviews: "3.210", price: "44,99 €", features: ["4 Ports"], amazonUrl: "#", category: "charging" },
+  { id: "ugreen-c-c", title: "USB-C zu USB-C Kabel 2 m (100W)", benefit: "100W Power Delivery, robust.", image: pCable, badge: "100W", badgeGradient: "from-blue-400 to-indigo-500", rating: 4.7, reviews: "8.412", price: "12,99 €", features: ["100W", "2 m"], amazonUrl: "#", category: "charging" },
   { id: "kabel-3pack", title: "USB-C Kabel 3er Pack (1m/2m/3m)", benefit: "Drei Längen für jeden Einsatz.", image: pCable, badge: "3er Pack", badgeGradient: "from-pink-400 to-rose-500", rating: 4.6, reviews: "2.918", price: "14,99 €", features: ["3er Pack"], amazonUrl: "#", category: "charging" },
   { id: "wireless-pad", title: "Kabelloses Ladepad 15W", benefit: "Schick, schnell, universell.", image: pCharger, badge: "Wireless", badgeGradient: "from-purple-400 to-pink-500", rating: 4.5, reviews: "1.882", price: "19,99 €", features: ["Wireless", "15W"], amazonUrl: "#", category: "charging" },
-  { id: "anker-100w", title: "Anker 100W Reiseladegerät", benefit: "Reise-Ladegerät mit Wechseladaptern.", image: pCharger, badge: "Reise", badgeGradient: "from-amber-400 to-orange-500", rating: 4.7, reviews: "1.420", price: "59,99 €", oldPrice: "79,99 €", features: ["100W", "Reise"], amazonUrl: "#", category: "charging" },
+  { id: "anker-100w", title: "Reiseladegerät 100W mit Wechseladaptern", benefit: "Reise-Ladegerät mit Wechseladaptern.", image: pCharger, badge: "Reise", badgeGradient: "from-amber-400 to-orange-500", rating: 4.7, reviews: "1.420", price: "59,99 €", oldPrice: "79,99 €", features: ["100W", "Reise"], amazonUrl: "#", category: "charging" },
 
   // Powerbanks
-  { id: "anker-pb-20k", title: "Anker Powerbank 20.000 mAh", benefit: "Riesige Kapazität für mehrere Tage.", image: pPb1, badge: "20.000 mAh", badgeGradient: "from-emerald-500 to-teal-600", rating: 4.8, reviews: "9.221", price: "39,99 €", oldPrice: "59,99 €", features: ["20.000 mAh", "PD"], amazonUrl: "#", category: "powerbanks" },
-  { id: "anker-nano", title: "Anker Nano Powerbank mit USB-C", benefit: "Direkt am iPhone andocken, kein Kabel.", image: pPb2, badge: "Nano", badgeGradient: "from-pink-500 to-purple-500", rating: 4.6, reviews: "3.120", price: "27,99 €", features: ["Kompakt", "USB-C"], amazonUrl: "#", category: "powerbanks" },
-  { id: "iniu-mini", title: "INIU Mini Powerbank 5.000 mAh", benefit: "Kreditkartengröße, perfekt für die Tasche.", image: pPb2, badge: "Mini", badgeGradient: "from-cyan-400 to-sky-500", rating: 4.6, reviews: "2.014", price: "14,99 €", features: ["Mini", "Slim"], amazonUrl: "#", category: "powerbanks" },
-  { id: "baseus-pb-fast", title: "Baseus 65W Powerbank 20.000 mAh", benefit: "Lädt sogar Laptops mit voller Leistung.", image: pPb1, badge: "65W", badgeGradient: "from-fuchsia-500 to-purple-600", rating: 4.7, reviews: "1.918", price: "59,99 €", oldPrice: "79,99 €", features: ["65W", "Laptop"], amazonUrl: "#", category: "powerbanks" },
+  { id: "anker-pb-20k", title: "Powerbank 20.000 mAh mit Schnellladen", benefit: "Riesige Kapazität für mehrere Tage.", image: pPb1, badge: "20.000 mAh", badgeGradient: "from-emerald-500 to-teal-600", rating: 4.8, reviews: "9.221", price: "39,99 €", oldPrice: "59,99 €", features: ["20.000 mAh", "PD"], amazonUrl: "#", category: "powerbanks" },
+  { id: "anker-nano", title: "Nano Powerbank mit USB-C Stecker", benefit: "Direkt am Smartphone andocken, kein Kabel.", image: pPb2, badge: "Nano", badgeGradient: "from-pink-500 to-purple-500", rating: 4.6, reviews: "3.120", price: "27,99 €", features: ["Kompakt", "USB-C"], amazonUrl: "#", category: "powerbanks" },
+  { id: "iniu-mini", title: "Mini Powerbank 5.000 mAh", benefit: "Kreditkartengröße, perfekt für die Tasche.", image: pPb2, badge: "Mini", badgeGradient: "from-cyan-400 to-sky-500", rating: 4.6, reviews: "2.014", price: "14,99 €", features: ["Mini", "Slim"], amazonUrl: "#", category: "powerbanks" },
+  { id: "baseus-pb-fast", title: "Powerbank 20.000 mAh mit 65W Ausgang", benefit: "Lädt sogar Laptops mit voller Leistung.", image: pPb1, badge: "65W", badgeGradient: "from-fuchsia-500 to-purple-600", rating: 4.7, reviews: "1.918", price: "59,99 €", oldPrice: "79,99 €", features: ["65W", "Laptop"], amazonUrl: "#", category: "powerbanks" },
   { id: "solar-pb", title: "Solar Powerbank 26.800 mAh", benefit: "Outdoor-tauglich mit Solarpanel.", image: pPb1, badge: "Solar", badgeGradient: "from-amber-400 to-yellow-500", rating: 4.4, reviews: "1.420", price: "34,99 €", features: ["Solar", "Outdoor"], amazonUrl: "#", category: "powerbanks" },
   { id: "wireless-pb", title: "Wireless Powerbank 10.000 mAh", benefit: "Kabellos und per USB-C laden.", image: pPb2, badge: "Wireless", badgeGradient: "from-purple-500 to-pink-500", rating: 4.5, reviews: "1.110", price: "24,99 €", features: ["Wireless", "10.000 mAh"], amazonUrl: "#", category: "powerbanks" },
 
@@ -366,7 +366,7 @@ export const categories: Category[] = [
   { id: "charging", name: "Ladegeräte & Kabel", image: pCharger, gradient: "from-amber-100 to-orange-100", slug: categorySlugs.charging },
   { id: "powerbanks", name: "Powerbanks", image: pPb1, gradient: "from-emerald-100 to-teal-100", slug: categorySlugs.powerbanks },
   { id: "car", name: "Auto‑Zubehör", image: pMount, gradient: "from-blue-100 to-cyan-100", slug: categorySlugs.car },
-  { id: "airpods", name: "AirPods Zubehör", image: pAirpods, gradient: "from-slate-100 to-zinc-100", slug: "/amazon-picks" },
+  { id: "airpods", name: "Earbuds Zubehör", image: pAirpods, gradient: "from-slate-100 to-zinc-100", slug: "/amazon-picks" },
   { id: "watch", name: "Smartwatch Zubehör", image: pWatch, gradient: "from-violet-100 to-purple-100", slug: "/amazon-picks" },
   { id: "gifts", name: "Tech Gifts", image: pGift, gradient: "from-pink-100 to-red-100", slug: "/amazon-picks" },
 ];
@@ -417,8 +417,8 @@ export const guides: Guide[] = [
   },
   {
     id: "airpods",
-    title: "AirPods Zubehör: Was lohnt sich wirklich?",
-    text: "Cases, Spitzen und mehr im Vergleich.",
+    title: "Earbuds Zubehör: Was lohnt sich wirklich?",
+    text: "Cases, Aufsätze und mehr im Vergleich.",
     image: pAirpods,
     gradient: "from-slate-50 via-zinc-50 to-gray-50",
   },

@@ -9,8 +9,56 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SamsungZubehoerRouteImport } from './routes/samsung-zubehoer'
+import { Route as PowerbanksRouteImport } from './routes/powerbanks'
+import { Route as MagsafeZubehoerRouteImport } from './routes/magsafe-zubehoer'
+import { Route as LadegeraeteKabelRouteImport } from './routes/ladegeraete-kabel'
+import { Route as IphoneZubehoerRouteImport } from './routes/iphone-zubehoer'
+import { Route as DisplayschutzRouteImport } from './routes/displayschutz'
+import { Route as AutoZubehoerRouteImport } from './routes/auto-zubehoer'
+import { Route as AmazonPicksRouteImport } from './routes/amazon-picks'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SamsungZubehoerRoute = SamsungZubehoerRouteImport.update({
+  id: '/samsung-zubehoer',
+  path: '/samsung-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PowerbanksRoute = PowerbanksRouteImport.update({
+  id: '/powerbanks',
+  path: '/powerbanks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MagsafeZubehoerRoute = MagsafeZubehoerRouteImport.update({
+  id: '/magsafe-zubehoer',
+  path: '/magsafe-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LadegeraeteKabelRoute = LadegeraeteKabelRouteImport.update({
+  id: '/ladegeraete-kabel',
+  path: '/ladegeraete-kabel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IphoneZubehoerRoute = IphoneZubehoerRouteImport.update({
+  id: '/iphone-zubehoer',
+  path: '/iphone-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisplayschutzRoute = DisplayschutzRouteImport.update({
+  id: '/displayschutz',
+  path: '/displayschutz',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AutoZubehoerRoute = AutoZubehoerRouteImport.update({
+  id: '/auto-zubehoer',
+  path: '/auto-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AmazonPicksRoute = AmazonPicksRouteImport.update({
+  id: '/amazon-picks',
+  path: '/amazon-picks',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +67,144 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/amazon-picks': typeof AmazonPicksRoute
+  '/auto-zubehoer': typeof AutoZubehoerRoute
+  '/displayschutz': typeof DisplayschutzRoute
+  '/iphone-zubehoer': typeof IphoneZubehoerRoute
+  '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
+  '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
+  '/powerbanks': typeof PowerbanksRoute
+  '/samsung-zubehoer': typeof SamsungZubehoerRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/amazon-picks': typeof AmazonPicksRoute
+  '/auto-zubehoer': typeof AutoZubehoerRoute
+  '/displayschutz': typeof DisplayschutzRoute
+  '/iphone-zubehoer': typeof IphoneZubehoerRoute
+  '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
+  '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
+  '/powerbanks': typeof PowerbanksRoute
+  '/samsung-zubehoer': typeof SamsungZubehoerRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/amazon-picks': typeof AmazonPicksRoute
+  '/auto-zubehoer': typeof AutoZubehoerRoute
+  '/displayschutz': typeof DisplayschutzRoute
+  '/iphone-zubehoer': typeof IphoneZubehoerRoute
+  '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
+  '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
+  '/powerbanks': typeof PowerbanksRoute
+  '/samsung-zubehoer': typeof SamsungZubehoerRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/amazon-picks'
+    | '/auto-zubehoer'
+    | '/displayschutz'
+    | '/iphone-zubehoer'
+    | '/ladegeraete-kabel'
+    | '/magsafe-zubehoer'
+    | '/powerbanks'
+    | '/samsung-zubehoer'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/amazon-picks'
+    | '/auto-zubehoer'
+    | '/displayschutz'
+    | '/iphone-zubehoer'
+    | '/ladegeraete-kabel'
+    | '/magsafe-zubehoer'
+    | '/powerbanks'
+    | '/samsung-zubehoer'
+  id:
+    | '__root__'
+    | '/'
+    | '/amazon-picks'
+    | '/auto-zubehoer'
+    | '/displayschutz'
+    | '/iphone-zubehoer'
+    | '/ladegeraete-kabel'
+    | '/magsafe-zubehoer'
+    | '/powerbanks'
+    | '/samsung-zubehoer'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AmazonPicksRoute: typeof AmazonPicksRoute
+  AutoZubehoerRoute: typeof AutoZubehoerRoute
+  DisplayschutzRoute: typeof DisplayschutzRoute
+  IphoneZubehoerRoute: typeof IphoneZubehoerRoute
+  LadegeraeteKabelRoute: typeof LadegeraeteKabelRoute
+  MagsafeZubehoerRoute: typeof MagsafeZubehoerRoute
+  PowerbanksRoute: typeof PowerbanksRoute
+  SamsungZubehoerRoute: typeof SamsungZubehoerRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/samsung-zubehoer': {
+      id: '/samsung-zubehoer'
+      path: '/samsung-zubehoer'
+      fullPath: '/samsung-zubehoer'
+      preLoaderRoute: typeof SamsungZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/powerbanks': {
+      id: '/powerbanks'
+      path: '/powerbanks'
+      fullPath: '/powerbanks'
+      preLoaderRoute: typeof PowerbanksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/magsafe-zubehoer': {
+      id: '/magsafe-zubehoer'
+      path: '/magsafe-zubehoer'
+      fullPath: '/magsafe-zubehoer'
+      preLoaderRoute: typeof MagsafeZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ladegeraete-kabel': {
+      id: '/ladegeraete-kabel'
+      path: '/ladegeraete-kabel'
+      fullPath: '/ladegeraete-kabel'
+      preLoaderRoute: typeof LadegeraeteKabelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/iphone-zubehoer': {
+      id: '/iphone-zubehoer'
+      path: '/iphone-zubehoer'
+      fullPath: '/iphone-zubehoer'
+      preLoaderRoute: typeof IphoneZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/displayschutz': {
+      id: '/displayschutz'
+      path: '/displayschutz'
+      fullPath: '/displayschutz'
+      preLoaderRoute: typeof DisplayschutzRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auto-zubehoer': {
+      id: '/auto-zubehoer'
+      path: '/auto-zubehoer'
+      fullPath: '/auto-zubehoer'
+      preLoaderRoute: typeof AutoZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/amazon-picks': {
+      id: '/amazon-picks'
+      path: '/amazon-picks'
+      fullPath: '/amazon-picks'
+      preLoaderRoute: typeof AmazonPicksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +217,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AmazonPicksRoute: AmazonPicksRoute,
+  AutoZubehoerRoute: AutoZubehoerRoute,
+  DisplayschutzRoute: DisplayschutzRoute,
+  IphoneZubehoerRoute: IphoneZubehoerRoute,
+  LadegeraeteKabelRoute: LadegeraeteKabelRoute,
+  MagsafeZubehoerRoute: MagsafeZubehoerRoute,
+  PowerbanksRoute: PowerbanksRoute,
+  SamsungZubehoerRoute: SamsungZubehoerRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

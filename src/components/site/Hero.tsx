@@ -7,7 +7,7 @@ export function Hero() {
     <section className="mx-auto max-w-[1400px] px-6 pt-6">
       <div className="grid gap-5 lg:grid-cols-[1.55fr_1fr]">
         <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-7 shadow-card md:p-10">
-          <div className="relative z-10 grid items-center gap-6 md:grid-cols-[1fr_1.1fr]">
+          <div className="relative z-10 grid items-center gap-6 md:grid-cols-[1fr_1.55fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-card/85 px-3.5 py-1.5 text-[11px] font-semibold text-foreground shadow-soft backdrop-blur">
                 <Sparkles className="h-3.5 w-3.5 text-primary" />

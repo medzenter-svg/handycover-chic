@@ -9,19 +9,57 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as UeberHandycoverRouteImport } from './routes/ueber-handycover'
+import { Route as SmartwatchZubehoerRouteImport } from './routes/smartwatch-zubehoer'
 import { Route as SamsungZubehoerRouteImport } from './routes/samsung-zubehoer'
+import { Route as ReiseZubehoerRouteImport } from './routes/reise-zubehoer'
+import { Route as RatgeberRouteImport } from './routes/ratgeber'
 import { Route as PowerbanksRouteImport } from './routes/powerbanks'
 import { Route as MagsafeZubehoerRouteImport } from './routes/magsafe-zubehoer'
 import { Route as LadegeraeteKabelRouteImport } from './routes/ladegeraete-kabel'
+import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IphoneZubehoerRouteImport } from './routes/iphone-zubehoer'
+import { Route as ImpressumRouteImport } from './routes/impressum'
+import { Route as GeschenkideenTechFansRouteImport } from './routes/geschenkideen-tech-fans'
+import { Route as EarbudsZubehoerRouteImport } from './routes/earbuds-zubehoer'
 import { Route as DisplayschutzRouteImport } from './routes/displayschutz'
+import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as AutoZubehoerRouteImport } from './routes/auto-zubehoer'
 import { Route as AmazonPicksRouteImport } from './routes/amazon-picks'
+import { Route as AffiliateHinweisRouteImport } from './routes/affiliate-hinweis'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as RatgeberWelcheHandyhuelleSchuetztAmBestenRouteImport } from './routes/ratgeber/welche-handyhuelle-schuetzt-am-besten'
+import { Route as RatgeberWasserdichteHandyhuelleRouteImport } from './routes/ratgeber/wasserdichte-handyhuelle'
+import { Route as RatgeberUsbCLadegeraetWievielWattRouteImport } from './routes/ratgeber/usb-c-ladegeraet-wieviel-watt'
+import { Route as RatgeberPowerbankKaufenWoraufAchtenRouteImport } from './routes/ratgeber/powerbank-kaufen-worauf-achten'
+import { Route as RatgeberPanzerglasOderSchutzfolieRouteImport } from './routes/ratgeber/panzerglas-oder-schutzfolie'
+import { Route as RatgeberMagsafeZubehoerWasLohntSichRouteImport } from './routes/ratgeber/magsafe-zubehoer-was-lohnt-sich'
+import { Route as RatgeberHandyhalterungAutoMagnetischOderKlemmeRouteImport } from './routes/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
+import { Route as RatgeberGeschenkideenFuerTechFansRouteImport } from './routes/ratgeber/geschenkideen-fuer-tech-fans'
 
+const UeberHandycoverRoute = UeberHandycoverRouteImport.update({
+  id: '/ueber-handycover',
+  path: '/ueber-handycover',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SmartwatchZubehoerRoute = SmartwatchZubehoerRouteImport.update({
+  id: '/smartwatch-zubehoer',
+  path: '/smartwatch-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SamsungZubehoerRoute = SamsungZubehoerRouteImport.update({
   id: '/samsung-zubehoer',
   path: '/samsung-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReiseZubehoerRoute = ReiseZubehoerRouteImport.update({
+  id: '/reise-zubehoer',
+  path: '/reise-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RatgeberRoute = RatgeberRouteImport.update({
+  id: '/ratgeber',
+  path: '/ratgeber',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PowerbanksRoute = PowerbanksRouteImport.update({
@@ -39,14 +77,39 @@ const LadegeraeteKabelRoute = LadegeraeteKabelRouteImport.update({
   path: '/ladegeraete-kabel',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IphoneZubehoerRoute = IphoneZubehoerRouteImport.update({
   id: '/iphone-zubehoer',
   path: '/iphone-zubehoer',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ImpressumRoute = ImpressumRouteImport.update({
+  id: '/impressum',
+  path: '/impressum',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeschenkideenTechFansRoute = GeschenkideenTechFansRouteImport.update({
+  id: '/geschenkideen-tech-fans',
+  path: '/geschenkideen-tech-fans',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EarbudsZubehoerRoute = EarbudsZubehoerRouteImport.update({
+  id: '/earbuds-zubehoer',
+  path: '/earbuds-zubehoer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DisplayschutzRoute = DisplayschutzRouteImport.update({
   id: '/displayschutz',
   path: '/displayschutz',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DatenschutzRoute = DatenschutzRouteImport.update({
+  id: '/datenschutz',
+  path: '/datenschutz',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AutoZubehoerRoute = AutoZubehoerRouteImport.update({
@@ -59,101 +122,300 @@ const AmazonPicksRoute = AmazonPicksRouteImport.update({
   path: '/amazon-picks',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AffiliateHinweisRoute = AffiliateHinweisRouteImport.update({
+  id: '/affiliate-hinweis',
+  path: '/affiliate-hinweis',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RatgeberWelcheHandyhuelleSchuetztAmBestenRoute =
+  RatgeberWelcheHandyhuelleSchuetztAmBestenRouteImport.update({
+    id: '/welche-handyhuelle-schuetzt-am-besten',
+    path: '/welche-handyhuelle-schuetzt-am-besten',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberWasserdichteHandyhuelleRoute =
+  RatgeberWasserdichteHandyhuelleRouteImport.update({
+    id: '/wasserdichte-handyhuelle',
+    path: '/wasserdichte-handyhuelle',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberUsbCLadegeraetWievielWattRoute =
+  RatgeberUsbCLadegeraetWievielWattRouteImport.update({
+    id: '/usb-c-ladegeraet-wieviel-watt',
+    path: '/usb-c-ladegeraet-wieviel-watt',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberPowerbankKaufenWoraufAchtenRoute =
+  RatgeberPowerbankKaufenWoraufAchtenRouteImport.update({
+    id: '/powerbank-kaufen-worauf-achten',
+    path: '/powerbank-kaufen-worauf-achten',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberPanzerglasOderSchutzfolieRoute =
+  RatgeberPanzerglasOderSchutzfolieRouteImport.update({
+    id: '/panzerglas-oder-schutzfolie',
+    path: '/panzerglas-oder-schutzfolie',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberMagsafeZubehoerWasLohntSichRoute =
+  RatgeberMagsafeZubehoerWasLohntSichRouteImport.update({
+    id: '/magsafe-zubehoer-was-lohnt-sich',
+    path: '/magsafe-zubehoer-was-lohnt-sich',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute =
+  RatgeberHandyhalterungAutoMagnetischOderKlemmeRouteImport.update({
+    id: '/handyhalterung-auto-magnetisch-oder-klemme',
+    path: '/handyhalterung-auto-magnetisch-oder-klemme',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
+const RatgeberGeschenkideenFuerTechFansRoute =
+  RatgeberGeschenkideenFuerTechFansRouteImport.update({
+    id: '/geschenkideen-fuer-tech-fans',
+    path: '/geschenkideen-fuer-tech-fans',
+    getParentRoute: () => RatgeberRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/affiliate-hinweis': typeof AffiliateHinweisRoute
   '/amazon-picks': typeof AmazonPicksRoute
   '/auto-zubehoer': typeof AutoZubehoerRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/displayschutz': typeof DisplayschutzRoute
+  '/earbuds-zubehoer': typeof EarbudsZubehoerRoute
+  '/geschenkideen-tech-fans': typeof GeschenkideenTechFansRoute
+  '/impressum': typeof ImpressumRoute
   '/iphone-zubehoer': typeof IphoneZubehoerRoute
+  '/kontakt': typeof KontaktRoute
   '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
   '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
   '/powerbanks': typeof PowerbanksRoute
+  '/ratgeber': typeof RatgeberRouteWithChildren
+  '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
+  '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
+  '/ueber-handycover': typeof UeberHandycoverRoute
+  '/ratgeber/geschenkideen-fuer-tech-fans': typeof RatgeberGeschenkideenFuerTechFansRoute
+  '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
+  '/ratgeber/magsafe-zubehoer-was-lohnt-sich': typeof RatgeberMagsafeZubehoerWasLohntSichRoute
+  '/ratgeber/panzerglas-oder-schutzfolie': typeof RatgeberPanzerglasOderSchutzfolieRoute
+  '/ratgeber/powerbank-kaufen-worauf-achten': typeof RatgeberPowerbankKaufenWoraufAchtenRoute
+  '/ratgeber/usb-c-ladegeraet-wieviel-watt': typeof RatgeberUsbCLadegeraetWievielWattRoute
+  '/ratgeber/wasserdichte-handyhuelle': typeof RatgeberWasserdichteHandyhuelleRoute
+  '/ratgeber/welche-handyhuelle-schuetzt-am-besten': typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/affiliate-hinweis': typeof AffiliateHinweisRoute
   '/amazon-picks': typeof AmazonPicksRoute
   '/auto-zubehoer': typeof AutoZubehoerRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/displayschutz': typeof DisplayschutzRoute
+  '/earbuds-zubehoer': typeof EarbudsZubehoerRoute
+  '/geschenkideen-tech-fans': typeof GeschenkideenTechFansRoute
+  '/impressum': typeof ImpressumRoute
   '/iphone-zubehoer': typeof IphoneZubehoerRoute
+  '/kontakt': typeof KontaktRoute
   '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
   '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
   '/powerbanks': typeof PowerbanksRoute
+  '/ratgeber': typeof RatgeberRouteWithChildren
+  '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
+  '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
+  '/ueber-handycover': typeof UeberHandycoverRoute
+  '/ratgeber/geschenkideen-fuer-tech-fans': typeof RatgeberGeschenkideenFuerTechFansRoute
+  '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
+  '/ratgeber/magsafe-zubehoer-was-lohnt-sich': typeof RatgeberMagsafeZubehoerWasLohntSichRoute
+  '/ratgeber/panzerglas-oder-schutzfolie': typeof RatgeberPanzerglasOderSchutzfolieRoute
+  '/ratgeber/powerbank-kaufen-worauf-achten': typeof RatgeberPowerbankKaufenWoraufAchtenRoute
+  '/ratgeber/usb-c-ladegeraet-wieviel-watt': typeof RatgeberUsbCLadegeraetWievielWattRoute
+  '/ratgeber/wasserdichte-handyhuelle': typeof RatgeberWasserdichteHandyhuelleRoute
+  '/ratgeber/welche-handyhuelle-schuetzt-am-besten': typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/affiliate-hinweis': typeof AffiliateHinweisRoute
   '/amazon-picks': typeof AmazonPicksRoute
   '/auto-zubehoer': typeof AutoZubehoerRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/displayschutz': typeof DisplayschutzRoute
+  '/earbuds-zubehoer': typeof EarbudsZubehoerRoute
+  '/geschenkideen-tech-fans': typeof GeschenkideenTechFansRoute
+  '/impressum': typeof ImpressumRoute
   '/iphone-zubehoer': typeof IphoneZubehoerRoute
+  '/kontakt': typeof KontaktRoute
   '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
   '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
   '/powerbanks': typeof PowerbanksRoute
+  '/ratgeber': typeof RatgeberRouteWithChildren
+  '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
+  '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
+  '/ueber-handycover': typeof UeberHandycoverRoute
+  '/ratgeber/geschenkideen-fuer-tech-fans': typeof RatgeberGeschenkideenFuerTechFansRoute
+  '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
+  '/ratgeber/magsafe-zubehoer-was-lohnt-sich': typeof RatgeberMagsafeZubehoerWasLohntSichRoute
+  '/ratgeber/panzerglas-oder-schutzfolie': typeof RatgeberPanzerglasOderSchutzfolieRoute
+  '/ratgeber/powerbank-kaufen-worauf-achten': typeof RatgeberPowerbankKaufenWoraufAchtenRoute
+  '/ratgeber/usb-c-ladegeraet-wieviel-watt': typeof RatgeberUsbCLadegeraetWievielWattRoute
+  '/ratgeber/wasserdichte-handyhuelle': typeof RatgeberWasserdichteHandyhuelleRoute
+  '/ratgeber/welche-handyhuelle-schuetzt-am-besten': typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/affiliate-hinweis'
     | '/amazon-picks'
     | '/auto-zubehoer'
+    | '/datenschutz'
     | '/displayschutz'
+    | '/earbuds-zubehoer'
+    | '/geschenkideen-tech-fans'
+    | '/impressum'
     | '/iphone-zubehoer'
+    | '/kontakt'
     | '/ladegeraete-kabel'
     | '/magsafe-zubehoer'
     | '/powerbanks'
+    | '/ratgeber'
+    | '/reise-zubehoer'
     | '/samsung-zubehoer'
+    | '/smartwatch-zubehoer'
+    | '/ueber-handycover'
+    | '/ratgeber/geschenkideen-fuer-tech-fans'
+    | '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
+    | '/ratgeber/magsafe-zubehoer-was-lohnt-sich'
+    | '/ratgeber/panzerglas-oder-schutzfolie'
+    | '/ratgeber/powerbank-kaufen-worauf-achten'
+    | '/ratgeber/usb-c-ladegeraet-wieviel-watt'
+    | '/ratgeber/wasserdichte-handyhuelle'
+    | '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/affiliate-hinweis'
     | '/amazon-picks'
     | '/auto-zubehoer'
+    | '/datenschutz'
     | '/displayschutz'
+    | '/earbuds-zubehoer'
+    | '/geschenkideen-tech-fans'
+    | '/impressum'
     | '/iphone-zubehoer'
+    | '/kontakt'
     | '/ladegeraete-kabel'
     | '/magsafe-zubehoer'
     | '/powerbanks'
+    | '/ratgeber'
+    | '/reise-zubehoer'
     | '/samsung-zubehoer'
+    | '/smartwatch-zubehoer'
+    | '/ueber-handycover'
+    | '/ratgeber/geschenkideen-fuer-tech-fans'
+    | '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
+    | '/ratgeber/magsafe-zubehoer-was-lohnt-sich'
+    | '/ratgeber/panzerglas-oder-schutzfolie'
+    | '/ratgeber/powerbank-kaufen-worauf-achten'
+    | '/ratgeber/usb-c-ladegeraet-wieviel-watt'
+    | '/ratgeber/wasserdichte-handyhuelle'
+    | '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
   id:
     | '__root__'
     | '/'
+    | '/affiliate-hinweis'
     | '/amazon-picks'
     | '/auto-zubehoer'
+    | '/datenschutz'
     | '/displayschutz'
+    | '/earbuds-zubehoer'
+    | '/geschenkideen-tech-fans'
+    | '/impressum'
     | '/iphone-zubehoer'
+    | '/kontakt'
     | '/ladegeraete-kabel'
     | '/magsafe-zubehoer'
     | '/powerbanks'
+    | '/ratgeber'
+    | '/reise-zubehoer'
     | '/samsung-zubehoer'
+    | '/smartwatch-zubehoer'
+    | '/ueber-handycover'
+    | '/ratgeber/geschenkideen-fuer-tech-fans'
+    | '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
+    | '/ratgeber/magsafe-zubehoer-was-lohnt-sich'
+    | '/ratgeber/panzerglas-oder-schutzfolie'
+    | '/ratgeber/powerbank-kaufen-worauf-achten'
+    | '/ratgeber/usb-c-ladegeraet-wieviel-watt'
+    | '/ratgeber/wasserdichte-handyhuelle'
+    | '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AffiliateHinweisRoute: typeof AffiliateHinweisRoute
   AmazonPicksRoute: typeof AmazonPicksRoute
   AutoZubehoerRoute: typeof AutoZubehoerRoute
+  DatenschutzRoute: typeof DatenschutzRoute
   DisplayschutzRoute: typeof DisplayschutzRoute
+  EarbudsZubehoerRoute: typeof EarbudsZubehoerRoute
+  GeschenkideenTechFansRoute: typeof GeschenkideenTechFansRoute
+  ImpressumRoute: typeof ImpressumRoute
   IphoneZubehoerRoute: typeof IphoneZubehoerRoute
+  KontaktRoute: typeof KontaktRoute
   LadegeraeteKabelRoute: typeof LadegeraeteKabelRoute
   MagsafeZubehoerRoute: typeof MagsafeZubehoerRoute
   PowerbanksRoute: typeof PowerbanksRoute
+  RatgeberRoute: typeof RatgeberRouteWithChildren
+  ReiseZubehoerRoute: typeof ReiseZubehoerRoute
   SamsungZubehoerRoute: typeof SamsungZubehoerRoute
+  SmartwatchZubehoerRoute: typeof SmartwatchZubehoerRoute
+  UeberHandycoverRoute: typeof UeberHandycoverRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/ueber-handycover': {
+      id: '/ueber-handycover'
+      path: '/ueber-handycover'
+      fullPath: '/ueber-handycover'
+      preLoaderRoute: typeof UeberHandycoverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/smartwatch-zubehoer': {
+      id: '/smartwatch-zubehoer'
+      path: '/smartwatch-zubehoer'
+      fullPath: '/smartwatch-zubehoer'
+      preLoaderRoute: typeof SmartwatchZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/samsung-zubehoer': {
       id: '/samsung-zubehoer'
       path: '/samsung-zubehoer'
       fullPath: '/samsung-zubehoer'
       preLoaderRoute: typeof SamsungZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reise-zubehoer': {
+      id: '/reise-zubehoer'
+      path: '/reise-zubehoer'
+      fullPath: '/reise-zubehoer'
+      preLoaderRoute: typeof ReiseZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ratgeber': {
+      id: '/ratgeber'
+      path: '/ratgeber'
+      fullPath: '/ratgeber'
+      preLoaderRoute: typeof RatgeberRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/powerbanks': {
@@ -177,6 +439,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LadegeraeteKabelRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/iphone-zubehoer': {
       id: '/iphone-zubehoer'
       path: '/iphone-zubehoer'
@@ -184,11 +453,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IphoneZubehoerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/impressum': {
+      id: '/impressum'
+      path: '/impressum'
+      fullPath: '/impressum'
+      preLoaderRoute: typeof ImpressumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/geschenkideen-tech-fans': {
+      id: '/geschenkideen-tech-fans'
+      path: '/geschenkideen-tech-fans'
+      fullPath: '/geschenkideen-tech-fans'
+      preLoaderRoute: typeof GeschenkideenTechFansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/earbuds-zubehoer': {
+      id: '/earbuds-zubehoer'
+      path: '/earbuds-zubehoer'
+      fullPath: '/earbuds-zubehoer'
+      preLoaderRoute: typeof EarbudsZubehoerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/displayschutz': {
       id: '/displayschutz'
       path: '/displayschutz'
       fullPath: '/displayschutz'
       preLoaderRoute: typeof DisplayschutzRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/datenschutz': {
+      id: '/datenschutz'
+      path: '/datenschutz'
+      fullPath: '/datenschutz'
+      preLoaderRoute: typeof DatenschutzRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auto-zubehoer': {
@@ -205,6 +502,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AmazonPicksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/affiliate-hinweis': {
+      id: '/affiliate-hinweis'
+      path: '/affiliate-hinweis'
+      fullPath: '/affiliate-hinweis'
+      preLoaderRoute: typeof AffiliateHinweisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -212,20 +516,129 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ratgeber/welche-handyhuelle-schuetzt-am-besten': {
+      id: '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
+      path: '/welche-handyhuelle-schuetzt-am-besten'
+      fullPath: '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
+      preLoaderRoute: typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/wasserdichte-handyhuelle': {
+      id: '/ratgeber/wasserdichte-handyhuelle'
+      path: '/wasserdichte-handyhuelle'
+      fullPath: '/ratgeber/wasserdichte-handyhuelle'
+      preLoaderRoute: typeof RatgeberWasserdichteHandyhuelleRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/usb-c-ladegeraet-wieviel-watt': {
+      id: '/ratgeber/usb-c-ladegeraet-wieviel-watt'
+      path: '/usb-c-ladegeraet-wieviel-watt'
+      fullPath: '/ratgeber/usb-c-ladegeraet-wieviel-watt'
+      preLoaderRoute: typeof RatgeberUsbCLadegeraetWievielWattRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/powerbank-kaufen-worauf-achten': {
+      id: '/ratgeber/powerbank-kaufen-worauf-achten'
+      path: '/powerbank-kaufen-worauf-achten'
+      fullPath: '/ratgeber/powerbank-kaufen-worauf-achten'
+      preLoaderRoute: typeof RatgeberPowerbankKaufenWoraufAchtenRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/panzerglas-oder-schutzfolie': {
+      id: '/ratgeber/panzerglas-oder-schutzfolie'
+      path: '/panzerglas-oder-schutzfolie'
+      fullPath: '/ratgeber/panzerglas-oder-schutzfolie'
+      preLoaderRoute: typeof RatgeberPanzerglasOderSchutzfolieRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/magsafe-zubehoer-was-lohnt-sich': {
+      id: '/ratgeber/magsafe-zubehoer-was-lohnt-sich'
+      path: '/magsafe-zubehoer-was-lohnt-sich'
+      fullPath: '/ratgeber/magsafe-zubehoer-was-lohnt-sich'
+      preLoaderRoute: typeof RatgeberMagsafeZubehoerWasLohntSichRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': {
+      id: '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
+      path: '/handyhalterung-auto-magnetisch-oder-klemme'
+      fullPath: '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
+      preLoaderRoute: typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
+    '/ratgeber/geschenkideen-fuer-tech-fans': {
+      id: '/ratgeber/geschenkideen-fuer-tech-fans'
+      path: '/geschenkideen-fuer-tech-fans'
+      fullPath: '/ratgeber/geschenkideen-fuer-tech-fans'
+      preLoaderRoute: typeof RatgeberGeschenkideenFuerTechFansRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
   }
 }
 
+interface RatgeberRouteChildren {
+  RatgeberGeschenkideenFuerTechFansRoute: typeof RatgeberGeschenkideenFuerTechFansRoute
+  RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute: typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
+  RatgeberMagsafeZubehoerWasLohntSichRoute: typeof RatgeberMagsafeZubehoerWasLohntSichRoute
+  RatgeberPanzerglasOderSchutzfolieRoute: typeof RatgeberPanzerglasOderSchutzfolieRoute
+  RatgeberPowerbankKaufenWoraufAchtenRoute: typeof RatgeberPowerbankKaufenWoraufAchtenRoute
+  RatgeberUsbCLadegeraetWievielWattRoute: typeof RatgeberUsbCLadegeraetWievielWattRoute
+  RatgeberWasserdichteHandyhuelleRoute: typeof RatgeberWasserdichteHandyhuelleRoute
+  RatgeberWelcheHandyhuelleSchuetztAmBestenRoute: typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
+}
+
+const RatgeberRouteChildren: RatgeberRouteChildren = {
+  RatgeberGeschenkideenFuerTechFansRoute:
+    RatgeberGeschenkideenFuerTechFansRoute,
+  RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute:
+    RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute,
+  RatgeberMagsafeZubehoerWasLohntSichRoute:
+    RatgeberMagsafeZubehoerWasLohntSichRoute,
+  RatgeberPanzerglasOderSchutzfolieRoute:
+    RatgeberPanzerglasOderSchutzfolieRoute,
+  RatgeberPowerbankKaufenWoraufAchtenRoute:
+    RatgeberPowerbankKaufenWoraufAchtenRoute,
+  RatgeberUsbCLadegeraetWievielWattRoute:
+    RatgeberUsbCLadegeraetWievielWattRoute,
+  RatgeberWasserdichteHandyhuelleRoute: RatgeberWasserdichteHandyhuelleRoute,
+  RatgeberWelcheHandyhuelleSchuetztAmBestenRoute:
+    RatgeberWelcheHandyhuelleSchuetztAmBestenRoute,
+}
+
+const RatgeberRouteWithChildren = RatgeberRoute._addFileChildren(
+  RatgeberRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AffiliateHinweisRoute: AffiliateHinweisRoute,
   AmazonPicksRoute: AmazonPicksRoute,
   AutoZubehoerRoute: AutoZubehoerRoute,
+  DatenschutzRoute: DatenschutzRoute,
   DisplayschutzRoute: DisplayschutzRoute,
+  EarbudsZubehoerRoute: EarbudsZubehoerRoute,
+  GeschenkideenTechFansRoute: GeschenkideenTechFansRoute,
+  ImpressumRoute: ImpressumRoute,
   IphoneZubehoerRoute: IphoneZubehoerRoute,
+  KontaktRoute: KontaktRoute,
   LadegeraeteKabelRoute: LadegeraeteKabelRoute,
   MagsafeZubehoerRoute: MagsafeZubehoerRoute,
   PowerbanksRoute: PowerbanksRoute,
+  RatgeberRoute: RatgeberRouteWithChildren,
+  ReiseZubehoerRoute: ReiseZubehoerRoute,
   SamsungZubehoerRoute: SamsungZubehoerRoute,
+  SmartwatchZubehoerRoute: SmartwatchZubehoerRoute,
+  UeberHandycoverRoute: UeberHandycoverRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

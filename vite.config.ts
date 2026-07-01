@@ -18,6 +18,7 @@ export default defineConfig({
       // turn that connection failure into a fullscreen black/error state.
       // Disable HMR in the preview; normal page reloads still work.
       hmr: false,
+      allowedHosts: "all",
     },
   },
 });

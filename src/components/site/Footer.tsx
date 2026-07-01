@@ -1,4 +1,30 @@
+import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Facebook, Sparkles } from "lucide-react";
+
+const kategorien = [
+  { label: "iPhone Zubehör", to: "/iphone-zubehoer" },
+  { label: "Samsung Zubehör", to: "/samsung-zubehoer" },
+  { label: "MagSafe Zubehör", to: "/magsafe-zubehoer" },
+  { label: "Displayschutz", to: "/displayschutz" },
+  { label: "Powerbanks", to: "/powerbanks" },
+  { label: "Auto-Zubehör", to: "/auto-zubehoer" },
+];
+
+const ratgeber = [
+  { label: "Handyhülle kaufen", to: "/ratgeber/welche-handyhuelle-schuetzt-am-besten" },
+  { label: "MagSafe Zubehör", to: "/ratgeber/magsafe-zubehoer-was-lohnt-sich" },
+  { label: "Panzerglas oder Folie", to: "/ratgeber/panzerglas-oder-schutzfolie" },
+  { label: "Powerbank kaufen", to: "/ratgeber/powerbank-kaufen-worauf-achten" },
+  { label: "Geschenkideen", to: "/ratgeber/geschenkideen-fuer-tech-fans" },
+];
+
+const rechtliches = [
+  { label: "Impressum", to: "/impressum" },
+  { label: "Datenschutz", to: "/datenschutz" },
+  { label: "Affiliate-Hinweis", to: "/affiliate-hinweis" },
+  { label: "Kontakt", to: "/kontakt" },
+  { label: "Über HandyCover", to: "/ueber-handycover" },
+];
 
 export function Footer() {
   return (
@@ -15,14 +41,14 @@ export function Footer() {
               <span className="text-lg font-extrabold">HandyCover</span>
             </div>
             <p className="mt-3 text-[12.5px] leading-relaxed text-foreground/70">
-              Dein Ratgeber für Smartphone Zubehör. Die besten Produkte schnell
-              und einfach finden.
+              Unabhängiger Ratgeber für Smartphone-Zubehör. Ausgewählte Produkte mit direktem Amazon-Link und klarer Kaufberatung.
             </p>
             <div className="mt-4 flex gap-2">
               {[Instagram, Youtube, Facebook].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
+                  aria-label="Social Media"
                   className="grid h-8 w-8 place-items-center rounded-full bg-card text-foreground/70 shadow-soft transition hover:text-primary"
                 >
                   <Icon className="h-3.5 w-3.5" />
@@ -31,25 +57,9 @@ export function Footer() {
             </div>
           </div>
 
-          <FooterCol
-            title="Kategorien"
-            items={[
-              "iPhone Zubehör",
-              "Samsung Zubehör",
-              "MagSafe Zubehör",
-              "Displayschutz",
-              "Ladegeräte & Kabel",
-              "Powerbanks",
-            ]}
-          />
-          <FooterCol
-            title="Wissenswertes"
-            items={["Ratgeber", "Amazon Picks", "Bestseller", "Neuheiten", "Geschenkideen"]}
-          />
-          <FooterCol
-            title="Rechtliches"
-            items={["Impressum", "Datenschutz", "Affiliate‑Hinweis", "Kontakt", "Sitemap"]}
-          />
+          <FooterCol title="Kategorien" items={kategorien} />
+          <FooterCol title="Ratgeber" items={ratgeber} />
+          <FooterCol title="Rechtliches" items={rechtliches} />
 
           {/* Newsletter */}
           <div>
@@ -60,7 +70,8 @@ export function Footer() {
             <form className="mt-3 flex gap-2">
               <input
                 type="email"
-                placeholder="E‑Mail‑Adresse"
+                placeholder="E-Mail-Adresse"
+                aria-label="E-Mail für Newsletter"
                 className="h-9 min-w-0 flex-1 rounded-full border border-border bg-card px-3 text-[12.5px] outline-none focus:border-primary"
               />
               <button
@@ -76,29 +87,36 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Affiliate-Hinweis */}
+        <div className="border-t border-border/60 px-8 py-3 md:px-10">
+          <p className="text-[11.5px] leading-relaxed text-muted-foreground">
+            <strong>Affiliate-Hinweis:</strong> Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Für Käufer entstehen keine Mehrkosten. Preise und Verfügbarkeit können sich ändern. Maßgeblich sind die Angaben auf der jeweiligen Amazon-Produktseite.
+          </p>
+        </div>
+
         {/* Slim bottom bar */}
         <div className="flex flex-col items-center justify-between gap-2 border-t border-border/60 px-8 py-4 text-[11.5px] text-muted-foreground sm:flex-row md:px-10">
           <span>© {new Date().getFullYear()} HandyCover. Alle Rechte vorbehalten.</span>
           <span className="text-center">
-            Als Amazon‑Partner verdienen wir an qualifizierten Verkäufen.
+            Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Preise und Verfügbarkeit können sich ändern.
           </span>
-          <a href="#" className="hover:text-primary">Affiliate‑Hinweis</a>
+          <Link to="/affiliate-hinweis" className="hover:text-primary">Affiliate-Hinweis</Link>
         </div>
       </div>
     </footer>
   );
 }
 
-function FooterCol({ title, items }: { title: string; items: string[] }) {
+function FooterCol({ title, items }: { title: string; items: { label: string; to: string }[] }) {
   return (
     <div>
       <h4 className="text-[13px] font-bold">{title}</h4>
       <ul className="mt-3 space-y-1.5 text-[12.5px] text-foreground/70">
         {items.map((item) => (
-          <li key={item}>
-            <a href="#" className="hover:text-primary">
-              {item}
-            </a>
+          <li key={item.to}>
+            <Link to={item.to} className="hover:text-primary">
+              {item.label}
+            </Link>
           </li>
         ))}
       </ul>

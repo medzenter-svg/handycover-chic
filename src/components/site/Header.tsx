@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Search, Heart, Bookmark, ChevronDown, Sparkles, User } from "lucide-react";
+import { useState } from "react";
+import { Search, ChevronDown, Sparkles, BookOpen } from "lucide-react";
 import { categorySlugs } from "@/data/products";
 
 const nav: { label: string; to: string }[] = [
@@ -9,10 +10,21 @@ const nav: { label: string; to: string }[] = [
   { label: "Displayschutz", to: categorySlugs.display },
   { label: "Ladegeräte & Kabel", to: categorySlugs.charging },
   { label: "Powerbanks", to: categorySlugs.powerbanks },
-  { label: "Auto‑Zubehör", to: categorySlugs.car },
+  { label: "Auto-Zubehör", to: categorySlugs.car },
+  { label: "Ratgeber", to: "/ratgeber" },
+];
+
+const moreNav = [
+  { label: "Earbuds Zubehör", to: "/earbuds-zubehoer" },
+  { label: "Smartwatch Zubehör", to: "/smartwatch-zubehoer" },
+  { label: "Geschenkideen", to: "/geschenkideen-tech-fans" },
+  { label: "Reise-Zubehör", to: "/reise-zubehoer" },
+  { label: "Über HandyCover", to: "/ueber-handycover" },
 ];
 
 export function Header() {
+  const [moreOpen, setMoreOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-card/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1400px] items-center gap-4 px-6 py-2.5">
@@ -23,7 +35,7 @@ export function Header() {
           <span className="text-base font-extrabold tracking-tight">HandyCover</span>
         </Link>
 
-        <nav className="hidden flex-1 items-center justify-center gap-0 lg:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-0 lg:flex" aria-label="Hauptnavigation">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -34,9 +46,29 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <button className="inline-flex items-center gap-0.5 rounded-full px-2 py-1.5 text-[12.5px] font-medium text-foreground/75 hover:bg-accent">
-            Mehr <ChevronDown className="h-3.5 w-3.5" />
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => setMoreOpen(!moreOpen)}
+              onBlur={() => setTimeout(() => setMoreOpen(false), 150)}
+              className="inline-flex items-center gap-0.5 rounded-full px-2 py-1.5 text-[12.5px] font-medium text-foreground/75 hover:bg-accent"
+              aria-expanded={moreOpen}
+            >
+              Mehr <ChevronDown className={`h-3.5 w-3.5 transition-transform ${moreOpen ? "rotate-180" : ""}`} />
+            </button>
+            {moreOpen && (
+              <div className="absolute right-0 top-full z-50 mt-1 min-w-[180px] rounded-xl border border-border bg-card p-1.5 shadow-card">
+                {moreNav.map((item) => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className="block rounded-lg px-3 py-2 text-[12.5px] font-medium text-foreground/75 hover:bg-accent hover:text-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="relative hidden w-[200px] xl:block">
@@ -44,22 +76,23 @@ export function Header() {
           <input
             type="text"
             placeholder="Zubehör suchen..."
+            aria-label="Zubehör suchen"
             className="h-9 w-full rounded-full border border-border bg-muted/60 pl-9 pr-4 text-[12.5px] outline-none transition focus:border-primary/50 focus:bg-card"
           />
         </div>
 
         <div className="flex items-center gap-1">
-          <button aria-label="Wunschliste" className="grid h-9 w-9 place-items-center rounded-full text-foreground/70 transition hover:bg-accent">
-            <Heart className="h-4 w-4" />
-          </button>
-          <button aria-label="Merkliste" className="grid h-9 w-9 place-items-center rounded-full text-foreground/70 transition hover:bg-accent">
-            <Bookmark className="h-4 w-4" />
-          </button>
+          <Link
+            to="/ratgeber"
+            className="hidden items-center gap-1.5 rounded-full px-3 py-1.5 text-[12.5px] font-medium text-foreground/75 transition hover:bg-accent sm:inline-flex"
+          >
+            <BookOpen className="h-3.5 w-3.5" />
+            Ratgeber
+          </Link>
           <Link
             to="/amazon-picks"
             className="ml-1 inline-flex h-9 items-center gap-1.5 rounded-full bg-gradient-brand px-3.5 text-[12.5px] font-semibold text-white shadow-glow transition hover:opacity-95"
           >
-            <User className="h-3.5 w-3.5" />
             Amazon Picks
           </Link>
         </div>

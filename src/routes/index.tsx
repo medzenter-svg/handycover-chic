@@ -3,25 +3,29 @@ import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Categories } from "@/components/site/Categories";
 import { Bestsellers } from "@/components/site/Bestsellers";
+import { TrustSection } from "@/components/site/TrustSection";
+import { AccessoryFinder } from "@/components/site/AccessoryFinder";
+import { ComparisonTable } from "@/components/site/ComparisonTable";
+import { HomeFaq } from "@/components/site/HomeFaq";
 import { Guides } from "@/components/site/Guides";
 import { TrustAffiliate } from "@/components/site/TrustAffiliate";
 import { Footer } from "@/components/site/Footer";
-import { ErrorReportButton } from "@/components/site/ErrorReportButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HandyCover – Die besten Smartphone Zubehör Empfehlungen" },
+      { title: "HandyCover – Smartphone Zubehör, Hüllen & Amazon Picks" },
       {
         name: "description",
         content:
-          "Entdecke stilvolle Handyhüllen, MagSafe Zubehör, Displayschutz, Ladegeräte, Powerbanks und Tech-Geschenke – sorgfältig ausgewählt und direkt bei Amazon verfügbar.",
+          "Ausgewähltes Smartphone-Zubehör, Handyhüllen, MagSafe, Displayschutz, Ladegeräte und Gadgets mit direktem Amazon-Preischeck und Kaufberatung.",
       },
-      { property: "og:title", content: "HandyCover – Smartphone Zubehör, ausgewählt für dich" },
+      { property: "og:title", content: "HandyCover – Smartphone Zubehör, Hüllen & Amazon Picks" },
       {
         property: "og:description",
-        content: "Stilvoll. Praktisch. Ausgewählt. Die besten Amazon Picks für dein Smartphone.",
+        content: "Ausgewähltes Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
       },
+      { name: "robots", content: "index, follow" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,12 +46,15 @@ function Index() {
       <main className="pb-10">
         <Hero />
         <Categories />
+        <AccessoryFinder />
         <Bestsellers />
+        <TrustSection />
+        <ComparisonTable />
         <TrustAffiliate />
         <Guides />
+        <HomeFaq />
       </main>
       <Footer />
-      <ErrorReportButton />
     </div>
   );
 }

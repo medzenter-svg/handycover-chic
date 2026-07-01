@@ -20,9 +20,9 @@ function shortLabel(p: Product): string {
 
 export function ProductCard({ p }: { p: Product }) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card transition hover:border-foreground/20 hover:shadow-[0_18px_40px_-24px_rgba(15,23,42,0.35)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card">
       {/* Image */}
-      <div className="relative flex h-[170px] items-center justify-center overflow-hidden bg-gradient-to-b from-[#f4f5f7] to-[#e9ecf1] p-3">
+      <div className="relative flex h-[170px] items-center justify-center overflow-hidden bg-white p-3">
         <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-white/90 px-2 py-0.5 text-[10.5px] font-semibold tracking-wide text-slate-800 ring-1 ring-slate-200 backdrop-blur">
           {shortLabel(p)}
         </span>
@@ -65,9 +65,10 @@ export function ProductCard({ p }: { p: Product }) {
           href={p.amazonUrl}
           target="_blank"
           rel="nofollow sponsored noopener"
+          aria-label={`${p.title} – Preis auf Amazon prüfen`}
           className="mt-auto inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-3 pt-3 text-[12.5px] font-semibold text-white transition hover:bg-slate-800"
         >
-          Auf Amazon ansehen
+          Preis auf Amazon prüfen
           <ArrowUpRight className="h-3.5 w-3.5" />
         </a>
       </div>

@@ -17,9 +17,9 @@ export function CategoryProductCard({ p }: { p: Product }) {
   const chips = (p.features && p.features.length > 0 ? p.features : [p.badge]).slice(0, 3);
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card transition hover:border-foreground/20 hover:shadow-[0_22px_50px_-28px_rgba(15,23,42,0.4)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card ">
       {/* Image area */}
-      <div className="relative flex h-[240px] items-center justify-center overflow-hidden bg-gradient-to-b from-[#f4f5f7] to-[#e7eaf0] p-5 sm:h-[260px]">
+      <div className="relative flex h-[240px] items-center justify-center overflow-hidden bg-white p-5 sm:h-[260px]">
         <span className="absolute left-3 top-3 z-10 rounded-md bg-white/90 px-2 py-0.5 text-[11px] font-semibold tracking-wide text-slate-800 ring-1 ring-slate-200 backdrop-blur">
           {chips[0]}
         </span>
@@ -75,9 +75,10 @@ export function CategoryProductCard({ p }: { p: Product }) {
           href={p.amazonUrl}
           target="_blank"
           rel="nofollow sponsored noopener"
+          aria-label={`${p.title} – Preis auf Amazon prüfen`}
           className="mt-auto inline-flex h-11 items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-4 text-[13px] font-semibold text-white transition hover:bg-slate-800"
         >
-          Auf Amazon ansehen
+          Preis auf Amazon prüfen
           <ArrowUpRight className="h-4 w-4" />
         </a>
       </div>

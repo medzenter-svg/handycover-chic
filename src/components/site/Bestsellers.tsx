@@ -5,14 +5,31 @@ import { ProductCard } from "./ProductCard";
 // Nur Produkte mit echten Amazon-Links anzeigen
 const activeProducts = products.filter((p) => p.amazonUrl && p.amazonUrl !== "#");
 
-// Kategoriereihenfolge für logische Gruppierung
-const categoryOrder = ["iphone", "samsung", "magsafe", "display", "charging", "powerbanks", "car", "watch", "airpods"];
+// Produkte nach Kategorien gruppieren
+const categoryOrder = ["iphone", "watch", "audio", "display", "samsung", "charging", "earbuds", "magsafe", "ladegeraete", "powerbanks", "car", "airpods", "gifts"];
 
-const sortedProducts = [...activeProducts].sort((a, b) => {
-  const ai = categoryOrder.indexOf(a.category);
-  const bi = categoryOrder.indexOf(b.category);
-  return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
-});
+const grouped: Record<string, typeof activeProducts> = {};
+for (const cat of categoryOrder) {
+  grouped[cat] = activeProducts.filter((p) => p.category === cat);
+}
+// Unbekannte Kategorien ans Ende
+const unknown = activeProducts.filter((p) => !categoryOrder.includes(p.category));
+
+// Interleave: reihum aus jeder Kategorie ein Produkt nehmen
+const interleavedProducts: typeof activeProducts = [];
+const queues = categoryOrder.map((cat) => [...grouped[cat]]);
+let hasMore = true;
+while (hasMore) {
+  hasMore = false;
+  for (const q of queues) {
+    if (q.length > 0) {
+      interleavedProducts.push(q.shift()!);
+      hasMore = true;
+    }
+  }
+}
+// Rest anhängen
+interleavedProducts.push(...unknown);
 
 export function Bestsellers() {
   return (
@@ -36,7 +53,7 @@ export function Bestsellers() {
         Unsere Bestseller-Auswahl hilft dir, schnell beliebtes Zubehör für iPhone, Samsung und andere Smartphones zu finden. Statt endloser Suche zeigen wir kompakte Empfehlungen für Schutz, MagSafe, Displayschutz, Ladegeräte, Powerbanks und Auto-Zubehör.
       </p>
       <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4">
-        {sortedProducts.map((p) => (
+        {interleavedProducts.map((p) => (
           <ProductCard key={p.id} p={p} />
         ))}
       </div>

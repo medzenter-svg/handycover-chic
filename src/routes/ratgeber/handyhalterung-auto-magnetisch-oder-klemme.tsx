@@ -1,33 +1,70 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RatgeberArticle } from "@/components/site/RatgeberArticle";
+
 export const Route = createFileRoute("/ratgeber/handyhalterung-auto-magnetisch-oder-klemme")({
-  head: () => ({ meta: [
-    { title: "Handyhalterung fürs Auto: Magnetisch oder Klemme? | HandyCover" },
-    { name: "description", content: "Vergleich: Magnetische Handyhalterung vs. Klemme fürs Auto. Stabilität, Bedienung und Kaufberatung." },
-    { name: "robots", content: "index, follow" },
-  ]}),
+  head: () => ({
+    meta: [
+      { title: "Handyhalterung fürs Auto: Magnetisch oder Klemme?" },
+      {
+        name: "description",
+        content:
+          "Welche Handyhalterung fürs Auto ist besser: magnetisch oder mit Klemme? Erfahre Vorteile, Nachteile und wichtige Kriterien für sichere Nutzung.",
+      },
+      { name: "robots", content: "index, follow" },
+    ],
+  }),
   component: () => (
     <RatgeberArticle
       title="Handyhalterung fürs Auto: Magnetisch oder Klemme?"
-      description="Vergleich der wichtigsten Halterungstypen für sicheres und bequemes Fahren."
-      intro="Eine gute Handyhalterung fürs Auto sorgt für sichere Navigation und bequeme Bedienung während der Fahrt. Die zwei häufigsten Typen sind magnetische Halterungen und Klemm-Halterungen. Beide haben Vor- und Nachteile."
+      description="Vorteile, Nachteile und wichtige Kriterien für sichere Nutzung im Auto."
+      intro="Eine gute Handyhalterung im Auto macht Navigation und Smartphone-Nutzung übersichtlicher. Besonders häufig sind magnetische Halterungen und Klemmhalterungen. Beide Varianten haben Vorteile. Welche Lösung besser ist, hängt vom Fahrzeug, vom Smartphone, von der Hülle und vom persönlichen Nutzungsverhalten ab."
       publishDate="Juli 2025"
       category="Auto-Zubehör"
       sections={[
-        { heading: "Magnetische Halterungen: Schnell und bequem", content: "Magnetische Halterungen ermöglichen das schnelle Befestigen und Lösen des Smartphones mit einer Hand. Sie sind besonders praktisch für häufiges Ein- und Aussteigen. Wichtig ist eine ausreichende Magnetkraft und eine Metallplatte oder MagSafe-kompatible Hülle." },
-        { heading: "Klemm-Halterungen: Oft stabiler", content: "Klemm-Halterungen halten das Smartphone durch mechanischen Druck. Sie sind oft stabiler als magnetische Halterungen und benötigen keine spezielle Hülle. Das Einlegen und Entnehmen dauert etwas länger." },
-        { heading: "Befestigung: Lüftung, Armaturenbrett oder Scheibe?", content: "Lüftungshalterungen sind einfach zu montieren, können aber den Luftstrom einschränken. Armaturenbrett-Halterungen mit Saugnapf sind flexibel positionierbar. Scheibenhalterungen bieten oft die beste Sicht, können aber die Sicht einschränken." },
-        { heading: "MagSafe im Auto: Ideal für iPhone-Nutzer", content: "Für iPhone-Nutzer mit MagSafe-kompatibler Hülle sind magnetische MagSafe-Autohalterungen besonders praktisch. Sie bieten starke Magnetkraft und können gleichzeitig laden." },
+        {
+          heading: "Magnetische Handyhalterungen",
+          content:
+            "Magnetische Halterungen sind besonders bequem. Das Smartphone wird schnell befestigt und lässt sich ebenso schnell wieder abnehmen. In Kombination mit MagSafe oder einer magnetischen Hülle kann diese Lösung sehr praktisch sein. Wichtig ist eine starke Magnetkraft und eine stabile Befestigung im Auto. Der Nachteil: Wenn Magnet oder Befestigung zu schwach sind, kann das Smartphone bei Erschütterungen verrutschen. Auch dicke Hüllen können die Magnetkraft verringern.",
+        },
+        {
+          heading: "Klemmhalterungen",
+          content:
+            "Klemmhalterungen halten das Smartphone mechanisch fest. Sie können besonders stabil sein und funktionieren mit vielen Smartphone-Modellen. Sie sind oft eine gute Wahl, wenn das Handy sicher fixiert werden soll. Der Nachteil: Das Einsetzen und Herausnehmen dauert etwas länger. Außerdem können sehr große Smartphones oder dicke Hüllen nicht in jede Halterung passen.",
+        },
+        {
+          heading: "Befestigung im Auto",
+          content:
+            "Handyhalterungen können an Lüftungsgittern, am Armaturenbrett oder an der Windschutzscheibe befestigt werden. Wichtig ist, dass die Sicht auf die Straße nicht behindert wird. Die Halterung sollte nicht wackeln und das Smartphone in einem sinnvollen Blickwinkel halten.",
+        },
+        {
+          heading: "Kaufberatung",
+          content:
+            "Achte beim Kauf auf: stabile Befestigung, passende Größe, Kompatibilität mit Hülle oder MagSafe, gute Erreichbarkeit, sicherer Blickwinkel, kein Wackeln während der Fahrt, einfache Bedienung. Für kurze Alltagsfahrten sind magnetische Halterungen sehr bequem. Für maximale Stabilität kann eine gute Klemmhalterung die bessere Wahl sein.",
+        },
       ]}
       faqs={[
-        { q: "Welche Autohalterung ist am stabilsten?", a: "Klemm-Halterungen sind oft stabiler, magnetische Halterungen aber bequemer. Für raue Straßen oder schwere Smartphones kann eine Klemme besser sein." },
-        { q: "Ist eine Handyhalterung im Auto legal?", a: "Das Smartphone darf während der Fahrt nicht in der Hand gehalten werden. Eine Halterung ist erlaubt, solange die Sicht nicht eingeschränkt wird." },
-        { q: "Kann ich MagSafe im Auto nutzen?", a: "Ja, mit einer MagSafe-kompatiblen Autohalterung und einer passenden iPhone-Hülle ist das möglich." },
+        {
+          q: "Was ist besser: Magnet oder Klemme?",
+          a: "Magnetische Halterungen sind bequemer, Klemmhalterungen oft stabiler. Die beste Wahl hängt vom Fahrzeug und der Nutzung ab.",
+        },
+        {
+          q: "Sind magnetische Handyhalterungen sicher?",
+          a: "Ja, wenn Magnetkraft und Befestigung stark genug sind. Bei MagSafe-kompatiblen Geräten können sie besonders praktisch sein.",
+        },
+        {
+          q: "Wo sollte die Handyhalterung im Auto sitzen?",
+          a: "Sie sollte gut sichtbar sein, aber nicht die Sicht auf die Straße behindern. Außerdem sollte sie während der Fahrt stabil bleiben.",
+        },
+        {
+          q: "Brauche ich zusätzlich ein Autoladegerät?",
+          a: "Für längere Fahrten ist ein gutes USB-C-Autoladegerät sinnvoll, besonders wenn Navigation genutzt wird.",
+        },
       ]}
       internalLinks={[
         { label: "Auto-Zubehör", to: "/auto-zubehoer" },
         { label: "MagSafe Zubehör", to: "/magsafe-zubehoer" },
         { label: "Ladegeräte & Kabel", to: "/ladegeraete-kabel" },
+        { label: "Reise-Zubehör", to: "/reise-zubehoer" },
       ]}
     />
   ),

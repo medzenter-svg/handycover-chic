@@ -10,6 +10,9 @@ function neutralHint(p: Product): string {
   if (p.category === "car") return "Für unterwegs";
   if (p.category === "watch") return "Für Smartwatch";
   if (p.category === "airpods") return "Für Earbuds";
+  if (p.category === "audio") return "Für Earbuds";
+  if (p.category === "earbuds") return "Für Earbuds";
+  if (p.category === "ladegeraete") return "Kabel & Organizer";
   return "Top Zubehör";
 }
 
@@ -22,7 +25,7 @@ export function ProductCard({ p }: { p: Product }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card">
       {/* Image */}
-      <div className="relative flex h-[170px] items-center justify-center overflow-hidden bg-white p-3">
+      <div className="relative flex h-[242px] items-center justify-center overflow-hidden bg-white p-3">
         <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-white/90 px-2 py-0.5 text-[10.5px] font-semibold tracking-wide text-slate-800 ring-1 ring-slate-200 backdrop-blur">
           {shortLabel(p)}
         </span>
@@ -37,7 +40,7 @@ export function ProductCard({ p }: { p: Product }) {
           width={260}
           height={260}
           loading="lazy"
-          className="h-[140px] w-[140px] object-contain object-center drop-shadow-[0_10px_18px_rgba(15,23,42,0.18)] transition duration-500 group-hover:scale-[1.04]"
+          className="h-[200px] w-[200px] object-contain object-center transition duration-500 group-hover:scale-[1.04]"
         />
       </div>
 

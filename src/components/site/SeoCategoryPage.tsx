@@ -80,7 +80,7 @@ export function SeoCategoryPage({
   affiliateNote,
 }: Props) {
   const allProducts = category
-    ? products.filter((p) => p.category === category && p.amazonUrl && p.amazonUrl !== "#")
+    ? products.filter((p) => (p.category === category || (p.categories && p.categories.includes(category))) && p.amazonUrl && p.amazonUrl !== "#")
     : products.filter((p) => p.amazonUrl && p.amazonUrl !== "#");
 
   return (
@@ -89,28 +89,25 @@ export function SeoCategoryPage({
       <main className="pb-12">
         {/* HERO */}
         <section className="mx-auto max-w-[1400px] px-4 pt-6 sm:px-6">
-          <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-pink-50 via-fuchsia-50 to-violet-100 p-6 shadow-card md:p-10">
+          <div className="relative overflow-hidden rounded-2xl border border-border/60 bg-gradient-to-br from-pink-50 via-fuchsia-50 to-violet-100 px-5 py-3 shadow-card">
             <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-to-br from-pink-200/70 to-purple-200/40 blur-3xl" />
             <div className="pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-gradient-to-br from-fuchsia-200/60 to-indigo-200/40 blur-3xl" />
-            <div className="relative max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-purple-700 shadow-soft ring-1 ring-white">
-                <Zap className="h-3.5 w-3.5" /> Amazon Affiliate Auswahl
+            <div className="relative flex flex-wrap items-center gap-x-6 gap-y-1">
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-purple-700 shadow-soft ring-1 ring-white whitespace-nowrap">
+                <Zap className="h-3 w-3" /> Amazon Affiliate Auswahl
               </span>
-              <h1 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl">
+              <h1 className="text-[15px] font-extrabold tracking-tight">
                 <span className="text-gradient-brand">{h1}</span>
               </h1>
-              <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-foreground/70 md:text-[15px]">
-                {description}
-              </p>
-              <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[13px] font-semibold text-foreground/80">
-                <li className="inline-flex items-center gap-1.5">
-                  <CheckCircle2 className="h-4 w-4 text-pink-500" /> Sorgfältig ausgewählt
+              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-[11.5px] font-semibold text-foreground/80">
+                <li className="inline-flex items-center gap-1">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-pink-500" /> Sorgfältig ausgewählt
                 </li>
-                <li className="inline-flex items-center gap-1.5">
-                  <CheckCircle2 className="h-4 w-4 text-fuchsia-500" /> Direkt zu Amazon
+                <li className="inline-flex items-center gap-1">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-fuchsia-500" /> Direkt zu Amazon
                 </li>
-                <li className="inline-flex items-center gap-1.5">
-                  <CheckCircle2 className="h-4 w-4 text-violet-500" /> Keine Mehrkosten
+                <li className="inline-flex items-center gap-1">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-violet-500" /> Keine Mehrkosten
                 </li>
               </ul>
             </div>
@@ -118,13 +115,13 @@ export function SeoCategoryPage({
         </section>
 
         {/* SEO INTRO TEXT */}
-        <section className="mx-auto max-w-[1400px] px-4 pt-7 sm:px-6">
-          <div className="rounded-3xl border border-border/60 bg-card p-7 shadow-card md:p-10">
-            <h2 className="text-lg font-extrabold text-foreground">{title}</h2>
-            <p className="mt-3 text-[13.5px] leading-relaxed text-muted-foreground">{intro}</p>
-            <div className="mt-5 border-t border-border/60 pt-5">
-              <h3 className="text-[14px] font-bold text-foreground">Kaufberatung</h3>
-              <p className="mt-2 text-[13.5px] leading-relaxed text-muted-foreground">{buyingGuide}</p>
+        <section className="mx-auto max-w-[1400px] px-4 pt-3 sm:px-6">
+          <div className="rounded-2xl border border-border/60 bg-card px-5 py-3 shadow-card">
+            <h2 className="text-[13.5px] font-extrabold text-foreground">{title}</h2>
+            <p className="mt-1 text-[12px] leading-relaxed text-muted-foreground">{intro}</p>
+            <div className="mt-2 border-t border-border/60 pt-2">
+              <h3 className="text-[12.5px] font-bold text-foreground">Kaufberatung</h3>
+              <p className="mt-1 text-[12px] leading-relaxed text-muted-foreground">{buyingGuide}</p>
             </div>
           </div>
         </section>

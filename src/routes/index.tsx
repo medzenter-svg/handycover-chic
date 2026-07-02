@@ -43,11 +43,25 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      {/* Tierheim Top-Bar */}
+      <div className="w-full bg-gradient-to-r from-pink-400 via-fuchsia-400 to-violet-500 py-2 px-4">
+        <div className="mx-auto flex max-w-[1400px] items-center justify-center gap-3">
+          <span className="text-sm font-bold text-white">🐾 15 % unserer Einnahmen spenden wir an Tierheime.</span>
+        </div>
+      </div>
       <main className="pb-10">
         <Hero />
         <Categories />
         <AccessoryFinder />
         <Bestsellers />
+        {/* Tierheim Banner */}
+        <div className="mx-auto max-w-[1400px] px-4 py-4 sm:px-6">
+          <img
+            src="/assets/tierheim-banner.jpg"
+            alt="15 % unserer Einnahmen spenden wir an Tierheime"
+            className="w-full rounded-2xl object-cover"
+          />
+        </div>
         <TrustSection />
         <ComparisonTable />
         <TrustAffiliate />

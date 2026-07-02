@@ -15,6 +15,17 @@ export const Route = createFileRoute("/powerbanks")({
       description="Ausgewählte Powerbanks für verschiedene Situationen – mit direktem Amazon-Link und klarer Kaufberatung."
       intro="Eine Powerbank ist praktisch, wenn unterwegs keine Steckdose verfügbar ist. Ob auf Reisen, im Auto, bei der Arbeit oder im Notfall – mit einer passenden Powerbank bleibt das Smartphone länger nutzbar. HandyCover zeigt ausgewählte Powerbanks für verschiedene Situationen. Wichtig sind Kapazität, Größe, Gewicht, USB-C, Ladeleistung und die Anzahl der Anschlüsse."
       buyingGuide="Für den Alltag reicht oft eine kompakte Powerbank. Für Reisen oder mehrere Geräte lohnt sich eine höhere Kapazität. Achte auf USB-C, Ladeleistung, Größe, Gewicht, Sicherheitsfunktionen und die Anzahl der Anschlüsse. Für iPhones kann eine MagSafe-Powerbank bequem sein."
+      sidebarCards={[
+        {
+          href: "https://amzn.to/4eFOoio",
+          image: "/assets/products/vrurc-powerbank-20000mah-rosa.jpg",
+          alt: "VRURC Powerbank 20000mAh rosa USB-C",
+          label: "Empfehlung",
+          title: "VRURC Powerbank 20000mAh",
+          subtitle: "22.5W · USB-C · Rosa · LED",
+          accentColor: "text-pink-500",
+        },
+      ]}
       category="powerbanks"
       faqs={[
         { q: "Wie viel mAh sollte eine Powerbank haben?", a: "Für den Alltag sind 5.000 bis 10.000 mAh oft ausreichend. Für Reisen oder mehrere Geräte können 20.000 mAh sinnvoll sein." },

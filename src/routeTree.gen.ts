@@ -28,6 +28,7 @@ import { Route as AutoZubehoerRouteImport } from './routes/auto-zubehoer'
 import { Route as AmazonPicksRouteImport } from './routes/amazon-picks'
 import { Route as AffiliateHinweisRouteImport } from './routes/affiliate-hinweis'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as RatgeberIndexRouteImport } from './routes/ratgeber/index'
 import { Route as RatgeberWelcheHandyhuelleSchuetztAmBestenRouteImport } from './routes/ratgeber/welche-handyhuelle-schuetzt-am-besten'
 import { Route as RatgeberWasserdichteHandyhuelleRouteImport } from './routes/ratgeber/wasserdichte-handyhuelle'
 import { Route as RatgeberUsbCLadegeraetWievielWattRouteImport } from './routes/ratgeber/usb-c-ladegeraet-wieviel-watt'
@@ -132,6 +133,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RatgeberIndexRoute = RatgeberIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => RatgeberRoute,
+} as any)
 const RatgeberWelcheHandyhuelleSchuetztAmBestenRoute =
   RatgeberWelcheHandyhuelleSchuetztAmBestenRouteImport.update({
     id: '/welche-handyhuelle-schuetzt-am-besten',
@@ -209,6 +215,7 @@ export interface FileRoutesByFullPath {
   '/ratgeber/usb-c-ladegeraet-wieviel-watt': typeof RatgeberUsbCLadegeraetWievielWattRoute
   '/ratgeber/wasserdichte-handyhuelle': typeof RatgeberWasserdichteHandyhuelleRoute
   '/ratgeber/welche-handyhuelle-schuetzt-am-besten': typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
+  '/ratgeber/': typeof RatgeberIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -225,7 +232,6 @@ export interface FileRoutesByTo {
   '/ladegeraete-kabel': typeof LadegeraeteKabelRoute
   '/magsafe-zubehoer': typeof MagsafeZubehoerRoute
   '/powerbanks': typeof PowerbanksRoute
-  '/ratgeber': typeof RatgeberRouteWithChildren
   '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
   '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
@@ -238,6 +244,7 @@ export interface FileRoutesByTo {
   '/ratgeber/usb-c-ladegeraet-wieviel-watt': typeof RatgeberUsbCLadegeraetWievielWattRoute
   '/ratgeber/wasserdichte-handyhuelle': typeof RatgeberWasserdichteHandyhuelleRoute
   '/ratgeber/welche-handyhuelle-schuetzt-am-besten': typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
+  '/ratgeber': typeof RatgeberIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -268,6 +275,7 @@ export interface FileRoutesById {
   '/ratgeber/usb-c-ladegeraet-wieviel-watt': typeof RatgeberUsbCLadegeraetWievielWattRoute
   '/ratgeber/wasserdichte-handyhuelle': typeof RatgeberWasserdichteHandyhuelleRoute
   '/ratgeber/welche-handyhuelle-schuetzt-am-besten': typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
+  '/ratgeber/': typeof RatgeberIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -299,6 +307,7 @@ export interface FileRouteTypes {
     | '/ratgeber/usb-c-ladegeraet-wieviel-watt'
     | '/ratgeber/wasserdichte-handyhuelle'
     | '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
+    | '/ratgeber/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -315,7 +324,6 @@ export interface FileRouteTypes {
     | '/ladegeraete-kabel'
     | '/magsafe-zubehoer'
     | '/powerbanks'
-    | '/ratgeber'
     | '/reise-zubehoer'
     | '/samsung-zubehoer'
     | '/smartwatch-zubehoer'
@@ -328,6 +336,7 @@ export interface FileRouteTypes {
     | '/ratgeber/usb-c-ladegeraet-wieviel-watt'
     | '/ratgeber/wasserdichte-handyhuelle'
     | '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
+    | '/ratgeber'
   id:
     | '__root__'
     | '/'
@@ -357,6 +366,7 @@ export interface FileRouteTypes {
     | '/ratgeber/usb-c-ladegeraet-wieviel-watt'
     | '/ratgeber/wasserdichte-handyhuelle'
     | '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
+    | '/ratgeber/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -516,6 +526,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ratgeber/': {
+      id: '/ratgeber/'
+      path: '/'
+      fullPath: '/ratgeber/'
+      preLoaderRoute: typeof RatgeberIndexRouteImport
+      parentRoute: typeof RatgeberRoute
+    }
     '/ratgeber/welche-handyhuelle-schuetzt-am-besten': {
       id: '/ratgeber/welche-handyhuelle-schuetzt-am-besten'
       path: '/welche-handyhuelle-schuetzt-am-besten'
@@ -584,6 +601,7 @@ interface RatgeberRouteChildren {
   RatgeberUsbCLadegeraetWievielWattRoute: typeof RatgeberUsbCLadegeraetWievielWattRoute
   RatgeberWasserdichteHandyhuelleRoute: typeof RatgeberWasserdichteHandyhuelleRoute
   RatgeberWelcheHandyhuelleSchuetztAmBestenRoute: typeof RatgeberWelcheHandyhuelleSchuetztAmBestenRoute
+  RatgeberIndexRoute: typeof RatgeberIndexRoute
 }
 
 const RatgeberRouteChildren: RatgeberRouteChildren = {
@@ -602,6 +620,7 @@ const RatgeberRouteChildren: RatgeberRouteChildren = {
   RatgeberWasserdichteHandyhuelleRoute: RatgeberWasserdichteHandyhuelleRoute,
   RatgeberWelcheHandyhuelleSchuetztAmBestenRoute:
     RatgeberWelcheHandyhuelleSchuetztAmBestenRoute,
+  RatgeberIndexRoute: RatgeberIndexRoute,
 }
 
 const RatgeberRouteWithChildren = RatgeberRoute._addFileChildren(

@@ -19,7 +19,7 @@ export function CategoryProductCard({ p }: { p: Product }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card ">
       {/* Image area */}
-      <div className="relative flex h-[240px] items-center justify-center overflow-hidden bg-white p-5 sm:h-[260px]">
+      <div className="relative h-[240px] overflow-hidden bg-white sm:h-[260px]">
         <span className="absolute left-3 top-3 z-10 rounded-md bg-white/90 px-2 py-0.5 text-[11px] font-semibold tracking-wide text-slate-800 ring-1 ring-slate-200 backdrop-blur">
           {chips[0]}
         </span>
@@ -32,7 +32,8 @@ export function CategoryProductCard({ p }: { p: Product }) {
           src={p.image}
           alt={p.title}
           loading="lazy"
-          className="relative z-[1] h-[82%] w-[82%] object-contain object-center drop-shadow-[0_18px_24px_rgba(15,23,42,0.22)] transition duration-500 group-hover:scale-[1.04]"
+          className="absolute inset-[3px] h-[calc(100%-6px)] w-[calc(100%-6px)] object-contain object-center transition duration-500 group-hover:scale-[1.04]"
+          style={{ maxWidth: '100%', maxHeight: '100%' }}
         />
       </div>
 

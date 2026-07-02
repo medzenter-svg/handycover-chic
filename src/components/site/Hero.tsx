@@ -1,11 +1,10 @@
-import { Check, ChevronLeft, ChevronRight, Sparkles, Shield, Truck, BadgeCheck, Star } from "lucide-react";
-import pCase from "@/assets/p-case-premium.jpg";
+import { Check, Sparkles, Shield, Truck, BadgeCheck } from "lucide-react";
 import heroProducts from "@/assets/hero-products-brand.jpg";
 
 export function Hero() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 pt-6">
-      <div className="grid gap-5 lg:grid-cols-[1.55fr_1fr]">
+      <div className="grid gap-5">
         <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-7 shadow-card md:p-10">
           <div className="relative z-10 grid items-center gap-6 md:grid-cols-[1fr_1.55fr]">
             <div>
@@ -55,100 +54,36 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="relative">
-              <img
-                src={heroProducts}
-                alt="Premium Smartphone Zubehör – Handyhüllen, MagSafe, Displayschutz und Ladegeräte"
-                width={1408}
-                height={1216}
-                className="aspect-square w-full rounded-2xl object-cover shadow-card"
-              />
+            <div className="relative flex items-center justify-center">
+              <a
+                href="https://amzn.to/4p6oLec"
+                target="_blank"
+                rel="nofollow sponsored noopener"
+                className="group mx-auto flex w-full max-w-xs flex-col items-center justify-center gap-3 rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-card to-purple/10 p-5 shadow-card transition hover:border-primary/60 hover:shadow-glow"
+              >
+                <img
+                  src="/assets/products/samsung-ladestation-s26-3in1-new.jpg"
+                  alt="Induktive Ladestation Samsung S26 Ultra 3 in 1 Galaxy Watch Buds3"
+                  className="h-48 w-auto rounded-xl object-contain shadow-card"
+                />
+                <div className="text-center">
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">Empfehlung der Woche</p>
+                  <h3 className="mt-1.5 text-lg font-extrabold leading-snug tracking-tight text-foreground">
+                    Induktive Ladestation für Samsung S26 Ultra
+                  </h3>
+                  <p className="mt-1 text-[12.5px] text-muted-foreground">
+                    3 in 1 – Galaxy S26/S25/S24/Z Flip 7, Watch 8/7/Ultra/6/5, Buds3/3 Pro
+                  </p>
+                </div>
+                <span className="inline-flex h-8 w-full items-center justify-center rounded-full bg-[#4B0082] px-4 text-[11px] font-bold text-white shadow transition group-hover:bg-[#3a006b]">
+                  Bei Amazon ansehen →
+                </span>
+                <p className="text-[10px] text-muted-foreground">*Affiliate-Link – keine Mehrkosten für dich</p>
+              </a>
             </div>
           </div>
         </div>
 
-        <aside className="flex flex-col rounded-3xl bg-card p-5 shadow-card md:p-6">
-          <div className="flex items-center justify-between">
-            <h3 className="text-base font-bold">Empfehlung der Woche</h3>
-            <span className="rounded-full bg-purple/30 px-2.5 py-1 text-[10px] font-bold text-foreground">
-              Bestseller
-            </span>
-          </div>
-
-          <div className="mt-4 grid grid-cols-[110px_1fr] gap-4">
-            <div className="grid aspect-square place-items-center overflow-hidden rounded-2xl bg-white p-2">
-              <img src={pCase} alt="Transparente MagSafe-Hülle für iPhone" width={440} height={440} className="h-[94px] w-[94px] object-contain object-center" />
-            </div>
-
-            <div className="min-w-0">
-              <h4 className="text-[15px] font-bold leading-snug">
-                Transparente MagSafe-Hülle für iPhone 16 Pro
-              </h4>
-              <div className="mt-1 flex items-center gap-1 text-[11px] text-muted-foreground">
-                <span className="flex">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
-                  ))}
-                </span>
-                <span>(2.654)</span>
-              </div>
-              <div className="mt-1.5 flex items-baseline gap-2">
-                <span className="text-xl font-extrabold text-gradient-brand">19,99 €</span>
-                <span className="text-[11px] text-muted-foreground line-through">statt 24,99 €</span>
-              </div>
-            </div>
-          </div>
-
-          <ul className="mt-4 space-y-1.5 text-[13px] text-foreground/80">
-            {[
-              "Kristallklares Design mit optimalem Schutz",
-              "Erhöhte Kanten für Display und Kamera",
-              "Kompatibel mit MagSafe",
-              "Schlank, leicht und langlebig",
-            ].map((b) => (
-              <li key={b} className="flex items-start gap-2">
-                <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" />
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
-
-          {/* TODO: Amazon-Link wird zentral in src/data/products.ts (Produkt "spigen-ultra-hybrid") gepflegt */}
-          <div className="mt-auto grid grid-cols-1 gap-2 pt-5">
-            <a
-              href="#"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-gradient-brand text-[13px] font-semibold text-white shadow-glow"
-            >
-              Bei Amazon ansehen
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-              className="inline-flex h-11 items-center justify-center rounded-full border border-border bg-card text-[13px] font-semibold text-foreground hover:bg-muted"
-            >
-              Preis prüfen
-            </a>
-          </div>
-
-          <div className="mt-4 flex items-center justify-between text-muted-foreground">
-            <div className="flex gap-1.5">
-              <span className="h-1.5 w-5 rounded-full bg-primary" />
-              <span className="h-1.5 w-1.5 rounded-full bg-border" />
-              <span className="h-1.5 w-1.5 rounded-full bg-border" />
-            </div>
-            <div className="flex gap-1.5">
-              <button aria-label="Zurück" className="grid h-7 w-7 place-items-center rounded-full border border-border hover:bg-muted">
-                <ChevronLeft className="h-3.5 w-3.5" />
-              </button>
-              <button aria-label="Weiter" className="grid h-7 w-7 place-items-center rounded-full border border-border hover:bg-muted">
-                <ChevronRight className="h-3.5 w-3.5" />
-              </button>
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
   );

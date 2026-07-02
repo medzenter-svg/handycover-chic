@@ -4,8 +4,8 @@ import { Search, ChevronDown, Sparkles, BookOpen } from "lucide-react";
 import { categorySlugs } from "@/data/products";
 
 const nav: { label: string; to: string }[] = [
-  { label: "iPhone Zubehör", to: categorySlugs.iphone },
-  { label: "Samsung Zubehör", to: categorySlugs.samsung },
+  { label: "iPhone", to: categorySlugs.iphone },
+  { label: "Samsung", to: categorySlugs.samsung },
   { label: "MagSafe Zubehör", to: categorySlugs.magsafe },
   { label: "Displayschutz", to: categorySlugs.display },
   { label: "Ladegeräte & Kabel", to: categorySlugs.charging },
@@ -40,8 +40,8 @@ export function Header() {
             <Link
               key={item.to}
               to={item.to}
-              className="rounded-full px-2 py-1.5 text-[12.5px] font-medium text-foreground/75 transition hover:bg-accent hover:text-foreground"
-              activeProps={{ className: "rounded-full px-2 py-1.5 text-[12.5px] font-semibold text-foreground bg-accent" }}
+              className="whitespace-nowrap rounded-full px-2 py-1.5 text-[12.5px] font-medium text-foreground/75 transition hover:bg-accent hover:text-foreground"
+              activeProps={{ className: "whitespace-nowrap rounded-full px-2 py-1.5 text-[12.5px] font-semibold text-foreground bg-accent" }}
             >
               {item.label}
             </Link>

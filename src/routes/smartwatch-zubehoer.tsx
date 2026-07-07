@@ -19,7 +19,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
       sidebarCards={[
         {
           href: "https://amzn.to/4giFcS9",
-          image: "/assets/products/sundara-nylon-armband-garmin-galaxy-amazfit.jpeg",
+          image: "/assets/products/sundara-nylon-armband-garmin-galaxy-amazfit.webp",
           alt: "Sundara Nylon Armband Garmin Galaxy Amazfit",
           label: "Empfehlung",
           title: "Sundara Nylon Armband",
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4v6Tf0Y",
-          image: "/assets/products/chinbersky-nylon-armband-samsung-galaxy-watch.jpeg",
+          image: "/assets/products/chinbersky-nylon-armband-samsung-galaxy-watch.webp",
           alt: "chinbersky Nylon Armband Samsung Galaxy Watch",
           label: "Empfehlung",
           title: "chinbersky Nylon Armband 20mm",
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/3SHVFWf",
-          image: "/assets/products/neitra-diamanten-huelle-apple-watch-40mm.jpeg",
+          image: "/assets/products/neitra-diamanten-huelle-apple-watch-40mm.webp",
           alt: "Neitra Diamanten Hülle Apple Watch 40mm 3 Stück",
           label: "Empfehlung",
           title: "Neitra Diamanten Hülle 3er Set",
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/447Bl3e",
-          image: "/assets/products/jetech-huelle-samsung-galaxy-watch-7-40mm-gruen.jpeg",
+          image: "/assets/products/jetech-huelle-samsung-galaxy-watch-7-40mm-gruen.webp",
           alt: "JETech Hülle Samsung Galaxy Watch 7 40mm Grün",
           label: "Empfehlung",
           title: "JETech Hülle 2er Set",
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4gXg9US",
-          image: "/assets/products/8er-nylon-armband-apple-watch.jpeg",
+          image: "/assets/products/8er-nylon-armband-apple-watch.webp",
           alt: "8 Stück Geflochtenes Nylon Armband Apple Watch",
           label: "Empfehlung",
           title: "8er Nylon Armband Set",
@@ -59,7 +59,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/44DfH70",
-          image: "/assets/products/diruite-huelle-apple-watch-se-40mm-schwarz.jpeg",
+          image: "/assets/products/diruite-huelle-apple-watch-se-40mm-schwarz.webp",
           alt: "Diruite Hülle Apple Watch SE 40mm Schwarz 2 Stück",
           label: "Empfehlung",
           title: "Diruite Hülle 2er Set",
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/3SHWj67",
-          image: "/assets/products/magnetisches-lederarmband-apple-watch-pink.jpeg",
+          image: "/assets/products/magnetisches-lederarmband-apple-watch-pink.webp",
           alt: "Magnetisches Lederarmband Apple Watch Pink",
           label: "Empfehlung",
           title: "Magnetisches Lederarmband",
@@ -75,7 +75,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4oZ2miJ",
-          image: "/assets/products/misxi-huelle-apple-watch-se-44mm-schwarz.jpeg",
+          image: "/assets/products/misxi-huelle-apple-watch-se-44mm-schwarz.webp",
           alt: "Misxi Hülle Apple Watch SE 44mm Schwarz 2 Stück",
           label: "Empfehlung",
           title: "Misxi Hard Hülle 2er Set",
@@ -83,7 +83,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4y1OmZK",
-          image: "/assets/products/bangting-armband-xiaomi-mi-band-10-9-8.jpeg",
+          image: "/assets/products/bangting-armband-xiaomi-mi-band-10-9-8.webp",
           alt: "BANGTING Ersatzarmband Xiaomi Mi Band 10/9/8 mehrere Farben",
           label: "Empfehlung",
           title: "BANGTING Armband 3–12 Stück",
@@ -91,7 +91,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4oVvRlq",
-          image: "/assets/products/diruite-huelle-apple-watch-ultra-49mm-titan.jpeg",
+          image: "/assets/products/diruite-huelle-apple-watch-ultra-49mm-titan.webp",
           alt: "Diruite Hülle Apple Watch Ultra 49mm Titanstahl 2 Stück",
           label: "Empfehlung",
           title: "Diruite Ultra Hülle 2er Set",
@@ -99,7 +99,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/3Te4hnD",
-          image: "/assets/products/simpeak-huelle-huawei-watch-fit-3-5stueck.jpeg",
+          image: "/assets/products/simpeak-huelle-huawei-watch-fit-3-5stueck.webp",
           alt: "Simpeak Schutzhülle Huawei Watch Fit 3 5 Stück",
           label: "Empfehlung",
           title: "Simpeak TPU Hülle 5er Set",
@@ -107,7 +107,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/3RiHuGN",
-          image: "/assets/products/fullmosa-lederarmband-apple-watch-creme-rosa.jpeg",
+          image: "/assets/products/fullmosa-lederarmband-apple-watch-creme-rosa.webp",
           alt: "Fullmosa Lederarmband Apple Watch Creme Rosa",
           label: "Empfehlung",
           title: "Fullmosa Lederarmband",
@@ -115,7 +115,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/448ibdw",
-          image: "/assets/products/amsky-6er-silikon-armband-apple-watch.jpeg",
+          image: "/assets/products/amsky-6er-silikon-armband-apple-watch.webp",
           alt: "AMSKY 6 Stück Silikon Armband Apple Watch",
           label: "Empfehlung",
           title: "AMSKY Silikon Armband 6er Set",
@@ -123,7 +123,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4y7X0pJ",
-          image: "/assets/products/ccnutri-nylon-loop-armband-apple-watch-4stueck.jpeg",
+          image: "/assets/products/ccnutri-nylon-loop-armband-apple-watch-4stueck.webp",
           alt: "CCnutri 4 Stück Nylon Loop Armband Apple Watch",
           label: "Empfehlung",
           title: "CCnutri Nylon Loop 4er Set",
@@ -131,7 +131,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4v8D8Qs",
-          image: "/assets/products/ccnutri-nylon-loop-armband-apple-watch-orange-4stueck.jpeg",
+          image: "/assets/products/ccnutri-nylon-loop-armband-apple-watch-orange-4stueck.webp",
           alt: "CCnutri 4 Stück Nylon Loop Armband Apple Watch Orange Teal Pink",
           label: "Empfehlung",
           title: "CCnutri Nylon Loop 4er Set",
@@ -139,7 +139,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4wlm4rm",
-          image: "/assets/products/maledan-10er-nylon-sport-loop-apple-watch.jpeg",
+          image: "/assets/products/maledan-10er-nylon-sport-loop-apple-watch.webp",
           alt: "Maledan 10 Stück Nylon Sport Loop Armband Apple Watch",
           label: "Empfehlung",
           title: "Maledan Nylon Loop 10er Set",
@@ -147,7 +147,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4v7v56k",
-          image: "/assets/products/apple-watch-series-11-gps-42mm-schwarz.jpeg",
+          image: "/assets/products/apple-watch-series-11-gps-42mm-schwarz.webp",
           alt: "Apple Watch Series 11 GPS 42mm Diamantschwarz",
           label: "Top Pick",
           title: "Apple Watch Series 11 GPS",
@@ -155,7 +155,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/44Dh4ma",
-          image: "/assets/products/apple-watch-se3-gps-cellular-40mm-polarstern.jpeg",
+          image: "/assets/products/apple-watch-se3-gps-cellular-40mm-polarstern.webp",
           alt: "Apple Watch SE 3 GPS Cellular 40mm Polarstern",
           label: "Top Pick",
           title: "Apple Watch SE 3 GPS + Cellular",
@@ -163,7 +163,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/444fedV",
-          image: "/assets/products/apple-watch-series-11-gps-42mm-rosegold.jpeg",
+          image: "/assets/products/apple-watch-series-11-gps-42mm-rosegold.webp",
           alt: "Apple Watch Series 11 GPS 42mm Roségold Blassrosa",
           label: "Top Pick",
           title: "Apple Watch Series 11 GPS",
@@ -171,7 +171,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4xZtcLR",
-          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-schwarz.jpeg",
+          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-schwarz.webp",
           alt: "Apple Watch Ultra 3 GPS Cellular 49mm Titan Schwarz",
           label: "Premium",
           title: "Apple Watch Ultra 3 GPS + Cellular",
@@ -179,7 +179,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4eQ6Chj",
-          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-alpine-loop-schwarz.jpeg",
+          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-alpine-loop-schwarz.webp",
           alt: "Apple Watch Ultra 3 GPS Cellular 49mm Alpine Loop Schwarz",
           label: "Premium",
           title: "Apple Watch Ultra 3 GPS + Cellular",
@@ -187,7 +187,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4b2z0u2",
-          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-natur-ocean-maritimblau.jpeg",
+          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-natur-ocean-maritimblau.webp",
           alt: "Apple Watch Ultra 3 GPS Cellular 49mm Titan Natur Ocean Maritimblau",
           label: "Premium",
           title: "Apple Watch Ultra 3 GPS + Cellular",
@@ -195,7 +195,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/4wmfJvJ",
-          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-natur-trail-loop-blau.jpeg",
+          image: "/assets/products/apple-watch-ultra3-gps-cellular-49mm-natur-trail-loop-blau.webp",
           alt: "Apple Watch Ultra 3 GPS Cellular 49mm Titan Natur Trail Loop Blau",
           label: "Premium",
           title: "Apple Watch Ultra 3 GPS + Cellular",
@@ -203,7 +203,7 @@ export const Route = createFileRoute("/smartwatch-zubehoer")({
         },
         {
           href: "https://amzn.to/448j3Pk",
-          image: "/assets/products/apple-watch-series-11-gps-cellular-42mm-rosegold-blassrosa.jpeg",
+          image: "/assets/products/apple-watch-series-11-gps-cellular-42mm-rosegold-blassrosa.webp",
           alt: "Apple Watch Series 11 GPS Cellular 42mm Roségold Blassrosa",
           label: "Top Pick",
           title: "Apple Watch Series 11 GPS + Cellular",

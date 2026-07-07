@@ -18,7 +18,7 @@ export const Route = createFileRoute("/powerbanks")({
       sidebarCards={[
         {
           href: "https://amzn.to/4eFOoio",
-          image: "/assets/products/vrurc-powerbank-20000mah-rosa.jpg",
+          image: "/assets/products/vrurc-powerbank-20000mah-rosa.webp",
           alt: "VRURC Powerbank 20000mAh rosa USB-C",
           label: "Empfehlung",
           title: "VRURC Powerbank 20000mAh",

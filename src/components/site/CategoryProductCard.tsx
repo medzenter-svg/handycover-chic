@@ -24,7 +24,7 @@ export function CategoryProductCard({ p }: { p: Product }) {
           {chips[0]}
         </span>
         {p.oldPrice && (
-          <span className="absolute right-3 top-3 z-10 rounded-md bg-slate-900 px-2 py-0.5 text-[11px] font-semibold tracking-wide text-white">
+          <span className="absolute right-3 top-3 z-10 rounded-md bg-[#4B0082] px-2 py-0.5 text-[11px] font-semibold tracking-wide text-white">
             Sale
           </span>
         )}
@@ -77,7 +77,7 @@ export function CategoryProductCard({ p }: { p: Product }) {
           target="_blank"
           rel="nofollow sponsored noopener"
           aria-label={`${p.title} – Preis auf Amazon prüfen`}
-          className="mt-auto inline-flex h-11 items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-4 text-[13px] font-semibold text-white transition hover:bg-slate-800"
+          className="mt-auto inline-flex h-11 items-center justify-center gap-1.5 rounded-lg bg-[#4B0082] px-4 text-[13px] font-semibold text-white transition hover:bg-[#3a006b]"
         >
           Preis auf Amazon prüfen
           <ArrowUpRight className="h-4 w-4" />

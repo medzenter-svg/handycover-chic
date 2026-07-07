@@ -18,7 +18,7 @@ export const Route = createFileRoute("/displayschutz")({
       sidebarCards={[
         {
           href: "https://amzn.to/4vKaLJw",
-          image: "/assets/products/newc-panzerglas-samsung-a22-5g.jpg",
+          image: "/assets/products/newc-panzerglas-samsung-a22-5g.webp",
           alt: "NEW'C Panzerglas Samsung Galaxy A22 5G 2 Stück 9H",
           label: "Empfehlung",
           title: "NEW'C Panzerglas Samsung A22 5G",

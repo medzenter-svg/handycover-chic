@@ -1,70 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RatgeberArticle } from "@/components/site/RatgeberArticle";
-
 export const Route = createFileRoute("/ratgeber/powerbank-kaufen-worauf-achten")({
   head: () => ({
     meta: [
-      { title: "Powerbank kaufen: Worauf achten? Kaufberatung | HandyCover" },
-      {
-        name: "description",
-        content:
-          "Kapazität, USB-C, Schnellladen, Gewicht und Preis: Worauf du beim Kauf einer Powerbank wirklich achten solltest.",
-      },
+      { title: "Powerbank kaufen: Worauf achten? – HandyCover Ratgeber" },
+      { name: "description", content: "Kapazität, USB-C, Schnellladen und praktische Tipps beim Powerbank-Kauf." },
       { name: "robots", content: "index, follow" },
     ],
   }),
   component: () => (
     <RatgeberArticle
       title="Powerbank kaufen: Worauf achten?"
-      description="Kapazität, USB-C, Schnellladen, Gewicht und Preis – die wichtigsten Kriterien beim Powerbank-Kauf."
-      intro="Eine Powerbank ist praktisch, wenn unterwegs keine Steckdose verfügbar ist. Beim Kauf gibt es einige wichtige Punkte zu beachten, damit die Powerbank wirklich zu den eigenen Bedürfnissen passt. Kapazität, Ladeleistung, Anschlüsse, Gewicht und Verarbeitung spielen alle eine Rolle."
+      description="Kapazität, USB-C, Schnellladen und praktische Tipps."
+      intro="Eine Powerbank ist praktisch, wenn das Smartphone unterwegs nicht leer werden soll. Besonders auf Reisen, bei langen Arbeitstagen, im Auto oder bei Ausflügen kann eine Powerbank sehr nützlich sein. Beim Kauf sollte man aber nicht nur auf den Preis achten."
       publishDate="Juli 2025"
       category="Powerbanks"
       sections={[
         {
           heading: "Kapazität: Wie viel mAh brauche ich?",
-          content:
-            "Die Kapazität einer Powerbank wird in Milliamperestunden (mAh) angegeben. Für ein Smartphone mit ca. 4.000 mAh Akku reichen 5.000 bis 10.000 mAh für eine bis zwei Ladungen. Für Reisen oder mehrere Geräte kann eine Kapazität von 20.000 mAh sinnvoll sein. Wichtig: Die tatsächlich nutzbare Kapazität ist durch Umwandlungsverluste etwas geringer als der angegebene Wert.",
+          content: "Die Kapazität wird meistens in mAh angegeben. Für den Alltag reicht oft eine Powerbank mit 5.000 bis 10.000 mAh. Damit lässt sich ein Smartphone meist einmal oder mehrmals nachladen. Für Reisen oder mehrere Geräte sind 20.000 mAh praktischer, aber auch größer und schwerer.",
         },
         {
-          heading: "Ladeleistung: Schnellladen spart Zeit",
-          content:
-            "Moderne Powerbanks unterstützen Schnellladen über USB-C Power Delivery. Damit lässt sich das Smartphone deutlich schneller aufladen als mit älteren Powerbanks. Achte auf die Ladeleistung in Watt. Für Smartphones reichen meist 18 bis 30 Watt. Für Tablets oder Laptops kann mehr Leistung sinnvoll sein.",
+          heading: "USB-C ist Standard",
+          content: "Wichtig ist auch der Anschluss. Moderne Powerbanks sollten USB-C haben. USB-C ist schneller, stabiler und passt zu vielen aktuellen Smartphones, Tablets und Ladegeräten. Besonders praktisch ist es, wenn die Powerbank über USB-C geladen werden kann und gleichzeitig andere Geräte über USB-C lädt.",
         },
         {
-          heading: "Anschlüsse: USB-C und mehrere Ports",
-          content:
-            "Moderne Powerbanks sollten mindestens einen USB-C-Anschluss haben. Wer mehrere Geräte gleichzeitig laden möchte, sollte auf mehrere Anschlüsse achten. Einige Powerbanks bieten USB-A und USB-C Anschlüsse kombiniert.",
+          heading: "Schnellladen – Power Delivery beachten",
+          content: "Schnellladen ist ebenfalls ein wichtiger Punkt. Wer ein iPhone oder Samsung Galaxy schnell laden möchte, sollte auf Power Delivery, kurz PD, achten. Je nach Gerät sind 20 Watt, 25 Watt oder mehr sinnvoll.",
         },
         {
-          heading: "Kaufberatung",
-          content:
-            "Für den Alltag und kurze Ausflüge: 5.000 bis 10.000 mAh, kompaktes Format, USB-C. Für Reisen und längere Trips: 20.000 mAh, mehrere Anschlüsse, Schnellladen. Für MagSafe-Nutzer: MagSafe-kompatible Powerbank. Wichtige Kriterien: Kapazität, Ladeleistung, Anschlüsse, Gewicht, Sicherheitszertifizierungen, Verarbeitung.",
+          heading: "MagSafe-Powerbanks für iPhone-Nutzer",
+          content: "MagSafe-Powerbanks sind besonders bequem für iPhone-Nutzer. Sie haften magnetisch am Gerät und laden ohne Kabel. Dafür ist aber eine passende MagSafe-Hülle wichtig.",
+        },
+        {
+          heading: "Unsere Empfehlung",
+          content: "Für die meisten Nutzer ist eine kompakte USB-C-Powerbank mit 10.000 mAh und Schnellladefunktion die beste Wahl. Wer viel reist, kann zu 20.000 mAh greifen.",
         },
       ]}
+      ctaLabel="Powerbanks ansehen"
+      ctaTo="/powerbanks"
       faqs={[
-        {
-          q: "Wie viel mAh braucht eine Powerbank für ein Smartphone?",
-          a: "Für eine vollständige Ladung eines modernen Smartphones reichen in der Regel 5.000 bis 10.000 mAh.",
-        },
-        {
-          q: "Darf man Powerbanks im Flugzeug mitnehmen?",
-          a: "Powerbanks dürfen meist im Handgepäck mitgenommen werden, aber es gelten Kapazitätsgrenzen. Vor dem Flug die Regeln der Airline prüfen.",
-        },
-        {
-          q: "Was ist besser: viele mAh oder hohe Watt-Zahl?",
-          a: "Beides ist wichtig. Viele mAh bedeuten mehr Ladekapazität. Hohe Watt-Zahl bedeutet schnelleres Laden. Für den Alltag ist ein gutes Gleichgewicht ideal.",
-        },
-        {
-          q: "Ist eine MagSafe-Powerbank sinnvoll?",
-          a: "Für kompatible iPhones ist eine MagSafe-Powerbank praktisch, weil sie magnetisch hält und kein Kabel benötigt.",
-        },
+        { q: "Wie viel mAh brauche ich für eine Powerbank?", a: "Für den Alltag reichen 5.000–10.000 mAh. Für Reisen oder mehrere Geräte sind 20.000 mAh sinnvoller." },
+        { q: "Was ist Power Delivery bei Powerbanks?", a: "Power Delivery (PD) ist eine Schnellladetechnik. Ladegerät und Gerät kommunizieren und nutzen die passende Ladeleistung – effizienter und sicherer." },
+        { q: "Kann ich mit einer Powerbank auch ein iPad laden?", a: "Ja, wenn die Powerbank USB-C mit ausreichend Watt hat. Für Tablets empfehlen sich 30 Watt oder mehr." },
+        { q: "Was sind MagSafe-Powerbanks?", a: "Powerbanks, die magnetisch am iPhone haften und kabellos laden. Praktisch unterwegs, aber eine MagSafe-kompatible Hülle ist Voraussetzung." },
       ]}
       internalLinks={[
         { label: "Powerbanks", to: "/powerbanks" },
         { label: "Ladegeräte & Kabel", to: "/ladegeraete-kabel" },
-        { label: "Reise-Zubehör", to: "/reise-zubehoer" },
         { label: "MagSafe Zubehör", to: "/magsafe-zubehoer" },
+        { label: "Ratgeber", to: "/ratgeber" },
       ]}
     />
   ),

@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as UeberHandycoverRouteImport } from './routes/ueber-handycover'
+import { Route as SucheRouteImport } from './routes/suche'
 import { Route as SmartwatchZubehoerRouteImport } from './routes/smartwatch-zubehoer'
 import { Route as SamsungZubehoerRouteImport } from './routes/samsung-zubehoer'
 import { Route as ReiseZubehoerRouteImport } from './routes/reise-zubehoer'
@@ -41,6 +42,11 @@ import { Route as RatgeberGeschenkideenFuerTechFansRouteImport } from './routes/
 const UeberHandycoverRoute = UeberHandycoverRouteImport.update({
   id: '/ueber-handycover',
   path: '/ueber-handycover',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SucheRoute = SucheRouteImport.update({
+  id: '/suche',
+  path: '/suche',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SmartwatchZubehoerRoute = SmartwatchZubehoerRouteImport.update({
@@ -206,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
   '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
+  '/suche': typeof SucheRoute
   '/ueber-handycover': typeof UeberHandycoverRoute
   '/ratgeber/geschenkideen-fuer-tech-fans': typeof RatgeberGeschenkideenFuerTechFansRoute
   '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
@@ -235,6 +242,7 @@ export interface FileRoutesByTo {
   '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
   '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
+  '/suche': typeof SucheRoute
   '/ueber-handycover': typeof UeberHandycoverRoute
   '/ratgeber/geschenkideen-fuer-tech-fans': typeof RatgeberGeschenkideenFuerTechFansRoute
   '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
@@ -266,6 +274,7 @@ export interface FileRoutesById {
   '/reise-zubehoer': typeof ReiseZubehoerRoute
   '/samsung-zubehoer': typeof SamsungZubehoerRoute
   '/smartwatch-zubehoer': typeof SmartwatchZubehoerRoute
+  '/suche': typeof SucheRoute
   '/ueber-handycover': typeof UeberHandycoverRoute
   '/ratgeber/geschenkideen-fuer-tech-fans': typeof RatgeberGeschenkideenFuerTechFansRoute
   '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme': typeof RatgeberHandyhalterungAutoMagnetischOderKlemmeRoute
@@ -298,6 +307,7 @@ export interface FileRouteTypes {
     | '/reise-zubehoer'
     | '/samsung-zubehoer'
     | '/smartwatch-zubehoer'
+    | '/suche'
     | '/ueber-handycover'
     | '/ratgeber/geschenkideen-fuer-tech-fans'
     | '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
@@ -327,6 +337,7 @@ export interface FileRouteTypes {
     | '/reise-zubehoer'
     | '/samsung-zubehoer'
     | '/smartwatch-zubehoer'
+    | '/suche'
     | '/ueber-handycover'
     | '/ratgeber/geschenkideen-fuer-tech-fans'
     | '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
@@ -357,6 +368,7 @@ export interface FileRouteTypes {
     | '/reise-zubehoer'
     | '/samsung-zubehoer'
     | '/smartwatch-zubehoer'
+    | '/suche'
     | '/ueber-handycover'
     | '/ratgeber/geschenkideen-fuer-tech-fans'
     | '/ratgeber/handyhalterung-auto-magnetisch-oder-klemme'
@@ -388,6 +400,7 @@ export interface RootRouteChildren {
   ReiseZubehoerRoute: typeof ReiseZubehoerRoute
   SamsungZubehoerRoute: typeof SamsungZubehoerRoute
   SmartwatchZubehoerRoute: typeof SmartwatchZubehoerRoute
+  SucheRoute: typeof SucheRoute
   UeberHandycoverRoute: typeof UeberHandycoverRoute
 }
 
@@ -398,6 +411,13 @@ declare module '@tanstack/react-router' {
       path: '/ueber-handycover'
       fullPath: '/ueber-handycover'
       preLoaderRoute: typeof UeberHandycoverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/suche': {
+      id: '/suche'
+      path: '/suche'
+      fullPath: '/suche'
+      preLoaderRoute: typeof SucheRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/smartwatch-zubehoer': {
@@ -646,6 +666,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReiseZubehoerRoute: ReiseZubehoerRoute,
   SamsungZubehoerRoute: SamsungZubehoerRoute,
   SmartwatchZubehoerRoute: SmartwatchZubehoerRoute,
+  SucheRoute: SucheRoute,
   UeberHandycoverRoute: UeberHandycoverRoute,
 }
 export const routeTree = rootRouteImport

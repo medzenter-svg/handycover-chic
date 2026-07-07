@@ -1,79 +1,59 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RatgeberArticle } from "@/components/site/RatgeberArticle";
-
 export const Route = createFileRoute("/ratgeber/magsafe-zubehoer-was-lohnt-sich")({
   head: () => ({
     meta: [
-      { title: "MagSafe Zubehör: Was lohnt sich wirklich? Hüllen, Ladegeräte & Halterungen" },
-      {
-        name: "description",
-        content:
-          "MagSafe Zubehör kann den iPhone-Alltag erleichtern. Erfahre, welche MagSafe-Produkte sinnvoll sind und worauf du bei Hüllen, Ladegeräten, Halterungen und Powerbanks achten solltest.",
-      },
+      { title: "MagSafe Zubehör: Was lohnt sich wirklich? – HandyCover Ratgeber" },
+      { name: "description", content: "Ladegeräte, Halterungen, Wallets und Powerbanks für iPhone-Nutzer. Was lohnt sich wirklich?" },
       { name: "robots", content: "index, follow" },
     ],
   }),
   component: () => (
     <RatgeberArticle
       title="MagSafe Zubehör: Was lohnt sich wirklich?"
-      description="Welche MagSafe-Produkte sinnvoll sind und worauf du bei Hüllen, Ladegeräten, Halterungen und Powerbanks achten solltest."
-      intro="MagSafe Zubehör kann den Alltag mit dem iPhone deutlich bequemer machen. Magnetische Ladegeräte, Halterungen, Wallets, Ständer und Powerbanks lassen sich schnell befestigen und wieder entfernen. Nicht jedes Zubehör ist jedoch automatisch sinnvoll. Entscheidend ist, ob es zur eigenen Nutzung passt und zuverlässig funktioniert."
+      description="Ladegeräte, Halterungen, Wallets und Powerbanks für iPhone-Nutzer."
+      intro="MagSafe ist besonders für iPhone-Nutzer praktisch. Das System arbeitet mit Magneten und ermöglicht kabelloses Laden, magnetische Halterungen, Powerbanks und Kartenhalter. Wichtig ist aber, dass nicht jedes Zubehör wirklich sinnvoll ist. Manche Produkte sehen gut aus, bringen im Alltag aber wenig Nutzen."
       publishDate="Juli 2025"
       category="MagSafe"
       sections={[
         {
-          heading: "Welches MagSafe Zubehör ist besonders praktisch?",
-          content:
-            "Eine MagSafe-Hülle ist für viele Nutzer die Grundlage. Sie sorgt dafür, dass anderes MagSafe-Zubehör besser hält. Besonders praktisch sind außerdem MagSafe-Ladegeräte für den Schreibtisch oder Nachttisch, Auto-Halterungen für Navigation und MagSafe-Powerbanks für unterwegs. MagSafe-Wallets können sinnvoll sein, wenn wenige Karten direkt am Smartphone getragen werden sollen. Für Menschen, die ihr iPhone häufig zum Arbeiten, für Videocalls oder zum Streamen nutzen, kann ein MagSafe-Ständer nützlich sein.",
+          heading: "MagSafe-Ladegerät",
+          content: "Ein MagSafe-Ladegerät lohnt sich vor allem, wenn das iPhone regelmäßig kabellos geladen wird. Es ist bequem, weil das Smartphone automatisch richtig positioniert wird. Dadurch lädt es stabiler als bei vielen normalen kabellosen Ladepads.",
         },
         {
-          heading: "Worauf sollte man beim Kauf achten?",
-          content:
-            "Die Magnetkraft ist entscheidend. Wenn sie zu schwach ist, kann das Smartphone verrutschen oder sich lösen. Auch die Ladeleistung sollte geprüft werden. Kabelloses Laden ist bequem, aber je nach Ladegerät langsamer als Laden per Kabel. Besonders wichtig ist die Hülle. Eine normale dicke Hülle kann die Magnetkraft reduzieren. Wer MagSafe regelmäßig nutzen möchte, sollte eine MagSafe-kompatible Hülle verwenden.",
+          heading: "MagSafe-Halterungen",
+          content: "MagSafe-Halterungen sind besonders praktisch im Auto oder am Schreibtisch. Das iPhone lässt sich schnell befestigen und wieder abnehmen. Für das Auto ist wichtig, dass die Halterung stark genug ist und das Handy auch bei Kurven oder Bremsen sicher hält.",
         },
         {
-          heading: "Kaufberatung",
-          content:
-            "Sinnvoll für: iPhone-Nutzer mit kompatiblem Modell, Nutzer die kabelloses Laden mögen, Autofahrer mit magnetischer Halterung, Menschen die unterwegs ohne Kabel laden möchten, Nutzer die Ordnung auf dem Schreibtisch wollen. Weniger sinnvoll wenn: das Smartphone kein MagSafe unterstützt, eine sehr dicke Hülle verwendet wird, hauptsächlich per Kabel geladen wird oder maximale Ladegeschwindigkeit wichtiger ist als Komfort.",
+          heading: "MagSafe-Wallets",
+          content: "MagSafe-Wallets sind kleine Kartenhalter für die Rückseite des iPhones. Sie sind praktisch, wenn man nur eine oder zwei Karten mitnehmen möchte. Für viele Karten oder Bargeld ersetzen sie aber kein vollständiges Portemonnaie.",
+        },
+        {
+          heading: "MagSafe-Powerbanks",
+          content: "MagSafe-Powerbanks sind sinnvoll für Reisen, lange Arbeitstage oder unterwegs. Sie haften magnetisch am iPhone und laden ohne Kabel. Man sollte aber auf Kapazität, Ladegeschwindigkeit und Gewicht achten.",
+        },
+        {
+          heading: "Wichtiger Hinweis zur Hülle",
+          content: "MagSafe funktioniert nur gut, wenn auch die Hülle MagSafe-kompatibel ist. Eine normale dicke Hülle kann die Magnetkraft schwächen.",
+        },
+        {
+          heading: "Unsere Empfehlung",
+          content: "Am sinnvollsten sind MagSafe-Hüllen, MagSafe-Autohalterungen und MagSafe-Powerbanks. Sie bringen im Alltag den größten praktischen Vorteil.",
         },
       ]}
+      ctaLabel="MagSafe Zubehör ansehen"
+      ctaTo="/magsafe-zubehoer"
       faqs={[
-        {
-          q: "Brauche ich eine MagSafe-Hülle?",
-          a: "Wenn du MagSafe-Zubehör regelmäßig nutzen möchtest, ist eine MagSafe-kompatible Hülle empfehlenswert. Sie verbessert die Magnetkraft und sorgt für stabileren Halt.",
-        },
-        {
-          q: "Ist MagSafe Laden langsamer als Kabel?",
-          a: "Kabelloses Laden kann je nach Ladegerät langsamer sein als Laden per Kabel. Dafür ist es besonders bequem im Alltag.",
-        },
-        {
-          q: "Welches MagSafe Zubehör lohnt sich am meisten?",
-          a: "Für viele Nutzer lohnen sich MagSafe-Hülle, MagSafe-Ladegerät, Auto-Halterung und MagSafe-Powerbank am meisten.",
-        },
-        {
-          q: "Funktioniert MagSafe mit Samsung?",
-          a: "MagSafe ist vor allem für kompatible iPhones gedacht. Für andere Smartphones gibt es teilweise magnetisches Zubehör oder Adapterlösungen, die aber separat geprüft werden müssen.",
-        },
+        { q: "Funktioniert MagSafe mit jeder iPhone-Hülle?", a: "Nein. MagSafe funktioniert am besten mit MagSafe-kompatiblen Hüllen. Dicke oder nicht-kompatible Hüllen können die Magnetkraft schwächen." },
+        { q: "Lohnt sich ein MagSafe-Ladegerät?", a: "Ja, wenn du dein iPhone regelmäßig kabellos lädst. Die automatische Positionierung sorgt für stabileres und effizienteres Laden." },
+        { q: "Sind MagSafe-Powerbanks gut?", a: "Ja, besonders für unterwegs. Sie haften magnetisch und laden ohne Kabel. Achte auf Kapazität und Ladegeschwindigkeit." },
+        { q: "Was ist ein MagSafe-Wallet?", a: "Ein kleiner Kartenhalter, der magnetisch an der Rückseite des iPhones haftet. Praktisch für 1–2 Karten, ersetzt aber kein vollständiges Portemonnaie." },
       ]}
-      sidebarCards={[
-        {
-          href: "https://amzn.to/4p2z3fh",
-          image: "/assets/products/magsafe-ladestation-3in1-faltbar-rosa.jpg",
-          alt: "MagSafe Ladestation 3 in 1 faltbar iPhone Apple Watch AirPods Rosa",
-          label: "Empfehlung",
-          title: "MagSafe Ladestation 3 in 1",
-          subtitle: "iPhone 17/16/15 · Apple Watch · AirPods · Rosa",
-          accentColor: "text-pink-500",
-
-        },
-      ]}
-      heroText="Was ist MagSafe? MagSafe ist ein magnetisches Zubehörsystem für kompatible iPhones und andere kompatible Geräte. Es ermöglicht die Verbindung mit magnetischen Ladegeräten, Hüllen, Halterungen, Kartenhaltern, Ständern und Powerbanks. Damit MagSafe zuverlässig funktioniert, müssen Smartphone, Hülle und Zubehör miteinander kompatibel sein."
       internalLinks={[
         { label: "MagSafe Zubehör", to: "/magsafe-zubehoer" },
         { label: "iPhone Zubehör", to: "/iphone-zubehoer" },
-        { label: "Auto-Zubehör", to: "/auto-zubehoer" },
         { label: "Powerbanks", to: "/powerbanks" },
-        { label: "Ladegeräte & Kabel", to: "/ladegeraete-kabel" },
+        { label: "Auto-Zubehör", to: "/auto-zubehoer" },
       ]}
     />
   ),

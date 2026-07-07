@@ -18,7 +18,7 @@ export const Route = createFileRoute("/auto-zubehoer")({
       sidebarCards={[
         {
           href: "https://amzn.to/4xXX7nF",
-          image: "/assets/products/vanmass-handyhalterung-auto-violett.jpg",
+          image: "/assets/products/vanmass-handyhalterung-auto-violett.webp",
           alt: "VANMASS Handyhalterung Auto violett 4in1",
           label: "Empfehlung",
           title: "VANMASS Handyhalterung Auto",

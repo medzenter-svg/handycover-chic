@@ -20,7 +20,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
       sidebarCards={[
         {
           href: "https://amzn.to/4wnDow0",
-          image: "/assets/products/usbc-25w-ladegeraet-3er-pack-weiss.jpeg",
+          image: "/assets/products/usbc-25w-ladegeraet-3er-pack-weiss.webp",
           alt: "3er-Pack USB-C 25W Ladegerät + 2m Kabel – PD3.0 Schnellladegerät für iPhone & Sa",
           label: "3er Set",
           title: "3er-Pack USB-C 25W Ladegerät + 2m Kabel – PD3",
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eZJ4VT",
-          image: "/assets/products/syncwire-magsafe-kfz-halterung.jpeg",
+          image: "/assets/products/syncwire-magsafe-kfz-halterung.webp",
           alt: "SYNCWIRE MagSafe Kfz-Halterung – Flexible Rotation, Armaturenbrett, iPhone, Sams",
           label: "MagSafe",
           title: "SYNCWIRE MagSafe Kfz-Halterung – Flexible Rot",
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4fde4TA",
-          image: "/assets/products/vakuum-handyhalterung-magsafe-mattschwarz.jpeg",
+          image: "/assets/products/vakuum-handyhalterung-magsafe-mattschwarz.webp",
           alt: "Vakuum Handyhalterung Auto MagSafe – 78LBS Saugkraft, 2400gf Magnet, 360° drehba",
           label: "MagSafe",
           title: "Vakuum Handyhalterung Auto MagSafe – 78LBS Sa",
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wlwF5A",
-          image: "/assets/products/blukar-handyhalterung-auto-saugnapf.jpeg",
+          image: "/assets/products/blukar-handyhalterung-auto-saugnapf.webp",
           alt: "Blukar Handyhalterung Auto – Upgrade Saugnapf, 360° drehbar, für iPhone & Samsun",
           label: "Auto",
           title: "Blukar Handyhalterung Auto – Upgrade Saugnapf",
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4whpxqR",
-          image: "/assets/products/magnetische-kabelbinder-20er-bunt.jpeg",
+          image: "/assets/products/magnetische-kabelbinder-20er-bunt.webp",
           alt: "SMART&COOL 20 Stück Magnetische Silikon Kabelbinder – 10 Farben, Wiederverwendba",
           label: "Zubehör",
           title: "SMART&COOL 20 Stück Magnetische Silikon Kabel",
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QTBHqT",
-          image: "/assets/products/silikon-kabelbinder-12er.jpeg",
+          image: "/assets/products/silikon-kabelbinder-12er.webp",
           alt: "12 Stück Silikon Kabelbinder Kabelorganisatoren – Wiederverwendbar, für Zuhause,",
           label: "Zubehör",
           title: "12 Stück Silikon Kabelbinder Kabelorganisator",
@@ -68,7 +68,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4fd3ZpI",
-          image: "/assets/products/magnetische-kabel-clips-6er.jpeg",
+          image: "/assets/products/magnetische-kabel-clips-6er.webp",
           alt: "6 Stück Magnetische Kabel Clips Organizer – Selbstklebend, Blau & Lila & Orange",
           label: "Zubehör",
           title: "6 Stück Magnetische Kabel Clips Organizer – S",
@@ -76,7 +76,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v27xQh",
-          image: "/assets/products/charco-3in1-ladegeraet-apple-watch-20w.jpeg",
+          image: "/assets/products/charco-3in1-ladegeraet-apple-watch-20w.webp",
           alt: "CHARCO 3-in-1 20W USB-C Ladegerät für Apple Watch – Schnellladegerät, kompatibel",
           label: "3-in-1 Ladegerät",
           title: "CHARCO 3-in-1 20W USB-C Ladegerät für Apple W",
@@ -84,7 +84,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y2h64r",
-          image: "/assets/products/cacoe-handyband-universal-2stueck.jpeg",
+          image: "/assets/products/cacoe-handyband-universal-2stueck.webp",
           alt: "CACOE Handyband Universal 2 Stück – Einstellbares Halsband Schlüsselband",
           label: "Universal",
           title: "CACOE Handyband Universal 2 Stück – Einstellb",
@@ -92,7 +92,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wDzCin",
-          image: "/assets/products/lamicall-waterproof-2pack.jpg",
+          image: "/assets/products/lamicall-waterproof-2pack.webp",
           alt: "Lamicall Wasserdichte Handyhülle IPX8 [2 Stück] – für Smartphones bis 7 Zoll",
           label: "IPX8 Wasserdicht",
           title: "Lamicall Wasserdichte Handyhülle IPX8 [2 Stüc",
@@ -100,7 +100,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eEgyKF",
-          image: "/assets/p-case-premium.jpg",
+          image: "/assets/p-case-premium.webp",
           alt: "Transparente Schutzhülle mit MagSafe für iPhone 16 Pro",
           label: "Empfehlung",
           title: "Transparente Schutzhülle mit MagSafe für iPho",
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vplet3",
-          image: "/assets/products/apple-usbc-cable-60w.jpg",
+          image: "/assets/products/apple-usbc-cable-60w.webp",
           alt: "Apple 60W USB‑C Ladekabel (1 m) – für iPhone, iPad, MacBook",
           label: "Original Apple",
           title: "Apple 60W USB‑C Ladekabel (1 m) – für iPhone,",
@@ -116,7 +116,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vplet3",
-          image: "/assets/p-cable-premium.jpg",
+          image: "/assets/p-cable-premium.webp",
           alt: "Apple USB‑C auf Lightning Kabel (2 m)",
           label: "Original Apple",
           title: "Apple USB‑C auf Lightning Kabel (2 m)",
@@ -124,7 +124,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vH3Vob",
-          image: "/assets/products/apple-usbc-lightning-1m.jpg",
+          image: "/assets/products/apple-usbc-lightning-1m.webp",
           alt: "Apple USB‑C auf Lightning Kabel (1 m)",
           label: "Original Apple",
           title: "Apple USB‑C auf Lightning Kabel (1 m)",
@@ -132,7 +132,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vfU1ZK",
-          image: "/assets/products/iphone-ladekabel-2pack-2m.jpg",
+          image: "/assets/products/iphone-ladekabel-2pack-2m.webp",
           alt: "iPhone Ladekabel 2Pack – USB-C auf Lightning, 2 Meter",
           label: "2er-Pack",
           title: "iPhone Ladekabel 2Pack – USB-C auf Lightning,",
@@ -140,7 +140,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44FoK7m",
-          image: "/assets/products/iphone-ladekabel-mfi-2pack-2m.jpg",
+          image: "/assets/products/iphone-ladekabel-mfi-2pack-2m.webp",
           alt: "iPhone Ladekabel [MFi-Zertifiziert] 2er Pack – USB-C auf Lightning, 2M",
           label: "MFi-Zertifiziert",
           title: "iPhone Ladekabel [MFi-Zertifiziert] 2er Pack",
@@ -148,7 +148,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4waTF7s",
-          image: "/assets/products/amazon-basics-usbc-usba-18m.jpg",
+          image: "/assets/products/amazon-basics-usbc-usba-18m.webp",
           alt: "Amazon Basics USB-C auf USB-A 2.0 Schnellladekabel, 1,8 m, Weiß",
           label: "USB-IF-Zertifiziert",
           title: "Amazon Basics USB-C auf USB-A 2.0 Schnelllade",
@@ -156,7 +156,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xUD7lE",
-          image: "/assets/products/lightning-kabel-mfi-2pack-2m-1m.jpg",
+          image: "/assets/products/lightning-kabel-mfi-2pack-2m-1m.webp",
           alt: "iPhone Lightning Kabel [MFi-Zertifiziert] 2Pack – 2M + 1M, Nylon",
           label: "MFi + Nylon",
           title: "iPhone Lightning Kabel [MFi-Zertifiziert] 2Pa",
@@ -164,7 +164,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oTp7EC",
-          image: "/assets/products/raviad-lightning-3pack-2m.jpg",
+          image: "/assets/products/raviad-lightning-3pack-2m.webp",
           alt: "RAVIAD iPhone Lightning Kabel [MFi-Zertifiziert] 3Pack, 2M",
           label: "3er-Pack",
           title: "RAVIAD iPhone Lightning Kabel [MFi-Zertifizie",
@@ -172,7 +172,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4bhHzkG",
-          image: "/assets/products/usbc-kabel-3m-3pack-nylon.jpg",
+          image: "/assets/products/usbc-kabel-3m-3pack-nylon.webp",
           alt: "USB-C Kabel 3M, 3er-Pack – Nylon Schnellladekabel",
           label: "3M Nylon",
           title: "USB-C Kabel 3M, 3er-Pack – Nylon Schnellladek",
@@ -180,7 +180,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oVgUjx",
-          image: "/assets/products/usbc-usbc-60w-2m-3m-nylon.jpg",
+          image: "/assets/products/usbc-usbc-60w-2m-3m-nylon.webp",
           alt: "USB-C auf USB-C Kabel 60W, 2er-Pack – 2M + 3M, Nylon",
           label: "60W PD",
           title: "USB-C auf USB-C Kabel 60W, 2er-Pack – 2M + 3M",
@@ -188,7 +188,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3T9FKA8",
-          image: "/assets/p-wallet-premium.jpg",
+          image: "/assets/p-wallet-premium.webp",
           alt: "MagSafe-Kartenhalter mit Standfunktion",
           label: "MagSafe",
           title: "MagSafe-Kartenhalter mit Standfunktion",
@@ -196,7 +196,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44Cze7s",
-          image: "/assets/products/anker-323-33w-2port.jpg",
+          image: "/assets/products/anker-323-33w-2port.webp",
           alt: "Anker 33W USB-C Ladegerät 323, 2-Port Netzteil",
           label: "33W Anker",
           title: "Anker 33W USB-C Ladegerät 323, 2-Port Netztei",
@@ -204,7 +204,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oZhXPo",
-          image: "/assets/p-powerbank2-premium.jpg",
+          image: "/assets/p-powerbank2-premium.webp",
           alt: "Schlanke Powerbank, 10.000 mAh",
           label: "Schlank",
           title: "Schlanke Powerbank, 10.000 mAh",
@@ -212,7 +212,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y2e800",
-          image: "/assets/products/torras-iphone17pro-sunview.jpg",
+          image: "/assets/products/torras-iphone17pro-sunview.webp",
           alt: "TORRAS SunView AR Panzerglas für iPhone 17 Pro [100% blendfrei], 2 Stück",
           label: "Blendfrei",
           title: "TORRAS SunView AR Panzerglas für iPhone 17 Pr",
@@ -220,7 +220,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vG7omY",
-          image: "/assets/p-screen-premium.jpg",
+          image: "/assets/p-screen-premium.webp",
           alt: "Displayschutzfolie für Samsung Galaxy S24, 2er-Pack",
           label: "2er-Pack",
           title: "Displayschutzfolie für Samsung Galaxy S24, 2e",
@@ -228,7 +228,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/440ztJv",
-          image: "/assets/p-case-premium.jpg",
+          image: "/assets/p-case-premium.webp",
           alt: "Transparente Schutzhülle für iPhone 15",
           label: "Transparent",
           title: "Transparente Schutzhülle für iPhone 15",
@@ -236,7 +236,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xYJKn9",
-          image: "/assets/products/torras-guardian-17promax-blau-transluzent.jpg",
+          image: "/assets/products/torras-guardian-17promax-blau-transluzent.webp",
           alt: "TORRAS Guardian Hülle für iPhone 17 Pro Max – Militärschutz, Transluzent Blau",
           label: "Militärschutz",
           title: "TORRAS Guardian Hülle für iPhone 17 Pro Max –",
@@ -244,7 +244,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oYOG7q",
-          image: "/assets/products/tocol-magsafe-17promax-orange.jpg",
+          image: "/assets/products/tocol-magsafe-17promax-orange.webp",
           alt: "TOCOL Hülle für iPhone 17 Pro Max – MagSafe, Kameraschutz, Transluzent Matt, Ora",
           label: "MagSafe",
           title: "TOCOL Hülle für iPhone 17 Pro Max – MagSafe,",
@@ -252,7 +252,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/445XHlv",
-          image: "/assets/products/torras-guardian-mag-17promax-silbergrau.jpg",
+          image: "/assets/products/torras-guardian-mag-17promax-silbergrau.webp",
           alt: "TORRAS Guardian-Mag Hülle für iPhone 17 Pro Max – MagSafe, Militärschutz, Matt S",
           label: "Militärschutz",
           title: "TORRAS Guardian-Mag Hülle für iPhone 17 Pro M",
@@ -260,7 +260,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eX2FWV",
-          image: "/assets/products/cacoe-magsafe-17promax-transluzent.jpg",
+          image: "/assets/products/cacoe-magsafe-17promax-transluzent.webp",
           alt: "CACOE Hülle für iPhone 17 Pro Max – MagSafe, Kameraschutz, Transluzent",
           label: "MagSafe",
           title: "CACOE Hülle für iPhone 17 Pro Max – MagSafe,",
@@ -268,7 +268,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3Rc77Jl",
-          image: "/assets/products/jueshituo-magsafe-17promax-silber.jpg",
+          image: "/assets/products/jueshituo-magsafe-17promax-silber.webp",
           alt: "JUESHITUO Hülle für iPhone 17 Pro Max – MagSafe, Kameraschutz, Anti-Vergilbung, ",
           label: "MagSafe",
           title: "JUESHITUO Hülle für iPhone 17 Pro Max – MagSa",
@@ -276,7 +276,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SE0xvB",
-          image: "/assets/products/anker-maggo-3in1.jpg",
+          image: "/assets/products/anker-maggo-3in1.webp",
           alt: "Anker MagGo 3-in-1 Ladestation, Qi2 15W – für iPhone, Apple Watch, AirPods",
           label: "Qi2 3-in-1",
           title: "Anker MagGo 3-in-1 Ladestation, Qi2 15W – für",
@@ -284,7 +284,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vKJOpc",
-          image: "/assets/products/qtlier-3in1-ladestation-20w.jpg",
+          image: "/assets/products/qtlier-3in1-ladestation-20w.webp",
           alt: "QTlier 3-in-1 Ladestation 20W – MagSafe, iPhone, Apple Watch",
           label: "3-in-1 20W",
           title: "QTlier 3-in-1 Ladestation 20W – MagSafe, iPho",
@@ -292,7 +292,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oTekuc",
-          image: "/assets/products/jsaux-magsafe-15w-v2.jpg",
+          image: "/assets/products/jsaux-magsafe-15w-v2.webp",
           alt: "JSAUX MagSafe Ladegerät 15W – Wireless Charger, Blau (Variante 2)",
           label: "15W MagSafe",
           title: "JSAUX MagSafe Ladegerät 15W – Wireless Charge",
@@ -300,7 +300,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3Rc4Wp9",
-          image: "/assets/products/magsafe-20w-charger-set.jpg",
+          image: "/assets/products/magsafe-20w-charger-set.webp",
           alt: "MagSafe Ladegerät 20W mit Netzteil & Kabel – für iPhone 12–17",
           label: "20W Set",
           title: "MagSafe Ladegerät 20W mit Netzteil & Kabel –",
@@ -308,7 +308,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eBproe",
-          image: "/assets/products/magsafe-20w-charger-set-v2.jpg",
+          image: "/assets/products/magsafe-20w-charger-set-v2.webp",
           alt: "MagSafe Ladegerät 20W mit Netzteil & Kabel – für iPhone 12–17 (Variante 2)",
           label: "20W Set",
           title: "MagSafe Ladegerät 20W mit Netzteil & Kabel –",
@@ -316,7 +316,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3RbiPE0",
-          image: "/assets/products/jsaux-magsafe-15w-blau.jpg",
+          image: "/assets/products/jsaux-magsafe-15w-blau.webp",
           alt: "JSAUX MagSafe Ladegerät 15W – Induktive Ladestation, Blau",
           label: "15W MagSafe",
           title: "JSAUX MagSafe Ladegerät 15W – Induktive Lades",
@@ -324,7 +324,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QP3sAU",
-          image: "/assets/products/ugreen-zapix-2in1-qi2-15w.jpg",
+          image: "/assets/products/ugreen-zapix-2in1-qi2-15w.webp",
           alt: "UGREEN Zapix 2-in-1 Qi2 Ladestation 15W – MagSafe, iPhone & AirPods, Schwarz",
           label: "Qi2 2-in-1",
           title: "UGREEN Zapix 2-in-1 Qi2 Ladestation 15W – Mag",
@@ -332,7 +332,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wdpxbp",
-          image: "/assets/products/exw-5in1-apple-ladestation-weiss.jpg",
+          image: "/assets/products/exw-5in1-apple-ladestation-weiss.webp",
           alt: "EXW 5-in-1 Apple Ladestation faltbar – MagSafe, Apple Watch, AirPods (Weiß)",
           label: "5-in-1 Faltbar",
           title: "EXW 5-in-1 Apple Ladestation faltbar – MagSaf",
@@ -340,7 +340,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vIfY4y",
-          image: "/assets/products/vicseed-magsafe-autohalterung.jpg",
+          image: "/assets/products/vicseed-magsafe-autohalterung.webp",
           alt: "VICSEED Handyhalterung Auto Magnet – MagSafe, 20 XN55 Magnet, 360°, Vollmetall",
           label: "MagSafe",
           title: "VICSEED Handyhalterung Auto Magnet – MagSafe,",
@@ -348,7 +348,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vHiIPH",
-          image: "/assets/products/tauri-panzerglas-iphone15.jpg",
+          image: "/assets/products/tauri-panzerglas-iphone15.webp",
           alt: "TAURI Panzerglas für iPhone 15 – Full Screen, 3 Stück, 9H, Staubfreies Installat",
           label: "3er Pack",
           title: "TAURI Panzerglas für iPhone 15 – Full Screen,",
@@ -356,7 +356,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/440UyU6",
-          image: "/assets/products/tocol-panzerglas-iphone15.jpg",
+          image: "/assets/products/tocol-panzerglas-iphone15.webp",
           alt: "TOCOL Panzerglas für iPhone 15 – Full Screen, Auto-Installation, 9H, 2 Stück",
           label: "Auto-Install",
           title: "TOCOL Panzerglas für iPhone 15 – Full Screen,",
@@ -364,7 +364,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4bgRAP6",
-          image: "/assets/products/spigen-glastr-ezfit-iphone17.jpg",
+          image: "/assets/products/spigen-glastr-ezfit-iphone17.webp",
           alt: "Spigen Glas.tR EZ Fit Schutzfolie – iPhone 17 Pro / 17 / 16 Pro, 2 Stück, 9H, Kr",
           label: "9H Glas",
           title: "Spigen Glas.tR EZ Fit Schutzfolie – iPhone 17",
@@ -372,7 +372,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QSYuTL",
-          image: "/assets/products/powerbank-p11d-20000mah-lcd.jpg",
+          image: "/assets/products/powerbank-p11d-20000mah-lcd.webp",
           alt: "Power Bank 20000mAh 22,5W – PD3.0 QC4.0, LCD-Display, USB-C Ein- & Ausgang",
           label: "LCD Display",
           title: "Power Bank 20000mAh 22,5W – PD3.0 QC4.0, LCD-",
@@ -380,7 +380,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vJZfOg",
-          image: "/assets/products/azmuth-magsafe-powerbank-10000mah.jpg",
+          image: "/assets/products/azmuth-magsafe-powerbank-10000mah.webp",
           alt: "Azmuth MagSafe Powerbank – 10000mAh, Magnetisch, Wireless Schnellladen, LED Disp",
           label: "MagSafe",
           title: "Azmuth MagSafe Powerbank – 10000mAh, Magnetis",
@@ -388,7 +388,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44FcpQC",
-          image: "/assets/products/anker-zolo-powerbank-20000mah-30w.jpg",
+          image: "/assets/products/anker-zolo-powerbank-20000mah-30w.webp",
           alt: "Anker Zolo Powerbank 2025 – 20000mAh, 30W, integriertes USB-C Kabel",
           label: "2025 Upgrade",
           title: "Anker Zolo Powerbank 2025 – 20000mAh, 30W, in",
@@ -396,7 +396,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4aq0M3A",
-          image: "/assets/products/anker-powerbank-165w-25000mah.jpg",
+          image: "/assets/products/anker-powerbank-165w-25000mah.webp",
           alt: "Anker 165W Laptop Powerbank – 25000mAh, ausziehbares Kabel, 3x USB-C, Flugzeugta",
           label: "165W Laptop",
           title: "Anker 165W Laptop Powerbank – 25000mAh, auszi",
@@ -404,7 +404,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eVpB8U",
-          image: "/assets/products/ugreen-nexode-powerbank-145w-25000mah.jpg",
+          image: "/assets/products/ugreen-nexode-powerbank-145w-25000mah.webp",
           alt: "UGREEN Nexode Powerbank 145W – 25000mAh, 3 USB-C Anschlüsse, Display, MacBook & ",
           label: "145W Pro",
           title: "UGREEN Nexode Powerbank 145W – 25000mAh, 3 US",
@@ -412,7 +412,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xXN55O",
-          image: "/assets/products/iniu-powerbank-20000mah.jpg",
+          image: "/assets/products/iniu-powerbank-20000mah.webp",
           alt: "INIU Ultra Klein 20000mAh Powerbank – 22,5W Schnellladung, USB-C Kabel, Flugtaug",
           label: "22,5W",
           title: "INIU Ultra Klein 20000mAh Powerbank – 22,5W S",
@@ -420,7 +420,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44BbPmX",
-          image: "/assets/products/pack-smooch-kirkby-iphone13mini-dunkelbraun.jpg",
+          image: "/assets/products/pack-smooch-kirkby-iphone13mini-dunkelbraun.webp",
           alt: "Pack & Smooch Kirkby für iPhone 13/12 Mini – Merino Wollfilz, Leder, Made in Ger",
           label: "Made in Germany",
           title: "Pack & Smooch Kirkby für iPhone 13/12 Mini –",
@@ -428,7 +428,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3RfiksB",
-          image: "/assets/products/casekoo-linkoo-iphone17promax-silber.jpg",
+          image: "/assets/products/casekoo-linkoo-iphone17promax-silber.webp",
           alt: "CASEKOO Linkoo für iPhone 17 Pro Max – Mit Band, ClipSafe, MagSafe, Transparent ",
           label: "MagSafe",
           title: "CASEKOO Linkoo für iPhone 17 Pro Max – Mit Ba",
@@ -436,7 +436,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4woK8tD",
-          image: "/assets/products/liquid-silikon-iphone16promax-lila.jpg",
+          image: "/assets/products/liquid-silikon-iphone16promax-lila.webp",
           alt: "Liquid Silikon Hülle für iPhone 16 Pro Max – MagSafe, Magnetisch, Sanftes Lila",
           label: "MagSafe",
           title: "Liquid Silikon Hülle für iPhone 16 Pro Max –",
@@ -444,7 +444,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wjenSH",
-          image: "/assets/products/oneflow-iphone17-silikon-rot.jpg",
+          image: "/assets/products/oneflow-iphone17-silikon-rot.webp",
           alt: "ONEFLOW Soft Case für iPhone 17 – Silikon mit Kameraschutz, Rot",
           label: "Silikon",
           title: "ONEFLOW Soft Case für iPhone 17 – Silikon mit",
@@ -452,7 +452,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vFHPCg",
-          image: "/assets/products/magsafe-silikon-iphone17promax-taupe.jpg",
+          image: "/assets/products/magsafe-silikon-iphone17promax-taupe.webp",
           alt: "Magnetische Silikon Hülle für iPhone 17 Pro Max – MagSafe, Premium Liquid Siliko",
           label: "MagSafe",
           title: "Magnetische Silikon Hülle für iPhone 17 Pro M",
@@ -460,7 +460,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xYyvLu",
-          image: "/assets/products/ocase-iphone17promax-leder-hellbraun.jpg",
+          image: "/assets/products/ocase-iphone17promax-leder-hellbraun.webp",
           alt: "OCASE 2-in-1 Leder Klappphülle für iPhone 17 Pro Max – Magnetisch, RFID, Standfu",
           label: "2-in-1 Leder",
           title: "OCASE 2-in-1 Leder Klappphülle für iPhone 17",
@@ -468,7 +468,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4atT4Fy",
-          image: "/assets/products/kwmobile-iphone14-neon-pink.jpg",
+          image: "/assets/products/kwmobile-iphone14-neon-pink.webp",
           alt: "kwmobile Handyhülle für iPhone 14 – Silikon, kabelloses Laden, Neon Pink",
           label: "Silikon",
           title: "kwmobile Handyhülle für iPhone 14 – Silikon,",
@@ -476,7 +476,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4yfzGqb",
-          image: "/assets/products/yosh-magsafe-autohalterung-15w.jpg",
+          image: "/assets/products/yosh-magsafe-autohalterung-15w.webp",
           alt: "YOSH MagSafe Autohalterung 15W – Metall-Doppelhaken, N56 Magnete, Schnellladen",
           label: "15W MagSafe",
           title: "YOSH MagSafe Autohalterung 15W – Metall-Doppe",
@@ -484,7 +484,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xS77yB",
-          image: "/assets/products/msxttly-magsafe-autohalterung.jpg",
+          image: "/assets/products/msxttly-magsafe-autohalterung.webp",
           alt: "MSXTTLY Militärische MagSafe Autohalterung – 36KG Saugnapf, 24XN55 Magnete, 360°",
           label: "Militär",
           title: "MSXTTLY Militärische MagSafe Autohalterung –",
@@ -492,7 +492,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/441k5wv",
-          image: "/assets/products/syncwire-magsafe-kfz-halterung.jpg",
+          image: "/assets/products/syncwire-magsafe-kfz-halterung.webp",
           alt: "SYNCWIRE MagSafe Kfz-Halterung – Flexible Rotation, Armaturenbrett, Universal",
           label: "MagSafe",
           title: "SYNCWIRE MagSafe Kfz-Halterung – Flexible Rot",
@@ -500,7 +500,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4garbpC",
-          image: "/assets/products/mokpr-magsafe-autohalterung-15w.jpg",
+          image: "/assets/products/mokpr-magsafe-autohalterung-15w.webp",
           alt: "MOKPR MagSafe Autohalterung 15W – mit Ladefunktion, Lüftung/Armaturenbrett, Schw",
           label: "15W MagSafe",
           title: "MOKPR MagSafe Autohalterung 15W – mit Ladefun",
@@ -508,7 +508,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xVXU8v",
-          image: "/assets/products/beser-magsafe-autohalterung-15w.jpg",
+          image: "/assets/products/beser-magsafe-autohalterung-15w.webp",
           alt: "Beser 15W MagSafe Autohalterung – 1,89 kg Magnetkraft, Qi Kabellos, Aluminium Sc",
           label: "15W MagSafe",
           title: "Beser 15W MagSafe Autohalterung – 1,89 kg Mag",
@@ -516,7 +516,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/444YYta",
-          image: "/assets/products/lisen-magsafe-autohalterung-15w.jpg",
+          image: "/assets/products/lisen-magsafe-autohalterung-15w.webp",
           alt: "LISEN MagSafe Autohalterung 15W – Kfz-Halterung mit Ladefunktion, Wireless Charg",
           label: "15W MagSafe",
           title: "LISEN MagSafe Autohalterung 15W – Kfz-Halteru",
@@ -524,7 +524,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vcRXBz",
-          image: "/assets/products/jetech-kameraschutz-iphone17promax-silber.jpg",
+          image: "/assets/products/jetech-kameraschutz-iphone17promax-silber.webp",
           alt: "JETech Kameraschutz für iPhone 17 Pro Max – 9H Glas, Volle Abdeckung, Metallring",
           label: "9H Metall",
           title: "JETech Kameraschutz für iPhone 17 Pro Max – 9",
@@ -532,7 +532,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vQgayH",
-          image: "/assets/products/tocol-kameraschutz-iphone13-gruen.jpg",
+          image: "/assets/products/tocol-kameraschutz-iphone13-gruen.webp",
           alt: "TOCOL 2 Sets Kameraschutz für iPhone 13 / 13 Mini – 9H+, Individualschutz, Alpen",
           label: "2 Sets",
           title: "TOCOL 2 Sets Kameraschutz für iPhone 13 / 13",
@@ -540,7 +540,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SFmqdZ",
-          image: "/assets/products/cacoe-kameraschutz-iphone15pro-schwarz.jpg",
+          image: "/assets/products/cacoe-kameraschutz-iphone15pro-schwarz.webp",
           alt: "CACOE Kameraschutz für iPhone 15 Pro / 15 Pro Max – Anti-Kratz Objektiv Schutzfo",
           label: "Anti-Kratz",
           title: "CACOE Kameraschutz für iPhone 15 Pro / 15 Pro",
@@ -548,7 +548,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wlNOMF",
-          image: "/assets/products/kameraschutz-iphone13-diamant-weiss.jpg",
+          image: "/assets/products/kameraschutz-iphone13-diamant-weiss.webp",
           alt: "3 Stück Kamera Schutzglas für iPhone 13 / 13 Mini – 9H, Weißer Diamant",
           label: "3 Stück",
           title: "3 Stück Kamera Schutzglas für iPhone 13 / 13",
@@ -556,7 +556,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4gz2un9",
-          image: "/assets/products/diruite-kameraschutz-iphone17pro-silber.jpg",
+          image: "/assets/products/diruite-kameraschutz-iphone17pro-silber.webp",
           alt: "Diruite Kameraschutz für iPhone 17 Pro – 9H Glas, Aluminium-Legierung, Silber (I",
           label: "Aluminium",
           title: "Diruite Kameraschutz für iPhone 17 Pro – 9H G",
@@ -564,7 +564,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4fcQXIP",
-          image: "/assets/products/kameraschutz-iphone13-glitzer-silber.jpg",
+          image: "/assets/products/kameraschutz-iphone13-glitzer-silber.webp",
           alt: "Kameraschutz für iPhone 13 / 13 Mini – 9H, Glitzer, Silber",
           label: "Glitzer",
           title: "Kameraschutz für iPhone 13 / 13 Mini – 9H, Gl",
@@ -572,7 +572,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oZmstk",
-          image: "/assets/products/kucheed-kameraschutz-iphone12-bling.jpg",
+          image: "/assets/products/kucheed-kameraschutz-iphone12-bling.webp",
           alt: "Kucheed Kameraschutz für iPhone 12 / 12 Mini – Bling Diamant, Automatische Ausri",
           label: "Bling Diamant",
           title: "Kucheed Kameraschutz für iPhone 12 / 12 Mini",
@@ -580,7 +580,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3RgzZQF",
-          image: "/assets/products/afarer-kameraschutz-iphone13-blau.jpg",
+          image: "/assets/products/afarer-kameraschutz-iphone13-blau.webp",
           alt: "AFARER 2 Stück Kameraschutz für iPhone 13 / 13 Mini – 9H, Metall, Blau",
           label: "2 Stück Blau",
           title: "AFARER 2 Stück Kameraschutz für iPhone 13 / 1",
@@ -588,7 +588,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wojiSs",
-          image: "/assets/products/sparin-kameraschutz-iphone16pro-klar.jpg",
+          image: "/assets/products/sparin-kameraschutz-iphone16pro-klar.webp",
           alt: "SPARIN 3 Stück Kameraschutz für iPhone 16 Pro / 16 Pro Max – 9H Panzerglas, Ultr",
           label: "3 Stück 9H",
           title: "SPARIN 3 Stück Kameraschutz für iPhone 16 Pro",
@@ -596,7 +596,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vH2aqQ",
-          image: "/assets/products/mesmos-webcam-abdeckung-katze.jpg",
+          image: "/assets/products/mesmos-webcam-abdeckung-katze.webp",
           alt: "MESMOS Webcam Abdeckung Schieber – Katzenmotiv, für Laptop & Handy",
           label: "Katzenmotiv",
           title: "MESMOS Webcam Abdeckung Schieber – Katzenmoti",
@@ -604,7 +604,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4blFlAS",
-          image: "/assets/products/jetech-kameraschutz-iphone17promax-silber-2.jpg",
+          image: "/assets/products/jetech-kameraschutz-iphone17promax-silber-2.webp",
           alt: "JETech Kameraschutz für iPhone 17 Pro Max – 9H Glas, Metallring, Silber (Variant",
           label: "9H Metall",
           title: "JETech Kameraschutz für iPhone 17 Pro Max – 9",
@@ -612,7 +612,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4b0HW32",
-          image: "/assets/products/tocol-kameraschutz-iphone15-transparent.jpg",
+          image: "/assets/products/tocol-kameraschutz-iphone15-transparent.webp",
           alt: "TOCOL 2 Sets Kameraschutz für iPhone 15 / 15 Plus – 9H+, Transparent",
           label: "2 Sets",
           title: "TOCOL 2 Sets Kameraschutz für iPhone 15 / 15",
@@ -620,7 +620,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v97oL7",
-          image: "/assets/products/cacoe-kameraschutz-iphone16pro-schwarz.jpg",
+          image: "/assets/products/cacoe-kameraschutz-iphone16pro-schwarz.webp",
           alt: "CACOE Kameraschutz Metall für iPhone 16 Pro / 16 Pro Max / 14 Pro / 14 Pro Max –",
           label: "Aluminium",
           title: "CACOE Kameraschutz Metall für iPhone 16 Pro /",
@@ -628,7 +628,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4p3JNdu",
-          image: "/assets/products/wsken-kameraschutz-iphone16pro-titan.jpg",
+          image: "/assets/products/wsken-kameraschutz-iphone16pro-titan.webp",
           alt: "WSKEN Matte Kameraschutz für iPhone 16 Pro Max / 16 Pro – 9H, Desert Titanium",
           label: "Desert Titanium",
           title: "WSKEN Matte Kameraschutz für iPhone 16 Pro Ma",
@@ -636,7 +636,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44agZGr",
-          image: "/assets/products/cacoe-kameraschutz-iphone17promax-dunkelblau.jpg",
+          image: "/assets/products/cacoe-kameraschutz-iphone17promax-dunkelblau.webp",
           alt: "CACOE Kameraschutz für iPhone 17 Pro Max – Anti-Kratz Objektiv Schutzfolie, Dunk",
           label: "Dunkel Blau",
           title: "CACOE Kameraschutz für iPhone 17 Pro Max – An",
@@ -644,7 +644,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v4vPck",
-          image: "/assets/products/locofun-kameraschutz-samsung-a37-schwarz.jpg",
+          image: "/assets/products/locofun-kameraschutz-samsung-a37-schwarz.webp",
           alt: "Locofun Kameraschutz für Samsung Galaxy A37 / A57 5G – 9H Panzerglas, Metall, Sc",
           label: "Samsung A37",
           title: "Locofun Kameraschutz für Samsung Galaxy A37 /",
@@ -652,7 +652,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y5XzQT",
-          image: "/assets/products/locofun-kameraschutz-xiaomi-poco-schwarz.jpg",
+          image: "/assets/products/locofun-kameraschutz-xiaomi-poco-schwarz.webp",
           alt: "Locofun Kameraschutz für Xiaomi Poco M8 Pro / Redmi Note 15 Pro – 9H, Metall, Sc",
           label: "Xiaomi",
           title: "Locofun Kameraschutz für Xiaomi Poco M8 Pro /",
@@ -660,7 +660,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SGG8WG",
-          image: "/assets/products/kameraschutz-iphone13-leuchtend-9farben.jpg",
+          image: "/assets/products/kameraschutz-iphone13-leuchtend-9farben.webp",
           alt: "Kameraschutz für iPhone 13 / 13 Mini – Leuchtend, Automatische Ausrichtung, 9 Fa",
           label: "9 Farben",
           title: "Kameraschutz für iPhone 13 / 13 Mini – Leucht",
@@ -668,7 +668,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eFdJsF",
-          image: "/assets/products/kameraschutz-iphone14pro-6stueck.jpg",
+          image: "/assets/products/kameraschutz-iphone14pro-6stueck.webp",
           alt: "6 Stück Kameraschutz für iPhone 14 Pro / 14 Pro Max – Aluminium Linse mit Schutz",
           label: "6 Stück",
           title: "6 Stück Kameraschutz für iPhone 14 Pro / 14 P",
@@ -676,7 +676,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/446Zsik",
-          image: "/assets/products/imluckies-kameraschutz-iphone13-pink.jpg",
+          image: "/assets/products/imluckies-kameraschutz-iphone13-pink.webp",
           alt: "imluckies Kameralinsenschutz für iPhone 13 / 13 Mini – Aluminium-Legierung, Pink",
           label: "Pink 2 Stück",
           title: "imluckies Kameralinsenschutz für iPhone 13 /",
@@ -684,7 +684,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QTjUjM",
-          image: "/assets/products/kameraschutz-iphone14pro-6stueck-v2.jpg",
+          image: "/assets/products/kameraschutz-iphone14pro-6stueck-v2.webp",
           alt: "6 Stück Kameraschutz für iPhone 14 Pro / 14 Pro Max – Objektivglas Aluminium (Va",
           label: "6 Stück",
           title: "6 Stück Kameraschutz für iPhone 14 Pro / 14 P",
@@ -692,7 +692,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4ggEaWN",
-          image: "/assets/products/kameraschutz-iphone14pro-2stueck-silber.jpg",
+          image: "/assets/products/kameraschutz-iphone14pro-2stueck-silber.webp",
           alt: "2 Stück Kameraschutz für iPhone 14 Pro / 14 Pro Max – Metall AR-Glas, Silber",
           label: "AR Glas Silber",
           title: "2 Stück Kameraschutz für iPhone 14 Pro / 14 P",
@@ -700,7 +700,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4gPD1FU",
-          image: "/assets/products/kameraschutz-samsung-s24ultra-2x.jpg",
+          image: "/assets/products/kameraschutz-samsung-s24ultra-2x.webp",
           alt: "2x Kamera Schutz Panzerfolie Hartglas 9H für Samsung Galaxy S24 Ultra",
           label: "S24 Ultra",
           title: "2x Kamera Schutz Panzerfolie Hartglas 9H für",
@@ -708,7 +708,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3StvH93",
-          image: "/assets/products/kameraschutz-samsung-s23ultra-rosa.jpg",
+          image: "/assets/products/kameraschutz-samsung-s23ultra-rosa.webp",
           alt: "Kameraschutz für Samsung Galaxy S23 Ultra – Leuchtend, Aluminiumringe, Rosa",
           label: "Rosa Leuchtend",
           title: "Kameraschutz für Samsung Galaxy S23 Ultra – L",
@@ -716,7 +716,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vEPuAK",
-          image: "/assets/products/imluckies-kameraschutz-s24ultra-bunt.jpg",
+          image: "/assets/products/imluckies-kameraschutz-s24ultra-bunt.webp",
           alt: "imluckies Glitzer Kameraschutz für Samsung Galaxy S24 Ultra – Aluminium, Bling B",
           label: "Bling Bunt",
           title: "imluckies Glitzer Kameraschutz für Samsung Ga",
@@ -724,7 +724,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SVvgnT",
-          image: "/assets/products/tocol-kameraschutz-iphone14-transparent.jpg",
+          image: "/assets/products/tocol-kameraschutz-iphone14-transparent.webp",
           alt: "TOCOL 2 Sets Kameraschutz für iPhone 14 / 14 Plus – 9H+, Transparent",
           label: "2 Sets",
           title: "TOCOL 2 Sets Kameraschutz für iPhone 14 / 14",
@@ -732,7 +732,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QAch1E",
-          image: "/assets/products/qulloo-kameraschutz-iphone17promax-3pack.jpg",
+          image: "/assets/products/qulloo-kameraschutz-iphone17promax-3pack.webp",
           alt: "QULLOO 3er-Pack Kameraschutz für iPhone 17 Pro Max – 9H Militärqualität, HD klar",
           label: "3er-Pack 9H",
           title: "QULLOO 3er-Pack Kameraschutz für iPhone 17 Pr",
@@ -740,7 +740,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eGDvwQ",
-          image: "/assets/products/kameraschutz-iphone13-glitzer-schwarz.jpg",
+          image: "/assets/products/kameraschutz-iphone13-glitzer-schwarz.webp",
           alt: "Kameraschutz für iPhone 13 / 13 Mini – 9H, Glitzer, Schwarz",
           label: "Glitzer Schwarz",
           title: "Kameraschutz für iPhone 13 / 13 Mini – 9H, Gl",
@@ -748,7 +748,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QvHVNN",
-          image: "/assets/products/lucbuy-kameraschutz-iphone13-diamant.jpg",
+          image: "/assets/products/lucbuy-kameraschutz-iphone13-diamant.webp",
           alt: "LucBuy Kameraschutz für iPhone 13 / 13 Mini – Diamant, Automatische Ausrichtung,",
           label: "Diamant",
           title: "LucBuy Kameraschutz für iPhone 13 / 13 Mini –",
@@ -756,7 +756,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oVgcme",
-          image: "/assets/products/jetech-kameraschutz-samsung-s24fe-schwarz.jpg",
+          image: "/assets/products/jetech-kameraschutz-samsung-s24fe-schwarz.webp",
           alt: "JETech Kameraschutz für Samsung Galaxy S24 FE – 9H Glas, Metallring, Schwarz",
           label: "S24 FE",
           title: "JETech Kameraschutz für Samsung Galaxy S24 FE",
@@ -764,7 +764,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/446jSrS",
-          image: "/assets/products/axfee-usbc-staubschutz-4stueck.jpg",
+          image: "/assets/products/axfee-usbc-staubschutz-4stueck.webp",
           alt: "AXFEE USB-C Staubschutzkappe – 4 Stück Silikon, mit Kleber, für Samsung, Xiaomi",
           label: "4 Stück",
           title: "AXFEE USB-C Staubschutzkappe – 4 Stück Siliko",
@@ -772,7 +772,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v98JBD",
-          image: "/assets/products/usbc-staubschutz-12stueck-silikon.jpg",
+          image: "/assets/products/usbc-staubschutz-12stueck-silikon.webp",
           alt: "USB-C Staubschutz Stöpsel – 12 Stück Silikon, für iPhone 15/16/17, Samsung, Xiao",
           label: "12 Stück",
           title: "USB-C Staubschutz Stöpsel – 12 Stück Silikon,",
@@ -780,7 +780,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4aPC8cT",
-          image: "/assets/products/usbc-staubschutz-4pcs-iphone.jpg",
+          image: "/assets/products/usbc-staubschutz-4pcs-iphone.webp",
           alt: "4 Pcs USB-C Staubschutz Set – mit Ladebuchsenschutz, Lautsprecherschutz & Reinig",
           label: "4-teilig Set",
           title: "4 Pcs USB-C Staubschutz Set – mit Ladebuchsen",
@@ -788,7 +788,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v4wSZO",
-          image: "/assets/products/faraday-tasche-schwarz.jpg",
+          image: "/assets/products/faraday-tasche-schwarz.webp",
           alt: "Leinwand Faraday-Tasche – Anti-Radiation, Anti-Tracking, Signal Blocking, Schwar",
           label: "Signal Blocker",
           title: "Leinwand Faraday-Tasche – Anti-Radiation, Ant",
@@ -796,7 +796,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oX4eIN",
-          image: "/assets/products/colink-faraday-tasche-rot.jpg",
+          image: "/assets/products/colink-faraday-tasche-rot.webp",
           alt: "Co-link Leinwand Faraday-Tasche – Anti-Radiation, Anti-Tracking, Signal Blocking",
           label: "Signal Blocker",
           title: "Co-link Leinwand Faraday-Tasche – Anti-Radiat",
@@ -804,7 +804,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SHnq1a",
-          image: "/assets/products/colink-faraday-tasche-khaki.jpg",
+          image: "/assets/products/colink-faraday-tasche-khaki.webp",
           alt: "Co-link Leinwand Faraday-Tasche – Anti-Radiation, Anti-Tracking, Signal Blocking",
           label: "Signal Blocker",
           title: "Co-link Leinwand Faraday-Tasche – Anti-Radiat",
@@ -812,7 +812,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QUzbRp",
-          image: "/assets/products/lanpard-faraday-box-xl.jpg",
+          image: "/assets/products/lanpard-faraday-box-xl.webp",
           alt: "lanpard Keyless Go Schutz Faraday Box XL – 2 Stück, für Autoschlüssel, Handy & K",
           label: "Faraday Box XL",
           title: "lanpard Keyless Go Schutz Faraday Box XL – 2",
@@ -820,7 +820,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4whxo7T",
-          image: "/assets/products/toca-faraday-bag-rfid.jpg",
+          image: "/assets/products/toca-faraday-bag-rfid.webp",
           alt: "TOCA Faraday Bag – Keyless Go Schutz, RFID Blocker, EMF Shielding, 24.5 x 10 cm",
           label: "RFID Blocker",
           title: "TOCA Faraday Bag – Keyless Go Schutz, RFID Bl",
@@ -828,7 +828,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4fh1kuf",
-          image: "/assets/products/cocases-handyband-nylon-schwarz.jpg",
+          image: "/assets/products/cocases-handyband-nylon-schwarz.webp",
           alt: "COCASES Handyband Universal – Nylon Lanyard zum Umhängen, 2 Pads, Dunkelschwarz",
           label: "Universal",
           title: "COCASES Handyband Universal – Nylon Lanyard z",
@@ -836,7 +836,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xXlOAv",
-          image: "/assets/products/gumolong-handyband-v1.jpg",
+          image: "/assets/products/gumolong-handyband-v1.webp",
           alt: "GUMO-LONG Handyband Universal zum Umhängen – Kette für alle Smartphones & Hüllen",
           label: "Universal",
           title: "GUMO-LONG Handyband Universal zum Umhängen –",
@@ -844,7 +844,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4feyNq0",
-          image: "/assets/products/gumolong-handyband-v2.jpg",
+          image: "/assets/products/gumolong-handyband-v2.webp",
           alt: "GUMO-LONG Handyband Universal zum Umhängen – Variante 2",
           label: "Universal",
           title: "GUMO-LONG Handyband Universal zum Umhängen –",
@@ -852,7 +852,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eCNzqy",
-          image: "/assets/products/morsunbela-handykette-universal.jpg",
+          image: "/assets/products/morsunbela-handykette-universal.webp",
           alt: "MORSUNBELA Handykette Universal – Verstellbar 45–65 cm, Breites Band, Outdoor & ",
           label: "Verstellbar",
           title: "MORSUNBELA Handykette Universal – Verstellbar",
@@ -860,7 +860,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y09b7G",
-          image: "/assets/products/moko-anti-diebstahl-lanyard.jpg",
+          image: "/assets/products/moko-anti-diebstahl-lanyard.webp",
           alt: "MoKo Anti-Diebstahl Handy Lanyard – 2 Pack, Stahlseil, Karabiner, 360° Metallhal",
           label: "Anti-Diebstahl",
           title: "MoKo Anti-Diebstahl Handy Lanyard – 2 Pack, S",
@@ -868,7 +868,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eQ8oNZ",
-          image: "/assets/products/rynapac-waterproof-2pack-schwarz.jpg",
+          image: "/assets/products/rynapac-waterproof-2pack-schwarz.webp",
           alt: "Rynapac Wasserdichte Handyhülle – 2 Stück IPX8, für iPhone 17/16/15, Samsung bis",
           label: "IPX8 2 Stück",
           title: "Rynapac Wasserdichte Handyhülle – 2 Stück IPX",
@@ -876,7 +876,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eFcE4c",
-          image: "/assets/products/rynapac-waterproof-2pack-gruen.jpg",
+          image: "/assets/products/rynapac-waterproof-2pack-gruen.webp",
           alt: "Rynapac Wasserdichte Handyhülle – 2 Stück IPX8, für iPhone 17/16/15, Samsung bis",
           label: "IPX8 2 Stück",
           title: "Rynapac Wasserdichte Handyhülle – 2 Stück IPX",
@@ -884,7 +884,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SCYBUa",
-          image: "/assets/products/jetech-waterproof-2pack-ipx8.jpg",
+          image: "/assets/products/jetech-waterproof-2pack-ipx8.webp",
           alt: "JETech Schwebend Wasserdicht Handytasche – 2 Stück IPX8, für iPhone 17/16/15, Sa",
           label: "Schwebend IPX8",
           title: "JETech Schwebend Wasserdicht Handytasche – 2",
@@ -892,7 +892,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vbSdRp",
-          image: "/assets/products/unbreakcable-waterproof-2pack.jpg",
+          image: "/assets/products/unbreakcable-waterproof-2pack.webp",
           alt: "UNBREAKcable Wasserdichte Handyhülle – 2 Stück IPX8, für iPhone 16/15/14/13/12/1",
           label: "IPX8 2 Stück",
           title: "UNBREAKcable Wasserdichte Handyhülle – 2 Stüc",
@@ -900,7 +900,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4ax23Wu",
-          image: "/assets/products/torras-waterproof-2026-schwarz.jpg",
+          image: "/assets/products/torras-waterproof-2026-schwarz.webp",
           alt: "TORRAS IPX8 Wasserdichte Handyhülle 2026 – Touch-sensitiv, Schwimmend, 7.9 Zoll,",
           label: "Touch Sensitiv",
           title: "TORRAS IPX8 Wasserdichte Handyhülle 2026 – To",
@@ -908,7 +908,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y07N4Y",
-          image: "/assets/products/waterproof-universal-ipx8-pink.jpg",
+          image: "/assets/products/waterproof-universal-ipx8-pink.webp",
           alt: "Universelle Wasserdichte Handyhülle IPX8 – Lanyard, bis 7 Zoll, Pink",
           label: "IPX8 Pink",
           title: "Universelle Wasserdichte Handyhülle IPX8 – La",
@@ -916,7 +916,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4eFcpWQ",
-          image: "/assets/products/waterproof-universal-ipx8-mint.jpg",
+          image: "/assets/products/waterproof-universal-ipx8-mint.webp",
           alt: "Universelle Wasserdichte Handyhülle IPX8 – Lanyard, bis 7 Zoll, Crystal Mint",
           label: "IPX8 Mint",
           title: "Universelle Wasserdichte Handyhülle IPX8 – La",
@@ -924,7 +924,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y5YTTR",
-          image: "/assets/products/ivoler-waterproof-bauchtasche-schwarz.jpg",
+          image: "/assets/products/ivoler-waterproof-bauchtasche-schwarz.webp",
           alt: "ivoler Wasserdichte Bauchtasche mit Handyhülle – IPX8, Strand, Schwimmen, Bootfa",
           label: "Bauchtasche",
           title: "ivoler Wasserdichte Bauchtasche mit Handyhüll",
@@ -932,7 +932,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4gQXxG5",
-          image: "/assets/products/lamicall-waterproof-doppeltasche.jpg",
+          image: "/assets/products/lamicall-waterproof-doppeltasche.webp",
           alt: "Lamicall Wasserdichte Handyhülle – Doppelte Taschen, IPX8, für iPhone 17/16/15/1",
           label: "Doppelte Taschen",
           title: "Lamicall Wasserdichte Handyhülle – Doppelte T",
@@ -940,7 +940,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4ggf2j8",
-          image: "/assets/products/lamicall-waterproof-2pack-v2.jpg",
+          image: "/assets/products/lamicall-waterproof-2pack-v2.webp",
           alt: "Lamicall Wasserdichte Handyhülle – 2 Stück IPX8, für iPhone 17/16/15/14/13, Sams",
           label: "IPX8 2 Stück",
           title: "Lamicall Wasserdichte Handyhülle – 2 Stück IP",
@@ -948,7 +948,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4gNWBCm",
-          image: "/assets/products/surphy-iphone11-stone.jpg",
+          image: "/assets/products/surphy-iphone11-stone.webp",
           alt: "SURPHY Hülle für iPhone 11 – Silikon mit Kameraschutz, Flache Kante, Stone",
           label: "Silikon",
           title: "SURPHY Hülle für iPhone 11 – Silikon mit Kame",
@@ -956,7 +956,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oWIAEH",
-          image: "/assets/products/surphy-iphone11-zitruspink.jpg",
+          image: "/assets/products/surphy-iphone11-zitruspink.webp",
           alt: "SURPHY Hülle für iPhone 11 – Silikon, Flache Kante, Zitruspink",
           label: "Silikon",
           title: "SURPHY Hülle für iPhone 11 – Silikon, Flache",
@@ -964,7 +964,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v37a87",
-          image: "/assets/products/surphy-iphone11-heissrosa.jpg",
+          image: "/assets/products/surphy-iphone11-heissrosa.webp",
           alt: "SURPHY Hülle für iPhone 11 – Silikon, Flache Kante, Heiße Rosa",
           label: "Silikon",
           title: "SURPHY Hülle für iPhone 11 – Silikon, Flache",
@@ -972,7 +972,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wfgLtr",
-          image: "/assets/products/surphy-iphone11-pink.jpg",
+          image: "/assets/products/surphy-iphone11-pink.webp",
           alt: "SURPHY Hülle für iPhone 11 – Silikon, Flache Kante, Pink",
           label: "Silikon Pink",
           title: "SURPHY Hülle für iPhone 11 – Silikon, Flache",
@@ -980,7 +980,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xPjZWe",
-          image: "/assets/products/sportlink-iphone11-ip68-rosa.jpg",
+          image: "/assets/products/sportlink-iphone11-ip68-rosa.webp",
           alt: "SPORTLINK Wasserdichte Hülle für iPhone 11 – IP68, 360 Grad, Kameraschutz, Rosa",
           label: "IP68 Rosa",
           title: "SPORTLINK Wasserdichte Hülle für iPhone 11 –",
@@ -988,7 +988,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4bmPM7h",
-          image: "/assets/products/sportlink-iphone11-ip68-schwarz.jpg",
+          image: "/assets/products/sportlink-iphone11-ip68-schwarz.webp",
           alt: "SPORTLINK Wasserdichte Hülle für iPhone 11 – IP68, 360 Grad, Kameraschutz, Schwa",
           label: "IP68 Schwarz",
           title: "SPORTLINK Wasserdichte Hülle für iPhone 11 –",
@@ -996,7 +996,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44CvZwT",
-          image: "/assets/products/sportlink-iphone17-ip68.jpg",
+          image: "/assets/products/sportlink-iphone17-ip68.webp",
           alt: "SPORTLINK Wasserdichte Hülle für iPhone 17 – IP68, 360 Grad, 6FT Stoßfest, 6,3 Z",
           label: "IP68 iPhone 17",
           title: "SPORTLINK Wasserdichte Hülle für iPhone 17 –",
@@ -1004,7 +1004,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wloSVy",
-          image: "/assets/products/miracase-magsafe-iphone16-schwarz.jpg",
+          image: "/assets/products/miracase-magsafe-iphone16-schwarz.webp",
           alt: "Miracase MagSafe Hülle für iPhone 16 – Militärschutz, mit 2 Schutzglas, Schwarz",
           label: "MagSafe Militär",
           title: "Miracase MagSafe Hülle für iPhone 16 – Militä",
@@ -1012,7 +1012,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3Tb63WE",
-          image: "/assets/products/seacosmo-iphone16e-360-schwarz.jpg",
+          image: "/assets/products/seacosmo-iphone16e-360-schwarz.webp",
           alt: "seacosmo Hülle für iPhone 16E / 17E – 360 Grad, Panzerglas, Kameraschutz, Schwar",
           label: "360 Grad",
           title: "seacosmo Hülle für iPhone 16E / 17E – 360 Gra",
@@ -1020,7 +1020,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4wk9QPF",
-          image: "/assets/products/cacoe-iphone15-magsafe-transluzent.jpg",
+          image: "/assets/products/cacoe-iphone15-magsafe-transluzent.webp",
           alt: "CACOE Hülle für iPhone 15 – MagSafe, Kameraschutz, Stoßfest, Transluzent",
           label: "MagSafe",
           title: "CACOE Hülle für iPhone 15 – MagSafe, Kamerasc",
@@ -1028,7 +1028,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4oYeYXf",
-          image: "/assets/products/torras-iphone15-ultradünn-schwarz.jpg",
+          image: "/assets/products/torras-iphone15-ultradünn-schwarz.webp",
           alt: "TORRAS Ultra Slim Hülle für iPhone 15 – 0.07cm Dünn, Samtiger Griff, Schwarz",
           label: "0.07cm Slim",
           title: "TORRAS Ultra Slim Hülle für iPhone 15 – 0.07c",
@@ -1036,7 +1036,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4ePXEiG",
-          image: "/assets/products/ivoler-iphone17-transparent-2glas.jpg",
+          image: "/assets/products/ivoler-iphone17-transparent-2glas.webp",
           alt: "ivoler Hülle für iPhone 17 – Transparent, Nie Vergilbung, mit 2 Schutzglas, Mili",
           label: "Transparent",
           title: "ivoler Hülle für iPhone 17 – Transparent, Nie",
@@ -1044,7 +1044,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4v22lMl",
-          image: "/assets/products/miracase-iphone-se2022-360-schwarz.jpg",
+          image: "/assets/products/miracase-iphone-se2022-360-schwarz.webp",
           alt: "Miracase 360 Grad Hülle für iPhone SE 2022 / SE 2020 / iPhone 8 – Ganzkörper, Gl",
           label: "360 Grad",
           title: "Miracase 360 Grad Hülle für iPhone SE 2022 /",
@@ -1052,7 +1052,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QWu8Qe",
-          image: "/assets/products/miracase-iphone-se2022-360-rot.jpg",
+          image: "/assets/products/miracase-iphone-se2022-360-rot.webp",
           alt: "Miracase 360 Grad Hülle für iPhone SE 2022 / SE 2020 / iPhone 8 – Ganzkörper, Gl",
           label: "360 Grad Rot",
           title: "Miracase 360 Grad Hülle für iPhone SE 2022 /",
@@ -1060,7 +1060,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4xXMCAJ",
-          image: "/assets/products/mobnano-iphone-se2022-transparent.jpg",
+          image: "/assets/products/mobnano-iphone-se2022-transparent.webp",
           alt: "MobNano Ultra Hybrid Hülle für iPhone SE 2022 / SE 2020 / 8 / 7 – Transparent, 3",
           label: "Transparent",
           title: "MobNano Ultra Hybrid Hülle für iPhone SE 2022",
@@ -1068,7 +1068,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4b0M03i",
-          image: "/assets/products/kwmobile-iphone-se2022-neon-tuerkis.jpg",
+          image: "/assets/products/kwmobile-iphone-se2022-neon-tuerkis.webp",
           alt: "kwmobile Hülle für iPhone SE 2022 / SE 2020 / 8 / 7 – TPU, Kabelloses Laden, Neo",
           label: "Neon Türkis",
           title: "kwmobile Hülle für iPhone SE 2022 / SE 2020 /",
@@ -1076,7 +1076,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4y09Wh2",
-          image: "/assets/products/kwmobile-iphone-se2022-neon-violett.jpg",
+          image: "/assets/products/kwmobile-iphone-se2022-neon-violett.webp",
           alt: "kwmobile Hülle für iPhone SE 2022 / SE 2020 / 8 / 7 – TPU, Kabelloses Laden, Neo",
           label: "Neon Violett",
           title: "kwmobile Hülle für iPhone SE 2022 / SE 2020 /",
@@ -1084,7 +1084,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4axv0Sd",
-          image: "/assets/products/kwmobile-iphone-se2022-fruity-orange.jpg",
+          image: "/assets/products/kwmobile-iphone-se2022-fruity-orange.webp",
           alt: "kwmobile Hülle für iPhone SE 2022 / SE 2020 / 8 / 7 – Silikon, Fruity Orange",
           label: "Fruity Orange",
           title: "kwmobile Hülle für iPhone SE 2022 / SE 2020 /",
@@ -1092,7 +1092,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vqZGw9",
-          image: "/assets/products/leaisan-iphone-se2022-leder-schwarz.jpg",
+          image: "/assets/products/leaisan-iphone-se2022-leder-schwarz.webp",
           alt: "Leaisan Leder Flip Hülle für iPhone SE 2022 / SE 2020 / 8 / 7 – Standfunktion, K",
           label: "Leder Flip",
           title: "Leaisan Leder Flip Hülle für iPhone SE 2022 /",
@@ -1100,7 +1100,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/44E32k6",
-          image: "/assets/products/leder-klapphuelle-iphone-se2022.jpg",
+          image: "/assets/products/leder-klapphuelle-iphone-se2022.webp",
           alt: "Leder Klapphülle für iPhone SE 2020 / 2022 / 8 / 7 – mit Schutzfolie, Kartenfach",
           label: "Leder Klapp",
           title: "Leder Klapphülle für iPhone SE 2020 / 2022 /",
@@ -1108,7 +1108,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3QUizcl",
-          image: "/assets/products/zyimou-iphone-se2022-wallet-schwarz.jpg",
+          image: "/assets/products/zyimou-iphone-se2022-wallet-schwarz.webp",
           alt: "ZYIMOU Leder Wallet Flip Hülle für iPhone SE 2022 / SE 2020 / 8 / 7 – Standfunkt",
           label: "Wallet Flip",
           title: "ZYIMOU Leder Wallet Flip Hülle für iPhone SE",
@@ -1116,7 +1116,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4fecKQk",
-          image: "/assets/products/tucch-iphone-se2022-klapp-schwarz.jpg",
+          image: "/assets/products/tucch-iphone-se2022-klapp-schwarz.webp",
           alt: "TUCCH Klapphülle für iPhone SE 2022 / 2020 / 8 / 7 – TPU, Kartenfächer, Magnet, ",
           label: "Klapp TPU",
           title: "TUCCH Klapphülle für iPhone SE 2022 / 2020 /",
@@ -1124,7 +1124,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vESLQy",
-          image: "/assets/products/giyer-iphone-se2022-leder-rot.jpg",
+          image: "/assets/products/giyer-iphone-se2022-leder-rot.webp",
           alt: "Giyer Leder Flip Hülle für iPhone SE 2022 / 2020 / 8 / 7 – Standfunktion, Karten",
           label: "Leder Flip Rot",
           title: "Giyer Leder Flip Hülle für iPhone SE 2022 / 2",
@@ -1132,7 +1132,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4vbWbJN",
-          image: "/assets/products/lolfz-iphone7plus-leder-blau.jpg",
+          image: "/assets/products/lolfz-iphone7plus-leder-blau.webp",
           alt: "LOLFZ Leder Hülle für iPhone 7 Plus / 8 Plus – Kartenfach, Standfunktion, Magnet",
           label: "Leder Blau",
           title: "LOLFZ Leder Hülle für iPhone 7 Plus / 8 Plus",
@@ -1140,7 +1140,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/3SX1dw9",
-          image: "/assets/products/gaming-finger-sleeves-10stueck.jpg",
+          image: "/assets/products/gaming-finger-sleeves-10stueck.webp",
           alt: "Gaming Finger Sleeves – 10 Stück, Touchscreen Glide, für alle Spiele, Handy Cont",
           label: "Gaming",
           title: "Gaming Finger Sleeves – 10 Stück, Touchscreen",
@@ -1148,7 +1148,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4avdjCM",
-          image: "/assets/products/kwmobile-handytasche-neopren-xxl.jpg",
+          image: "/assets/products/kwmobile-handytasche-neopren-xxl.webp",
           alt: "kwmobile Handytasche XXL – Neopren, 7 Zoll, Marineblau, 17,7 x 8,5 cm",
           label: "Neopren XXL",
           title: "kwmobile Handytasche XXL – Neopren, 7 Zoll, M",
@@ -1156,7 +1156,7 @@ export const Route = createFileRoute("/iphone-zubehoer")({
         },
         {
           href: "https://amzn.to/4atUH62",
-          image: "/assets/products/pnitri-autohalterung-lueftung-360.jpg",
+          image: "/assets/products/pnitri-autohalterung-lueftung-360.webp",
           alt: "Pnitri Handyhalterung Auto – Lüftung, 360° Drehbar, Hakenclip, für 4–7 Zoll Smar",
           label: "360° Lüftung",
           title: "Pnitri Handyhalterung Auto – Lüftung, 360° Dr",

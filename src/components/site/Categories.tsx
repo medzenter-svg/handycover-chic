@@ -1,23 +1,44 @@
 import { Link } from "@tanstack/react-router";
-import { categories } from "@/data/products";
+
+const categoryCards = [
+  { id: "iphone",      name: "iPhone Zubehör",     slug: "/iphone-zubehoer",    img: "/images/iphone-zubehoer.webp" },
+  { id: "samsung",     name: "Samsung Zubehör",    slug: "/samsung-zubehoer",   img: "/images/samsung-zubehoer.webp" },
+  { id: "magsafe",     name: "MagSafe Zubehör",    slug: "/magsafe-zubehoer",   img: "/images/magsafe-zubehoer.webp" },
+  { id: "display",     name: "Displayschutz",      slug: "/displayschutz",      img: "/images/displayschutz.webp" },
+  { id: "ladegeraete", name: "Ladegeräte & Kabel", slug: "/ladegeraete-kabel",  img: "/images/ladegeraete-kabel.webp" },
+  { id: "powerbanks",  name: "Powerbanks",         slug: "/powerbanks",         img: "/images/powerbanks.webp" },
+  { id: "auto",        name: "Auto-Zubehör",       slug: "/auto-zubehoer",      img: "/images/auto-zubehoer.webp" },
+  { id: "earbuds",     name: "Earbuds Zubehör",    slug: "/earbuds-zubehoer",   img: "/images/earbuds-zubehoer.webp" },
+  { id: "watch",       name: "Smartwatch Zubehör", slug: "/smartwatch-zubehoer", img: "/images/smartwatch-zubehoer.webp" },
+  { id: "gifts",       name: "Tech Gifts",         slug: "/amazon-picks",       img: "/images/tech-gifts.webp" },
+];
 
 export function Categories() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 pt-6">
-      <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-10">
-        {categories.map((c) => (
+    <section className="mx-auto max-w-[1400px] px-4 pt-6 sm:px-6">
+      {/* Horizontal scroll on mobile, 10-column grid on desktop */}
+      <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide xl:grid xl:grid-cols-10 xl:overflow-visible xl:pb-0">
+        {categoryCards.map((c) => (
           <Link
             key={c.id}
             to={c.slug}
-            className={`group flex h-[82px] items-center gap-2.5 rounded-2xl border border-border/60 bg-gradient-to-br ${c.gradient} px-2.5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-card xl:h-[112px] xl:flex-col xl:items-center xl:justify-center xl:gap-1.5 xl:px-2`}
+            className="group flex-shrink-0 w-[120px] xl:w-auto transition hover:-translate-y-0.5"
+            aria-label={c.name}
           >
-            <div className="grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-xl border border-white/80 bg-white/85 p-1 shadow-soft">
-              <img src={c.image} alt="" width={120} height={120} className="h-10 w-10 object-contain object-center transition duration-500 group-hover:scale-[1.04]" loading="lazy" />
+            <div className="flex flex-col items-center gap-1.5">
+              <img
+                src={c.img}
+                alt={c.name}
+                width={293}
+                height={293}
+                loading="lazy"
+                className="w-full rounded-2xl shadow-sm object-contain bg-white"
+                style={{ aspectRatio: "1 / 1" }}
+              />
+              <span className="text-center text-[11px] font-semibold text-gray-700 leading-tight group-hover:text-pink-500 transition-colors px-1">
+                {c.name}
+              </span>
             </div>
-
-            <span className="min-w-0 text-[11.5px] font-extrabold leading-tight text-foreground xl:text-center">
-              {c.name}
-            </span>
           </Link>
         ))}
       </div>

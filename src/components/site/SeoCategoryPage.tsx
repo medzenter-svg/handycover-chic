@@ -79,9 +79,34 @@ export function SeoCategoryPage({
   category,
   affiliateNote,
 }: Props) {
-  const allProducts = category
+  const filteredProducts = category
     ? products.filter((p) => (p.category === category || (p.categories && p.categories.includes(category))) && p.amazonUrl && p.amazonUrl !== "#")
     : products.filter((p) => p.amazonUrl && p.amazonUrl !== "#");
+
+  // Für iPhone-Kategorie: Smartphones zuerst, dann Hüllen, dann Rest
+  // Für Watch-Kategorie: Zubehör zuerst (Armbänder, Hüllen), dann Uhren selbst
+  const isWatch = (p: typeof filteredProducts[0]) =>
+    p.title.toLowerCase().includes("apple watch") ||
+    p.title.toLowerCase().includes("galaxy watch") ||
+    p.title.toLowerCase().includes("smartwatch") ||
+    (p.badge && (p.badge.toLowerCase().includes("gps") || p.badge.toLowerCase().includes("lte") || p.badge.toLowerCase().includes("cellular") || p.badge.toLowerCase().includes("galaxy ai")));
+
+  const allProducts = category === "iphone"
+    ? [
+        ...filteredProducts.filter((p) => p.badge && (p.badge.includes("GB") || p.badge.includes("TB") || (p.title && (p.title.toLowerCase().includes("iphone") && !p.title.toLowerCase().includes("hülle") && !p.title.toLowerCase().includes("case") && !p.title.toLowerCase().includes("schutz") && !p.title.toLowerCase().includes("panzerglas") && !p.title.toLowerCase().includes("folie") && !p.title.toLowerCase().includes("kabel") && !p.title.toLowerCase().includes("ladegerät") && !p.title.toLowerCase().includes("powerbank") && !p.title.toLowerCase().includes("halterung") && !p.title.toLowerCase().includes("ohrbügel") && !p.title.toLowerCase().includes("übersetzer"))))),
+        ...filteredProducts.filter((p) => p.title && (p.title.toLowerCase().includes("hülle") || p.title.toLowerCase().includes("case")) && !(p.badge && (p.badge.includes("GB") || p.badge.includes("TB")))),
+        ...filteredProducts.filter((p) => !(p.badge && (p.badge.includes("GB") || p.badge.includes("TB"))) && !(p.title && (p.title.toLowerCase().includes("hülle") || p.title.toLowerCase().includes("case")))),
+      ]
+    : category === "watch"
+    ? [
+        // Zubehör zuerst: Armbänder, Hüllen, Schutz
+        ...filteredProducts.filter((p) => !isWatch(p) && (p.title.toLowerCase().includes("armband") || p.title.toLowerCase().includes("band"))),
+        ...filteredProducts.filter((p) => !isWatch(p) && (p.title.toLowerCase().includes("hülle") || p.title.toLowerCase().includes("schutz") || p.title.toLowerCase().includes("folie") || p.title.toLowerCase().includes("glas"))),
+        ...filteredProducts.filter((p) => !isWatch(p) && !p.title.toLowerCase().includes("armband") && !p.title.toLowerCase().includes("band") && !p.title.toLowerCase().includes("hülle") && !p.title.toLowerCase().includes("schutz") && !p.title.toLowerCase().includes("folie") && !p.title.toLowerCase().includes("glas")),
+        // Uhren selbst am Ende
+        ...filteredProducts.filter((p) => isWatch(p)),
+      ]
+    : filteredProducts;
 
   return (
     <div className="min-h-screen bg-background">

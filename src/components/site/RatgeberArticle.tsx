@@ -33,6 +33,8 @@ type Props = {
   category?: string;
   sidebarCards?: SidebarCard[];
   heroText?: string;
+  ctaLabel?: string;
+  ctaTo?: string;
 };
 
 function FaqBlock({ faqs }: { faqs: ArticleFaq[] }) {
@@ -58,7 +60,7 @@ function FaqBlock({ faqs }: { faqs: ArticleFaq[] }) {
   );
 }
 
-export function RatgeberArticle({ title, description, intro, sections, faqs, internalLinks, publishDate, category, sidebarCards, heroText }: Props) {
+export function RatgeberArticle({ title, description, intro, sections, faqs, internalLinks, publishDate, category, sidebarCards, heroText, ctaLabel, ctaTo }: Props) {
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -127,6 +129,20 @@ export function RatgeberArticle({ title, description, intro, sections, faqs, int
             ))}
           </div>
         </section>
+
+        {/* CTA */}
+        {ctaLabel && ctaTo && (
+          <section className="mx-auto max-w-[1400px] px-4 pt-4 sm:px-6">
+            <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-pink-50 via-fuchsia-50 to-violet-100 p-5 shadow-card text-center md:p-7">
+              <Link
+                to={ctaTo}
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-3.5 text-[15px] font-extrabold text-white shadow-glow transition hover:from-pink-600 hover:to-purple-700"
+              >
+                {ctaLabel} <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </section>
+        )}
 
         {/* FAQ */}
         <section className="mx-auto max-w-[1400px] px-4 pt-4 sm:px-6">

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/ladegeraete-kabel")({
       sidebarCards={[
         {
           href: "https://amzn.to/4wnDow0",
-          image: "/assets/products/usbc-25w-ladegeraet-3er-pack-weiss.jpeg",
+          image: "/assets/products/usbc-25w-ladegeraet-3er-pack-weiss.webp",
           alt: "3er-Pack USB-C 25W Ladegerät + 2m Kabel Weiß",
           label: "3er Set",
           title: "3er USB-C 25W Ladegerät + Kabel",
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/ladegeraete-kabel")({
         },
         {
           href: "https://amzn.to/4gQj9T4",
-          image: "/assets/products/usbc-ladegeraet-20w-rosa-iphone.jpg",
+          image: "/assets/products/usbc-ladegeraet-20w-rosa-iphone.webp",
           alt: "20W USB-C Ladegerät & Kabel rosa iPhone 17 16 15",
           label: "Empfehlung",
           title: "20W USB-C Ladegerät + Kabel",
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/ladegeraete-kabel")({
         },
         {
           href: "https://amzn.to/4v27xQh",
-          image: "/assets/products/charco-3in1-ladegeraet-apple-watch-20w.jpeg",
+          image: "/assets/products/charco-3in1-ladegeraet-apple-watch-20w.webp",
           alt: "CHARCO 3-in-1 20W Ladegerät Apple Watch",
           label: "Empfehlung",
           title: "CHARCO 3-in-1 Ladegerät",
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/ladegeraete-kabel")({
         },
         {
           href: "https://amzn.to/4fd3ZpI",
-          image: "/assets/products/magnetische-kabel-clips-6er.jpeg",
+          image: "/assets/products/magnetische-kabel-clips-6er.webp",
           alt: "6er Magnetische Kabel Clips Blau Lila Orange",
           label: "Zubehör",
           title: "Magnetische Kabel Clips",
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/ladegeraete-kabel")({
         },
         {
           href: "https://amzn.to/3QTBHqT",
-          image: "/assets/products/silikon-kabelbinder-12er.jpeg",
+          image: "/assets/products/silikon-kabelbinder-12er.webp",
           alt: "12er Silikon Kabelbinder Kabelorganisatoren",
           label: "Zubehör",
           title: "Silikon Kabelbinder",
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/ladegeraete-kabel")({
         },
         {
           href: "https://amzn.to/4whpxqR",
-          image: "/assets/products/magnetische-kabelbinder-20er-bunt.jpeg",
+          image: "/assets/products/magnetische-kabelbinder-20er-bunt.webp",
           alt: "SMART&COOL 20er Magnetische Kabelbinder bunt",
           label: "Zubehör",
           title: "Magnetische Kabelbinder",

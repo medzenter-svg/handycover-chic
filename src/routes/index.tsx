@@ -4,7 +4,6 @@ import { Hero } from "@/components/site/Hero";
 import { Categories } from "@/components/site/Categories";
 import { Bestsellers } from "@/components/site/Bestsellers";
 import { TrustSection } from "@/components/site/TrustSection";
-import { AccessoryFinder } from "@/components/site/AccessoryFinder";
 import { ComparisonTable } from "@/components/site/ComparisonTable";
 import { HomeFaq } from "@/components/site/HomeFaq";
 import { Guides } from "@/components/site/Guides";
@@ -52,12 +51,11 @@ function Index() {
       <main className="pb-10">
         <Hero />
         <Categories />
-        <AccessoryFinder />
         <Bestsellers />
         {/* Tierheim Banner */}
         <div className="mx-auto max-w-[1400px] px-4 py-4 sm:px-6">
           <img
-            src="/assets/tierheim-banner.jpg"
+            src="/assets/tierheim-banner.webp"
             alt="15 % unserer Einnahmen spenden wir an Tierheime"
             className="w-full rounded-2xl object-cover"
           />

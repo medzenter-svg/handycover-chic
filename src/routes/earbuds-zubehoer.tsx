@@ -15,11 +15,11 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
       description="Ausgewähltes Zubehör für Earbuds und AirPods mit direktem Amazon-Link."
       intro="Gutes Earbuds-Zubehör schützt deine AirPods oder anderen Kopfhörer vor Kratzern und Verlust. Schutzhüllen, Clips und praktische Accessoires sorgen für längere Haltbarkeit und einfaches Handling im Alltag."
       buyingGuide="Achte bei Earbuds-Zubehör auf die genaue Modellkompatibilität. AirPods-Hüllen müssen zur jeweiligen Generation passen. Clips und Karabiner können helfen, die Kopfhörer sicher zu befestigen."
-      category="airpods"
+      category="earbuds"
       sidebarCards={[
         {
           href: "https://amzn.to/3SUZ9Vq",
-          image: "/assets/products/mygadget-kopfhoerer-aufbewahrung-orange.jpeg",
+          image: "/assets/products/mygadget-kopfhoerer-aufbewahrung-orange.webp",
           alt: "MyGadget Kopfhörer Aufbewahrung Mini Tasche Orange",
           label: "Empfehlung",
           title: "MyGadget Kopfhörer Tasche",
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4ePI9ap",
-          image: "/assets/products/xanad-kopfhoerer-tasche-over-ear-lila.jpeg",
+          image: "/assets/products/xanad-kopfhoerer-tasche-over-ear-lila.webp",
           alt: "XANAD Kopfhörer Tasche Over Ear Lila",
           label: "Empfehlung",
           title: "XANAD Over-Ear Kopfhörer Tasche",
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4ws5ma1",
-          image: "/assets/products/mas-carney-mini-kopfhoerer-tasche-pink.jpeg",
+          image: "/assets/products/mas-carney-mini-kopfhoerer-tasche-pink.webp",
           alt: "MAS CARNEY Mini Kopfhörer Tasche Macaron Pink",
           label: "Empfehlung",
           title: "MAS CARNEY Mini Kopfhörer Tasche",
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4eZwHJr",
-          image: "/assets/products/eazy-case-inear-tasche-rot-schwarz.jpeg",
+          image: "/assets/products/eazy-case-inear-tasche-rot-schwarz.webp",
           alt: "EAZY CASE Universal In-Ear Tasche Rot Schwarz",
           label: "Empfehlung",
           title: "EAZY CASE In-Ear Hardcase",
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4eHFaSD",
-          image: "/assets/products/xanad-kopfhoerer-tasche-jbl-tune-lila.jpeg",
+          image: "/assets/products/xanad-kopfhoerer-tasche-jbl-tune-lila.webp",
           alt: "XANAD Kopfhörer Tasche JBL Tune Lila",
           label: "Empfehlung",
           title: "XANAD JBL Tune Hardcase",
@@ -59,7 +59,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4gPjaXl",
-          image: "/assets/products/moko-ladetasche-apple-watch-airpods-blau-lila.jpeg",
+          image: "/assets/products/moko-ladetasche-apple-watch-airpods-blau-lila.webp",
           alt: "MoKo Ladetasche Apple Watch AirPods Blau Lila",
           label: "Empfehlung",
           title: "MoKo Ladetasche Apple Watch & AirPods",
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4fbjSwV",
-          image: "/assets/products/eazy-case-inear-tasche-orange.jpeg",
+          image: "/assets/products/eazy-case-inear-tasche-orange.webp",
           alt: "EAZY CASE Universal In-Ear Tasche Orange",
           label: "Empfehlung",
           title: "EAZY CASE In-Ear Hardcase",
@@ -75,7 +75,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4p2FrDp",
-          image: "/assets/products/acronix-airpods-pro3-huelle-orange.jpeg",
+          image: "/assets/products/acronix-airpods-pro3-huelle-orange.webp",
           alt: "ACRONIX AirPods Pro 3 Hülle Orange",
           label: "Neu 2025",
           title: "ACRONIX AirPods Pro 3 Hülle",
@@ -83,7 +83,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/44ICG0q",
-          image: "/assets/products/ahastyle-airpods-pro3-huelle-dunkelblau.jpeg",
+          image: "/assets/products/ahastyle-airpods-pro3-huelle-dunkelblau.webp",
           alt: "AhaStyle AirPods Pro 3 Hülle Dunkelblau",
           label: "Neu 2025",
           title: "AhaStyle AirPods Pro 3 Hülle",
@@ -91,7 +91,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4blheSO",
-          image: "/assets/products/rfun-airpods-pro3-huelle-rosenrosa.jpeg",
+          image: "/assets/products/rfun-airpods-pro3-huelle-rosenrosa.webp",
           alt: "R-fun AirPods Pro 3 Hülle Rosenrosa",
           label: "Neu 2025",
           title: "R-fun AirPods Pro 3 Hülle",
@@ -99,7 +99,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4vKwmBD",
-          image: "/assets/products/rfun-airpods-pro3-huelle-rot.jpeg",
+          image: "/assets/products/rfun-airpods-pro3-huelle-rot.webp",
           alt: "R-fun AirPods Pro 3 Hülle Rot",
           label: "Neu 2025",
           title: "R-fun AirPods Pro 3 Hülle",
@@ -107,7 +107,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4aRGPmv",
-          image: "/assets/products/rfun-airpods-pro2-huelle-tuerkis.jpeg",
+          image: "/assets/products/rfun-airpods-pro2-huelle-tuerkis.webp",
           alt: "R-fun AirPods Pro 2 Hülle Türkis",
           label: "Bestseller",
           title: "R-fun AirPods Pro 2 Hülle",
@@ -115,7 +115,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/44GbL5l",
-          image: "/assets/products/rfun-airpods-pro3-huelle-rosa.jpeg",
+          image: "/assets/products/rfun-airpods-pro3-huelle-rosa.webp",
           alt: "R-fun AirPods Pro 3 Hülle Rosa",
           label: "Neu 2025",
           title: "R-fun AirPods Pro 3 Hülle",
@@ -123,7 +123,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4ve3Zuz",
-          image: "/assets/products/rfun-airpods-pro3-huelle-lila.jpeg",
+          image: "/assets/products/rfun-airpods-pro3-huelle-lila.webp",
           alt: "R-fun AirPods Pro 3 Hülle Lila",
           label: "Neu 2025",
           title: "R-fun AirPods Pro 3 Hülle",
@@ -131,7 +131,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4oVyzY8",
-          image: "/assets/products/rfun-airpods-pro3-huelle-himmelblau.jpeg",
+          image: "/assets/products/rfun-airpods-pro3-huelle-himmelblau.webp",
           alt: "R-fun AirPods Pro 3 Hülle Himmelblau",
           label: "Neu 2025",
           title: "R-fun AirPods Pro 3 Hülle",
@@ -139,7 +139,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4az3CDk",
-          image: "/assets/products/rfun-airpods-pro3-huelle-orange.jpeg",
+          image: "/assets/products/rfun-airpods-pro3-huelle-orange.webp",
           alt: "R-fun AirPods Pro 3 Hülle Orange",
           label: "Neu 2025",
           title: "R-fun AirPods Pro 3 Hülle",
@@ -147,7 +147,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4as7LsM",
-          image: "/assets/products/airpods3-huelle-silikon-neonpink.jpeg",
+          image: "/assets/products/airpods3-huelle-silikon-neonpink.webp",
           alt: "AirPods 3 Silikon Hülle Neon-Rosa",
           label: "Zubehör",
           title: "AirPods 3 Silikon Hülle",
@@ -155,7 +155,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/44Hx7iQ",
-          image: "/assets/products/airpods-pro3-huelle-silikon-rosenrosa-umhang.jpeg",
+          image: "/assets/products/airpods-pro3-huelle-silikon-rosenrosa-umhang.webp",
           alt: "AirPods Pro 3 Silikon Hülle Rosenrosa mit Umhängeband",
           label: "Neu 2025",
           title: "AirPods Pro 3 Silikon Hülle",
@@ -163,7 +163,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/4wdZ0uw",
-          image: "/assets/products/airpods-pro3-huelle-diamant-schwarz.jpeg",
+          image: "/assets/products/airpods-pro3-huelle-diamant-schwarz.webp",
           alt: "AirPods Pro 3 Diamant Strass Hülle Schwarz",
           label: "Neu 2025",
           title: "AirPods Pro 3 Diamant Hülle",
@@ -171,7 +171,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/3QSywje",
-          image: "/assets/products/airpods-magnetische-gurte-4er.jpeg",
+          image: "/assets/products/airpods-magnetische-gurte-4er.webp",
           alt: "4er Magnetische Anti-Verlust Gurte AirPods",
           label: "Zubehör",
           title: "Magnetische Anti-Verlust Gurte",
@@ -179,7 +179,7 @@ export const Route = createFileRoute("/earbuds-zubehoer")({
         },
         {
           href: "https://amzn.to/3Qzw9C5",
-          image: "/assets/products/airpods-pro-ohrbuegel-transparent.jpeg",
+          image: "/assets/products/airpods-pro-ohrbuegel-transparent.webp",
           alt: "AirPods Pro Ohrbügel transparent verstellbar",
           label: "Zubehör",
           title: "AirPods Pro Ohrbügel",

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/magsafe-zubehoer")({
       sidebarCards={[
         {
           href: "https://amzn.to/4eBcN8I",
-          image: "/assets/products/mini-powerbank-10000mah-magsafe-blau.jpg",
+          image: "/assets/products/mini-powerbank-10000mah-magsafe-blau.webp",
           alt: "Mini Powerbank 10000mAh magnetisch MagSafe 20W PD blau",
           label: "Empfehlung",
           title: "Mini Powerbank 10000mAh",

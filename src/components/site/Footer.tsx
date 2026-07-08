@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Youtube, Facebook, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const kategorien = [
   { label: "iPhone Zubehör", to: "/iphone-zubehoer" },
@@ -43,18 +43,7 @@ export function Footer() {
             <p className="mt-3 text-[12.5px] leading-relaxed text-foreground/70">
               Unabhängiger Ratgeber für Smartphone-Zubehör. Ausgewählte Produkte mit direktem Amazon-Link und klarer Kaufberatung.
             </p>
-            <div className="mt-4 flex gap-2">
-              {[Instagram, Youtube, Facebook].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="Social Media"
-                  className="grid h-8 w-8 place-items-center rounded-full bg-card text-foreground/70 shadow-soft transition hover:text-primary"
-                >
-                  <Icon className="h-3.5 w-3.5" />
-                </a>
-              ))}
-            </div>
+
           </div>
 
           <FooterCol title="Kategorien" items={kategorien} />

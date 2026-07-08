@@ -77,19 +77,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Handycover.com – Handyhüllen & Smartphone-Zubehör" },
+      {
+        name: "description",
+        content:
+          "Entdecke ausgewählte Handyhüllen, MagSafe-Zubehör, Displayschutz, Ladegeräte, Powerbanks und Smartphone-Zubehör mit direktem Amazon-Preischeck.",
+      },
+      { name: "author", content: "Handycover.com" },
+      { property: "og:title", content: "Handycover.com – Handyhüllen & Smartphone-Zubehör" },
+      {
+        property: "og:description",
+        content:
+          "Ausgewählte Handyhüllen und Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.handycover.com/" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "robots", content: "index, follow" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "canonical",
+        href: "https://www.handycover.com/",
       },
       {
         rel: "icon",
@@ -114,7 +127,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <head>
         <HeadContent />
       </head>

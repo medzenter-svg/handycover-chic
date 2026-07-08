@@ -13,20 +13,23 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HandyCover – Smartphone Zubehör, Hüllen & Amazon Picks" },
+      { title: "Handycover.com – Handyhüllen & Smartphone-Zubehör" },
       {
         name: "description",
         content:
-          "Ausgewähltes Smartphone-Zubehör, Handyhüllen, MagSafe, Displayschutz, Ladegeräte und Gadgets mit direktem Amazon-Preischeck und Kaufberatung.",
+          "Entdecke ausgewählte Handyhüllen, MagSafe-Zubehör, Displayschutz, Ladegeräte, Powerbanks und Smartphone-Zubehör mit direktem Amazon-Preischeck.",
       },
-      { property: "og:title", content: "HandyCover – Smartphone Zubehör, Hüllen & Amazon Picks" },
+      { property: "og:title", content: "Handycover.com – Handyhüllen & Smartphone-Zubehör" },
       {
         property: "og:description",
-        content: "Ausgewähltes Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
+        content:
+          "Ausgewählte Handyhüllen und Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
       },
+      { property: "og:url", content: "https://www.handycover.com/" },
       { name: "robots", content: "index, follow" },
     ],
     links: [
+      { rel: "canonical", href: "https://www.handycover.com/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {

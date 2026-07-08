@@ -34,6 +34,24 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Generate static entry page
+        shell: bash
+        run: |
+          NITRO_HOST=127.0.0.1 NITRO_PORT=3000 node .output/server/index.mjs > /tmp/handycover-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+
+          for i in {1..30}; do
+            if curl --fail --silent --show-error http://127.0.0.1:3000/ -o .output/public/index.html; then
+              cp .output/public/index.html .output/public/404.html
+              exit 0
+            fi
+            sleep 1
+          done
+
+          cat /tmp/handycover-server.log
+          exit 1
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

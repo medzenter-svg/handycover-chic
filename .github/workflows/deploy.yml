@@ -37,20 +37,37 @@ jobs:
       - name: Generate static entry page
         shell: bash
         run: |
-          NITRO_HOST=127.0.0.1 NITRO_PORT=3000 node .output/server/index.mjs > /tmp/handycover-server.log 2>&1 &
-          SERVER_PID=$!
-          trap 'kill $SERVER_PID || true' EXIT
+          node --input-type=module <<'EOF'
+          import { writeFile, copyFile } from 'node:fs/promises'
+          import * as workerModule from './.output/server/index.mjs'
 
-          for i in {1..30}; do
-            if curl --fail --silent --show-error http://127.0.0.1:3000/ -o .output/public/index.html; then
-              cp .output/public/index.html .output/public/404.html
-              exit 0
-            fi
-            sleep 1
-          done
+          const worker = workerModule.default ?? workerModule
+          const fetchHandler = worker.fetch ?? workerModule.fetch
 
-          cat /tmp/handycover-server.log
-          exit 1
+          if (typeof fetchHandler !== 'function') {
+            console.error('Available exports:', Object.keys(workerModule))
+            throw new Error('Could not find a fetch handler in the built server module')
+          }
+
+          const ctx = {
+            waitUntil() {},
+            passThroughOnException() {},
+          }
+
+          const response = await fetchHandler(
+            new Request('https://handycover.com/'),
+            {},
+            ctx,
+          )
+
+          if (!response.ok) {
+            throw new Error(`SSR request failed with status ${response.status}`)
+          }
+
+          const html = await response.text()
+          await writeFile('.output/public/index.html', html, 'utf8')
+          await copyFile('.output/public/index.html', '.output/public/404.html')
+          EOF
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

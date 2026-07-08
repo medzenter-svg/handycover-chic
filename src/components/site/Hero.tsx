@@ -93,14 +93,14 @@ export function Hero() {
               <div className="mt-7 grid grid-cols-2 gap-x-4 gap-y-2 text-[11.5px] text-muted-foreground sm:grid-cols-4">
                 {[
                   { i: BadgeCheck, t: "Sorgfältig ausgewählt", href: "/ratgeber", external: false },
-                  { i: Shield, t: "Direkt zu Amazon", href: "https://www.amazon.de", external: true },
-                  { i: Truck, t: "Preischeck möglich", href: "https://www.amazon.de", external: true },
+                  { i: Shield, t: "Direkt zu Amazon", href: "https://www.amazon.de", external: true, sponsored: true },
+                  { i: Truck, t: "Preischeck möglich", href: "https://www.amazon.de", external: true, sponsored: true },
                   { i: Check, t: "Keine Mehrkosten", href: "/ratgeber", external: false },
-                ].map(({ i: Icon, t, href, external }) => (
+                ].map(({ i: Icon, t, href, external, sponsored }) => (
                   <a
                     key={t}
                     href={href}
-                    {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    {...(external ? { target: "_blank", rel: sponsored ? "nofollow sponsored noopener" : "noopener noreferrer" } : {})}
                     className="inline-flex items-center gap-1.5 hover:text-primary transition-colors"
                   >
                     <Icon className="h-3.5 w-3.5 text-primary" />

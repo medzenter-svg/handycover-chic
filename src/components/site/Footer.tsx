@@ -88,9 +88,11 @@ export function Footer() {
         </div>
 
         {/* Affiliate-Hinweis */}
-        <div className="border-t border-border/60 px-8 py-3 md:px-10">
+        <div className="border-t border-border/60 px-8 py-4 md:px-10">
           <p className="text-[11.5px] leading-relaxed text-muted-foreground">
-            <strong>Affiliate-Hinweis:</strong> Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Für dich entstehen dadurch keine zusätzlichen Kosten. Preise und Verfügbarkeit können sich ändern – maßgeblich sind die Angaben auf der jeweiligen Amazon-Produktseite. Bitte prüfe dort die genaue Modellkompatibilität, bevor du kaufst.
+            <strong>Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.</strong>{" "}
+            Für dich entstehen durch die Nutzung unserer Affiliate-Links keine zusätzlichen Kosten.{" "}
+            Preise und Verfügbarkeit können sich jederzeit ändern. Maßgeblich sind ausschließlich die Angaben auf der jeweiligen Amazon-Produktseite zum Zeitpunkt des Kaufs.
           </p>
         </div>
 
@@ -98,7 +100,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-2 border-t border-border/60 px-8 py-4 text-[11.5px] text-muted-foreground sm:flex-row md:px-10">
           <span>© {new Date().getFullYear()} HandyCover. Alle Rechte vorbehalten.</span>
           <span className="text-center">
-            Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Preise und Verfügbarkeit können sich ändern.
+            Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Preise und Verfügbarkeit können sich jederzeit ändern.
           </span>
           <Link to="/affiliate-hinweis" className="hover:text-primary">Affiliate-Hinweis</Link>
         </div>

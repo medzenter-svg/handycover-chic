@@ -86,8 +86,15 @@ function shortLabel(p: Product): string {
   return p.badge;
 }
 
+/** Gibt das aktuelle Datum als "DD.MM.YYYY" zurück */
+function today(): string {
+  const d = new Date();
+  return d.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
+
 export function ProductCard({ p }: { p: Product }) {
   const copy = getCardCopy(p);
+  const priceDate = today();
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card">
@@ -123,11 +130,12 @@ export function ProductCard({ p }: { p: Product }) {
           {p.benefit}
         </p>
 
-        {/* Affiliate-Hinweis */}
+        {/* Kompatibilitäts-Hinweis */}
         <p className="mt-1.5 text-[10.5px] leading-snug text-muted-foreground/70 italic">
           {copy.hint}
         </p>
 
+        {/* Preis */}
         <div className="mt-2 flex items-baseline gap-2">
           <span className="text-[17px] font-extrabold text-foreground">{p.price}</span>
           {p.oldPrice && (
@@ -135,16 +143,30 @@ export function ProductCard({ p }: { p: Product }) {
           )}
         </div>
 
+        {/* Preis-Hinweis */}
+        <p className="mt-0.5 text-[10px] leading-snug text-muted-foreground/60">
+          Preis zuletzt geprüft am: {priceDate}
+        </p>
+        <p className="mt-0.5 text-[10px] leading-snug text-muted-foreground/60">
+          Preis kann sich geändert haben. Maßgeblich ist der aktuelle Preis bei Amazon.
+        </p>
+
+        {/* Amazon-Button */}
         <a
           href={p.amazonUrl}
           target="_blank"
           rel="nofollow sponsored noopener"
           aria-label={`${p.title} – ${copy.button}`}
-          className="mt-auto inline-flex h-9 w-full items-center justify-center gap-1.5 rounded-lg bg-[#4B0082] px-3 text-[12.5px] font-semibold text-white transition hover:bg-[#3a006b]"
+          className="mt-3 inline-flex h-9 w-full items-center justify-center gap-1.5 rounded-lg bg-[#4B0082] px-3 text-[12.5px] font-semibold text-white transition hover:bg-[#3a006b]"
         >
           {copy.button}
           <ArrowUpRight className="h-3.5 w-3.5" />
         </a>
+
+        {/* Affiliate-Kennzeichnung direkt unter dem Button */}
+        <p className="mt-1 text-center text-[9.5px] leading-snug text-muted-foreground/55">
+          ✶ Affiliate-Link: Bei einem Kauf erhalten wir möglicherweise eine Provision. Für dich entstehen keine zusätzlichen Kosten.
+        </p>
       </div>
     </article>
   );

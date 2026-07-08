@@ -12,13 +12,6 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  nitro: {
-    preset: "static",
-    prerender: {
-      routes: ["/"],
-      crawlLinks: true,
-    },
-  },
   vite: {
     server: {
       // The preview proxy rejects the Vite HMR websocket, and Vite's client can

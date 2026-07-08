@@ -86,16 +86,8 @@ function shortLabel(p: Product): string {
   return p.badge;
 }
 
-/** Gibt das aktuelle Datum als "DD.MM.YYYY" zurück */
-function today(): string {
-  const d = new Date();
-  return d.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" });
-}
-
 export function ProductCard({ p }: { p: Product }) {
   const copy = getCardCopy(p);
-  const priceDate = today();
-
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card">
       {/* Image */}
@@ -145,10 +137,7 @@ export function ProductCard({ p }: { p: Product }) {
 
         {/* Preis-Hinweis */}
         <p className="mt-0.5 text-[10px] leading-snug text-muted-foreground/60">
-          Preis zuletzt geprüft am: {priceDate}
-        </p>
-        <p className="mt-0.5 text-[10px] leading-snug text-muted-foreground/60">
-          Preis kann sich geändert haben. Maßgeblich ist der aktuelle Preis bei Amazon.
+          Preis kann sich seit der letzten Aktualisierung geändert haben. Maßgeblich ist der aktuelle Preis bei Amazon.
         </p>
 
         {/* Amazon-Button */}

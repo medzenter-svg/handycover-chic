@@ -30,7 +30,7 @@ export function Footer() {
   return (
     <footer className="mx-auto mt-12 max-w-[1400px] px-6 pb-10">
       <div className="overflow-hidden rounded-3xl bg-gradient-footer shadow-card">
-        <div className="grid grid-cols-1 items-start gap-7 p-6 md:grid-cols-[1.4fr_1fr_1fr_1fr_1.4fr] md:gap-12 md:p-10">
+        <div className="grid grid-cols-1 items-start gap-7 p-6 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-12 md:p-10">
 
           {/* Brand */}
           <div>
@@ -61,30 +61,7 @@ export function Footer() {
           <FooterCol title="Ratgeber" items={ratgeber} />
           <FooterCol title="Rechtliches" items={rechtliches} />
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-[13px] font-bold">Newsletter</h4>
-            <p className="mt-2 text-[12.5px] text-foreground/70">
-              Keine Deals & Tipps mehr verpassen!
-            </p>
-            <form className="mt-3 flex gap-2">
-              <input
-                type="email"
-                placeholder="E-Mail-Adresse"
-                aria-label="E-Mail für Newsletter"
-                className="h-9 min-w-0 flex-1 rounded-full border border-border bg-card px-3 text-[12.5px] outline-none focus:border-primary"
-              />
-              <button
-                type="button"
-                className="inline-flex h-9 shrink-0 items-center rounded-full bg-gradient-brand px-3.5 text-[12.5px] font-semibold text-white shadow-glow"
-              >
-                Anmelden
-              </button>
-            </form>
-            <p className="mt-2 text-[11px] text-muted-foreground">
-              Abmeldung jederzeit möglich.
-            </p>
-          </div>
+
         </div>
 
         {/* Affiliate-Hinweis */}

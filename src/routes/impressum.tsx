@@ -19,13 +19,10 @@ export const Route = createFileRoute("/impressum")({
 
             <div className="mt-5 space-y-4 text-[13.5px] leading-relaxed text-muted-foreground">
 
-              {/* Angaben gemäß § 5 DDG (ehemals TMG) */}
               <div>
                 <p className="font-semibold text-foreground">Diensteanbieter</p>
-                {/* TODO: Vollständigen Namen des Diensteanbieters eintragen */}
                 <p className="mt-1">
                   HandyCover<br />
-                  {/* TODO: Vorname Nachname des Betreibers eintragen */}
                   Crusiusstr. 1<br />
                   80538 München<br />
                   Deutschland
@@ -42,14 +39,6 @@ export const Route = createFileRoute("/impressum")({
                 </p>
               </div>
 
-              <div>
-                <p className="font-semibold text-foreground">Verantwortlich für den Inhalt</p>
-                {/* TODO: Vollständigen Namen der verantwortlichen Person eintragen */}
-                <p className="mt-1">
-                  Crusiusstr. 1, 80538 München
-                </p>
-              </div>
-
               <div className="border-t border-border/60 pt-4">
                 <p className="font-semibold text-foreground">Hinweis zu Affiliate-Links</p>
                 <p className="mt-1">
@@ -62,7 +51,7 @@ export const Route = createFileRoute("/impressum")({
               <div className="border-t border-border/60 pt-4">
                 <p className="font-semibold text-foreground">Haftungsausschluss</p>
                 <p className="mt-1">
-                  Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Als Diensteanbieter sind wir für eigene Inhalte nach den allgemeinen Gesetzen verantwortlich. Für externe Links übernehmen wir keine Haftung; für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+                  Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Für externe Links übernehmen wir keine Haftung; für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
                 </p>
               </div>
 

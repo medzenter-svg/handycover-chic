@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Ausgewählte Handyhüllen und Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://www.handycover.com/" },
+      { property: "og:url", content: "https://handycover.com/" },
       { name: "twitter:card", content: "summary" },
       { name: "robots", content: "index, follow" },
     ],
@@ -102,7 +102,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         rel: "canonical",
-        href: "https://www.handycover.com/",
+        href: "https://handycover.com/",
       },
       {
         rel: "icon",

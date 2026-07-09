@@ -25,11 +25,11 @@ export const Route = createFileRoute("/")({
         content:
           "Ausgewählte Handyhüllen und Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
       },
-      { property: "og:url", content: "https://www.handycover.com/" },
+      { property: "og:url", content: "https://handycover.com/" },
       { name: "robots", content: "index, follow" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.handycover.com/" },
+      { rel: "canonical", href: "https://handycover.com/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {

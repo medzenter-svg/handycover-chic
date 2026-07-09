@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.handycover.com/sitemap.xml
+Sitemap: https://handycover.com/sitemap.xml

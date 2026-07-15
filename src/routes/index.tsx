@@ -13,20 +13,23 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Handycover.com – Handyhüllen & Smartphone-Zubehör" },
+      { title: "HandyCover – Handyhüllen, MagSafe & Smartphone-Zubehör" },
       {
         name: "description",
         content:
-          "Entdecke ausgewählte Handyhüllen, MagSafe-Zubehör, Displayschutz, Ladegeräte, Powerbanks und Smartphone-Zubehör mit direktem Amazon-Preischeck.",
+          "HandyCover vergleicht Handyhüllen, MagSafe-Zubehör, Displayschutz, Ladegeräte und Powerbanks. Kaufberatung, Produktauswahl und direkter Amazon-Preischeck.",
       },
-      { property: "og:title", content: "Handycover.com – Handyhüllen & Smartphone-Zubehör" },
+      { property: "og:title", content: "HandyCover – Handyhüllen, MagSafe & Smartphone-Zubehör" },
       {
         property: "og:description",
         content:
-          "Ausgewählte Handyhüllen und Smartphone-Zubehör mit direktem Amazon-Preischeck und Kaufberatung.",
+          "Kaufberatung und ausgewählte Produkte rund um Handyhüllen, MagSafe, Displayschutz, Ladegeräte und Powerbanks.",
       },
       { property: "og:url", content: "https://handycover.com/" },
-      { name: "robots", content: "index, follow" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "HandyCover" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
     ],
     links: [
       { rel: "canonical", href: "https://handycover.com/" },
@@ -42,10 +45,26 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "HandyCover",
+    url: "https://handycover.com/",
+    description:
+      "Unabhängige Kaufberatung und Produktauswahl für Handyhüllen, MagSafe-Zubehör, Displayschutz, Ladegeräte und Powerbanks.",
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "HandyCover",
+    url: "https://handycover.com/",
+    inLanguage: "de-DE",
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      {/* Tierheim Top-Bar */}
       <div className="w-full bg-gradient-to-r from-pink-400 via-fuchsia-400 to-violet-500 py-2 px-4">
         <div className="mx-auto flex max-w-[1400px] items-center justify-center gap-3">
           <span className="text-sm font-bold text-white">🐾 15 % unserer Einnahmen spenden wir an Tierheime.</span>
@@ -55,7 +74,6 @@ function Index() {
         <Hero />
         <Categories />
         <Bestsellers />
-        {/* Tierheim Banner */}
         <div className="mx-auto max-w-[1400px] px-4 py-4 sm:px-6">
           <img
             src="/assets/tierheim-banner.webp"
@@ -70,6 +88,14 @@ function Index() {
         <HomeFaq />
       </main>
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
     </div>
   );
 }

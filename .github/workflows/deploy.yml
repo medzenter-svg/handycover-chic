@@ -34,11 +34,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Generate static entry page
+      - name: Prerender every sitemap URL
         shell: bash
         run: |
           node --input-type=module <<'EOF'
-          import { writeFile, copyFile } from 'node:fs/promises'
+          import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises'
+          import { dirname, join } from 'node:path'
           import * as workerModule from './.output/server/index.mjs'
 
           const worker = workerModule.default ?? workerModule
@@ -49,23 +50,37 @@ jobs:
             throw new Error('Could not find a fetch handler in the built server module')
           }
 
+          const sitemap = await readFile('public/sitemap.xml', 'utf8')
+          const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1])
+
+          if (urls.length === 0) {
+            throw new Error('No URLs found in public/sitemap.xml')
+          }
+
           const ctx = {
             waitUntil() {},
             passThroughOnException() {},
           }
 
-          const response = await fetchHandler(
-            new Request('https://handycover.com/'),
-            {},
-            ctx,
-          )
+          for (const urlString of urls) {
+            const url = new URL(urlString)
+            const response = await fetchHandler(new Request(url), {}, ctx)
 
-          if (!response.ok) {
-            throw new Error(`SSR request failed with status ${response.status}`)
+            if (!response.ok) {
+              throw new Error(`SSR request failed for ${url.pathname} with status ${response.status}`)
+            }
+
+            const html = await response.text()
+            const relativePath = url.pathname === '/'
+              ? 'index.html'
+              : join(url.pathname.replace(/^\//, '').replace(/\/$/, ''), 'index.html')
+            const outputPath = join('.output/public', relativePath)
+
+            await mkdir(dirname(outputPath), { recursive: true })
+            await writeFile(outputPath, html, 'utf8')
+            console.log(`Prerendered ${url.pathname} -> ${outputPath}`)
           }
 
-          const html = await response.text()
-          await writeFile('.output/public/index.html', html, 'utf8')
           await copyFile('.output/public/index.html', '.output/public/404.html')
           EOF
 

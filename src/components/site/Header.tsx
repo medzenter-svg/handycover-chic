@@ -1,6 +1,6 @@
 import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
-import { Search, ChevronDown, Sparkles, BookOpen } from "lucide-react";
+import { Search, ChevronDown, Sparkles, BookOpen, Menu, X } from "lucide-react";
 import { categorySlugs } from "@/data/products";
 
 const nav: { label: string; to: string }[] = [
@@ -23,6 +23,7 @@ const moreNav = [
 
 export function Header() {
   const [moreOpen, setMoreOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const routerState = useRouterState();
@@ -99,8 +100,50 @@ export function Header() {
           </form>
         </div>
 
-
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-expanded={mobileOpen}
+          aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
+          className="ml-auto inline-flex items-center justify-center rounded-full border border-border bg-card p-2 text-foreground shadow-soft lg:hidden"
+        >
+          {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
+
+      {mobileOpen && (
+        <div className="border-t border-border/60 bg-card px-4 pb-4 pt-3 lg:hidden">
+          <form onSubmit={handleSearch} className="relative mb-3">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Zubehör suchen..."
+              aria-label="Zubehör suchen"
+              className="h-10 w-full rounded-full border border-border bg-muted/60 pl-9 pr-4 text-[13px] outline-none transition focus:border-primary/50 focus:bg-card"
+            />
+          </form>
+          <nav className="flex flex-col gap-1" aria-label="Mobile Navigation">
+            {[...nav, ...moreNav].map((item) => {
+              const isActive = currentPath === item.to || currentPath.startsWith(item.to + "/");
+              return (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setMobileOpen(false)}
+                  className={isActive
+                    ? "rounded-lg px-3 py-2.5 text-[14px] font-bold text-white"
+                    : "rounded-lg px-3 py-2.5 text-[14px] font-semibold text-foreground/80 hover:bg-accent hover:text-foreground"
+                  }
+                  style={isActive ? { background: 'linear-gradient(135deg, #6d28d9 0%, #4c1d95 100%)' } : undefined}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
